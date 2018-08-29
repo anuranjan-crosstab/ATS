@@ -51,7 +51,7 @@
         <ul id="progressbar" class="form-candidate">
             <li class="active">Upload Resume</li>
             <li>General Information</li>
-            <li>Quessionaire</li>
+            <li>Questionnaire</li>
             <li>Video CV</li>
         </ul>
         <!-- fieldsets -->
@@ -113,7 +113,7 @@
                                     <div class="col-sm-12">
                                         <div class="input-group input-group-primary">
                                             <span class="input-group-addon">
-                                                <i class="icofont icofont-user"></i>
+                                                <i class="icofont icofont-ui-email"></i>
                                             </span>
                                             <input type="text" class="form-control" placeholder="Email Address">
                                         </div>
@@ -125,7 +125,7 @@
                                     <div class="col-sm-12">
                                         <div class="input-group input-group-primary">
                                             <span class="input-group-addon">
-                                                <i class="icofont icofont-user"></i>
+                                                <i class="icofont icofont-ui-touch-phone"></i>
                                             </span>
                                             <input type="text" class="form-control" placeholder="Phone Number">
                                         </div>
@@ -205,32 +205,62 @@
         </fieldset>
         <fieldset>
             <!-- <img class="logo" src="assets/images/auth/logo.png" alt="logo.png"> -->
-            <h2 class="fs-title">Quessionaire</h2>
+            <h2 class="fs-title">Questionnaire</h2>
             <!-- <h3 class="fs-subtitle">Little bit about your presence on social media</h3> -->
             <!-- <input type="file" name="files[]" id="filer_input" multiple="multiple"> -->
             <!-- Input Group Sizes & Colors card start -->
                 <div class="card">
-                    <div class="card-block">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="input-group">
-                                            <span class="input-group-addon" id="basic-addon6">@</span>
-                                            <input type="text" class="form-control" placeholder="input-group-lg">
-                                        </div>
+                    <div class="card-block accordion-block">
+                        <div id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="accordion-panel">
+                                <div class="accordion-heading" role="tab" id="headingOne">
+                                    <h3 class="card-title accordion-title text-left">
+                                    <a  class="accordion-msg" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="icofont icofont-question-circle"></i>&nbsp;What are your strengths? 
+                                    </a>
+                                    </h3>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="accordion-content accordion-desc">
+                                        <textarea class="form-control max-textarea" maxlength="255" rows="4" placeholder="Write your answer..."></textarea>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="input-group input-group-primary">
-                                            <span class="input-group-addon">
-                                                <i class="icofont icofont-presentation"></i>
-                                            </span>
-                                            <input type="text" class="form-control" placeholder="input-group-primary">
-                                        </div>
+                            <div class="accordion-panel">
+                                <div class="accordion-heading" role="tab" id="headingTwo">
+                                    <h3 class="card-title accordion-title text-left">
+                                    <a class="accordion-msg" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="icofont icofont-question-circle"></i>&nbsp;How would your current/past teammates describe you and your work ethic? 
+                                    </a>
+                                    </h3>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="accordion-content accordion-desc">
+                                        <textarea class="form-control max-textarea" maxlength="255" rows="4" placeholder="Write your answer..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-panel">
+                                <div class=" accordion-heading" role="tab" id="headingThree">
+                                    <h3 class="card-title accordion-title text-left">
+                                    <a class="accordion-msg" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="icofont icofont-question-circle"></i>&nbsp;Describe an example of your innovation in a work situation. 
+                                    </a>
+                                    </h3>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="accordion-content accordion-desc">
+                                        <textarea class="form-control max-textarea" maxlength="255" rows="4" placeholder="Write your answer..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-panel">
+                                <div class=" accordion-heading" role="tab" id="headingFour">
+                                    <h3 class="card-title accordion-title text-left">
+                                    <a class="accordion-msg" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree"><i class="icofont icofont-question-circle"></i>&nbsp;What are your long and short term career goals?
+                                    </a>
+                                    </h3>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="accordion-content accordion-desc">
+                                        <textarea class="form-control max-textarea" maxlength="255" rows="4" placeholder="Write your answer..."></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -245,7 +275,15 @@
             <!-- <img class="logo" src="assets/images/auth/logo.png" alt="logo.png"> -->
             <h2 class="fs-title">Video CV</h2>
             <!-- <h3 class="fs-subtitle">And something about yourself!</h3> -->
-
+                <div class="card">
+                    <div class="card-block">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <input type="file" name="files[]" id="filer_input2" multiple="multiple">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <button type="button" name="previous" class="btn btn-inverse btn-outline-inverse previous" value="Previous">Previous</button>
             <button type="button" name="next" class="btn btn-primary" value="submit">Submit</button>
         </fieldset>

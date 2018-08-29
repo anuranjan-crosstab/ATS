@@ -19311,11 +19311,26 @@ width: 99.5% !important;
 }
 
 #msform {
-    width: 70%;
+    width: 100%;
 }
 
 #msform .form-candidate li {
   width: 25%;
+  font-size: 15px;
+}
+
+#msform .form-candidate li::before {
+  width: 35px;
+  line-height: 35px;
+  font-size: 12px;
+}
+
+#msform .form-candidate li::after {
+  top: 15px;
+}
+
+.wizard > .content {
+  min-height: 35em;
 }
 
 /* Custom End */
