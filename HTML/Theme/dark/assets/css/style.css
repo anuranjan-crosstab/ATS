@@ -43,9 +43,7 @@ ul {
   font-size: 14px; }
   * a:focus, * a:hover {
     text-decoration: none; }
-#its-height{
-	height:400px;
-}
+
 p {
   font-size: 14px; }
 
@@ -19305,6 +19303,19 @@ width: 99.5% !important;
 .card-comment-icon .btn-danger {
     background-color: #c34e42;
     border: 3px solid #ed7669;
+}
+
+#candidate-back {
+  background: url("../images/job-back.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+
+#msform {
+    width: 70%;
+}
+
+#msform .form-candidate li {
+  width: 25%;
 }
 
 /* Custom End */

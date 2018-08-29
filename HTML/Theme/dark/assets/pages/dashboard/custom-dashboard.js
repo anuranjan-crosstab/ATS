@@ -467,5 +467,8 @@ $(document).ready(function() {
     $(".js-example-data-array-2").select2({
         data: data
     });
+
+    // Single Search Select
+    $(".js-example-basic-single").select2();
 });
 
