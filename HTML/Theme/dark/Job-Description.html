@@ -30,6 +30,8 @@
    <!-- Range slider css -->
       <link rel="stylesheet" type="text/css" href="../bower_components/seiyria-bootstrap-slider/css/bootstrap-slider.css">
      <link rel="stylesheet" href="../bower_components/select2/css/select2.min.css" />
+   <!-- Switch component css -->
+    <link rel="stylesheet" type="text/css" href="../bower_components/switchery/css/switchery.min.css">
 
 
   <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
@@ -42,6 +44,8 @@
   <!-- Style.css -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <!--color css-->
+ <!-- Date-Dropper css -->
+      <link rel="stylesheet" type="text/css" href="../bower_components/datedropper/css/datedropper.min.css" />
 
   <link rel="stylesheet" type="text/css" href="assets/css/linearicons.css">
   <link rel="stylesheet" type="text/css" href="assets/css/simple-line-icons.css">
@@ -54,10 +58,27 @@
     font-size: 20px;
     background-color: #f0f0f1;
 }
+
 #ex6SliderVal{
         font-size: 25px;
     color: #0073aa;
     padding: 20px 20px;
+}
+.slides{
+    background: #0073aa;
+    width: calc(100% / 6);
+    height: 4px;
+    position: absolute;
+    -webkit-transition: left 0.3s ease-out;
+    transition: left 0.3s ease-out;
+    bottom: 0;
+}
+ .big-font2{
+    padding: -1px 0 !important;
+    color: #0073aa;
+    font-size: 20px;
+    background-color: #f0f0f1;
+     width:200px;
 }
 </style>
 </head>
@@ -724,194 +745,217 @@
                                                                 <div class="tab-content card-block">
                                                                     <div class="tab-pane active" id="home7" role="tabpanel">
                                                                         <div class="card-block" id="its-height">
-                                                                           <div class="row">
-                                                                                <div class="col-sm-2 col-lg-2">
-                                                                                    <b><label for="phone-1" class="block">Upload JD</label></b>
-                                                                                </div>
-                                                                                <div class="col-sm-6 col-lg-6">
-                                                                                    <input type="file" name="files[]" id="filer_input"  multiple="multiple">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="row">
-                                                                                <div class="col-sm-2 col-lg-2">
-                                                                                    <b><label for="name-1" class="block">Job Title *</label></b>
-                                                                                </div>
-                                                                                <div class="col-sm-4 col-lg-4 ">
-                                                                                    <div class="input-group">
-                                                                                        <input type="text" class="form-control"/>
-                                                                                        <span class="input-group-addon">
-                                                                                           <i class="icofont icofont-ui-user"></i>
-                                                                                       </span>
-                                                                                   </div>
-                                                                               </div>
-                                                                               <div class="col-sm-2 col-lg-2">
-                                                                                    <b><label for="name-2" class="block">Company *</label></b>
-                                                                                </div>
-                                                                                <div class="col-sm-4 col-lg-4 ">
-                                                                                    <div class="input-group">
-                                                                                        <input type="text" class="form-control"/>
-                                                                                        <span class="input-group-addon">
-                                                                                           <i class="icofont icofont-ui-user"></i>
-                                                                                       </span>
-                                                                                   </div>
-                                                                               </div>  
-                                                                                 </div>
-
-                                                                              
-                                                                                   
-                                                                               <div class="row">
-                                                                                <div class="col-sm-2 col-lg-2">
-                                                                                   <b> <label for="name-1" class="block">Country *</label></b>
-                                                                                </div>
-                                                                                <div class="col-sm-4 col-lg-4 ">
-                                                                                    <div class="input-group">
-                                                                                        <Select class="form-control "/>
-                                                                                        <option value="" selected>Select country</option>
-                                                                                        <option value="Australia">Australia</option>
-                                                                                        <option value="Austria">Austria</option>
-                                                                                        <option value="Brazil">Brazil</option>
-                                                                                        <option value="Canada">Canada</option>
-                                                                                        <option value="Germany">Germany</option>
-                                                                                        <option value="India">India</option>
-                                                                                        <option value="Italy">Italy</option>
-                                                                                        <option value="Japan">Japan</option>
-                                                                                        <option value=">Netherlands">Netherlands</option>
-                                                                                        <option value=">New Zealand">New Zealand</option>
-                                                                                        <option value="Philippines">Philippines</option>
-                                                                                        <option value="Portugal">Portugal</option>
-                                                                                        <option value="South Africa">South Africa</option>
-                                                                                        <option value="Spain">Spain</option>
-                                                                                        <option value="Switzerland">Switzerland</option>
-                                                                                        <option value="Sweden">Sweden</option>
-                                                                                        <option value="Turkey">Turkey</option>
-                                                                                        <option value="j-United Arab Emirates">j-United Arab Emirates</option>
-                                                                                        <option value="j-United Kingdom">j-United Kingdom</option>
-                                                                                        <option value="USA">USA</option>
-                                                                                    </select>
-                                                                                        <span class="input-group-addon">
-                                                                                           <i class="icofont icofont-globe"></i>
-                                                                                       </span>
-                                                                                   </div>
-                                                                               </div>
-                                                                               <div class="col-sm-2 col-lg-2">
-                                                                                    <b><label for="name-2" class="block">City *</label></b>
-                                                                                </div>
-                                                                                <div class="col-sm-4 col-lg-4 ">
-                                                                                    <div class="input-group">
-                                                                                        <input type="text" class="form-control"/>
-                                                                                        <span class="input-group-addon">
-                                                                                           <i class="icofont icofont-ui-user"></i>
-                                                                                       </span>
-                                                                                   </div>
-                                                                               </div>  
-                                                                                 </div>
-
-                                                                           
-                                                                                
-
-
-                                                                              
-
-
-                                                                              <!-- Image upload card start -->
-
-
-                                                                              <div class="row">                                                                
-                                                                                 <div class="col-sm-2 col-lg-2">
-                                                                                    <b><label for="name-2" class="block">Location *</label></b>
-                                                                                </div>
-                                                                                <div class="col-sm-4 col-lg-4 ">
-                                                                                    <div class="input-group">
-                                                                                        <Select class="form-control "/>
-                                                                                        <option value="" selected>Select country</option>
-                                                                                        <option value="Australia">Australia</option>
-                                                                                        <option value="Austria">Austria</option>
-                                                                                        <option value="Brazil">Brazil</option>
-                                                                                        <option value="Canada">Canada</option>
-                                                                                        <option value="Germany">Germany</option>
-                                                                                        <option value="India">India</option>
-                                                                                        <option value="Italy">Italy</option>
-                                                                                        <option value="Japan">Japan</option>
-                                                                                        <option value=">Netherlands">Netherlands</option>
-                                                                                        <option value=">New Zealand">New Zealand</option>
-                                                                                        <option value="Philippines">Philippines</option>
-                                                                                        <option value="Portugal">Portugal</option>
-                                                                                        <option value="South Africa">South Africa</option>
-                                                                                        <option value="Spain">Spain</option>
-                                                                                        <option value="Switzerland">Switzerland</option>
-                                                                                        <option value="Sweden">Sweden</option>
-                                                                                        <option value="Turkey">Turkey</option>
-                                                                                        <option value="j-United Arab Emirates">j-United Arab Emirates</option>
-                                                                                        <option value="j-United Kingdom">j-United Kingdom</option>
-                                                                                        <option value="USA">USA</option>
-                                                                                    </select>
-                                                                                    <span class="input-group-addon">
-                                                                                      <i class="icofont icofont-globe"></i>
-
-                                                                                  </span>
-                                                                              </div>
-                                                                          </div>
-
-                                                                           <div class="col-sm-2 col-lg-2">
-                                                                                    <b><label for="name-2" class="block">PIN Code *</label></b>
-                                                                                </div>
-                                                                                <div class="col-sm-4 col-lg-4 ">
-                                                                                    <div class="input-group">
-                                                                                        <input type="text" class="form-control"/>
-                                                                                        <span class="input-group-addon">
-                                                                                           <i class="icofont icofont-ui-user"></i>
-                                                                                       </span>
-                                                                                   </div>
-                                                                               </div>    </div>
-
-
-
-                                                                          <div class="row">   
-
+                                                                         <div class="row">
                                                                             <div class="col-sm-2 col-lg-2">
-                                                                                <b><label for="name-1" class="block">Required Experience</label></b>
+                                                                                <b><label for="phone-1" class="block">Upload JD</label></b>
                                                                             </div>
-                                                                            <div class="col-sm-8 col-lg-8 ">
-                                                                               
-                                                                                <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
- 
-                                                                               <span id="ex6SliderVal">(3)</span>
-                                                                           
-                                                                                
-                                                                        
-                                                                      </div>
-                                                                   
-                                                          </div><br>
+                                                                            <div class="col-sm-6 col-lg-6">
+                                                                                <input type="file" name="files[]" id="filer_input"  multiple="multiple">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-sm-2 col-lg-2">
+                                                                                <b><label for="name-1" class="block">Job Title *</label></b>
+                                                                            </div>
+                                                                            <div class="col-sm-4 col-lg-4 ">
+                                                                                <div class="input-group">
+                                                                                    <input type="text" class="form-control"/>
+                                                                                    <span class="input-group-addon">
+                                                                                     <i class="icofont icofont-ui-user"></i>
+                                                                                 </span>
+                                                                             </div>
+                                                                         </div>
+                                                                         <div class="col-sm-2 col-lg-2">
+                                                                            <b><label for="name-2" class="block">Company *</label></b>
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-lg-4 ">
+                                                                            <div class="input-group">
+                                                                                <input type="text" class="form-control"/>
+                                                                                <span class="input-group-addon">
+                                                                                 <i class="icofont icofont-ui-user"></i>
+                                                                             </span>
+                                                                         </div>
+                                                                     </div>  
+                                                                 </div>
+ <div class="row">
+                                                                            <div class="col-sm-2 col-lg-2">
+                                                                                <b><label for="name-1" class="block">Start Date *</label></b>
+                                                                            </div>
+                                                                            <div class="col-sm-4 col-lg-4 ">
+                                                                                <div class="input-group">
+                                                                                   <input id="dropper-default" class="form-control" type="text" placeholder="Select your date" />
 
-  <div class="row">
-                                                                                <div class="col-sm-2 col-lg-2">
-                                                                                    <b><label for="name-1" class="block">Required Skills *</label></b>
-                                                                                </div>
-                                                                                <div class="col-sm-6 col-lg-6 ">
-                                                                                    <div class="input-group">
-                                                                                        <select class="js-example-basic-multiple" multiple="multiple" id="skill-select">
-                                                                <option selected="">JAVA</option>
-                                                                <option value="AL">Java Script</option>
+                                                                                    <span class="input-group-addon">
+                                                                                     <i class="icofont icofont-ui-user"></i>
+                                                                                 </span>
+                                                                             </div>
+                                                                         </div>
+                                                                         <div class="col-sm-2 col-lg-2">
+                                                                            <b><label for="name-2" class="block">End Date *</label></b>
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-lg-4 ">
+                                                                            <div class="input-group">
+                                                                                <input id="dropper-animation" class="form-control" type="text" placeholder="Select your date" />
+
+
+                                                                                <span class="input-group-addon">
+                                                                                 <i class="icofont icofont-ui-user"></i>
+                                                                             </span>
+                                                                         </div>
+                                                                     </div>  
+                                                                 </div>
+
+
+                                                                 <div class="row">
+                                                                    <div class="col-sm-2 col-lg-2">
+                                                                     <b> <label for="name-1" class="block">Country *</label></b>
+                                                                 </div>
+                                                                 <div class="col-sm-4 col-lg-4 ">
+                                                                    <div class="input-group">
+                                                                        <Select class="form-control "/>
+                                                                        <option value="" selected>Select country</option>
+                                                                        <option value="Australia">Australia</option>
+                                                                        <option value="Austria">Austria</option>
+                                                                        <option value="Brazil">Brazil</option>
+                                                                        <option value="Canada">Canada</option>
+                                                                        <option value="Germany">Germany</option>
+                                                                        <option value="India">India</option>
+                                                                        <option value="Italy">Italy</option>
+                                                                        <option value="Japan">Japan</option>
+                                                                        <option value=">Netherlands">Netherlands</option>
+                                                                        <option value=">New Zealand">New Zealand</option>
+                                                                        <option value="Philippines">Philippines</option>
+                                                                        <option value="Portugal">Portugal</option>
+                                                                        <option value="South Africa">South Africa</option>
+                                                                        <option value="Spain">Spain</option>
+                                                                        <option value="Switzerland">Switzerland</option>
+                                                                        <option value="Sweden">Sweden</option>
+                                                                        <option value="Turkey">Turkey</option>
+                                                                        <option value="j-United Arab Emirates">j-United Arab Emirates</option>
+                                                                        <option value="j-United Kingdom">j-United Kingdom</option>
+                                                                        <option value="USA">USA</option>
+                                                                    </select>
+                                                                    <span class="input-group-addon">
+                                                                     <i class="icofont icofont-globe"></i>
+                                                                 </span>
+                                                             </div>
+                                                         </div>
+                                                         <div class="col-sm-2 col-lg-2">
+                                                            <b><label for="name-2" class="block">City *</label></b>
+                                                        </div>
+                                                        <div class="col-sm-4 col-lg-4 ">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control"/>
+                                                                <span class="input-group-addon">
+                                                                 <i class="icofont icofont-ui-user"></i>
+                                                             </span>
+                                                         </div>
+                                                     </div>  
+                                                 </div>
+
+
+
+
+
+
+
+
+                                                 <!-- Image upload card start -->
+
+
+                                                 <div class="row">                                                                
+                                                   <div class="col-sm-2 col-lg-2">
+                                                    <b><label for="name-2" class="block">Location *</label></b>
+                                                </div>
+                                                <div class="col-sm-4 col-lg-4 ">
+                                                    <div class="input-group">
+                                                        <Select class="form-control "/>
+                                                        <option value="" selected>Select country</option>
+                                                        <option value="Australia">Australia</option>
+                                                        <option value="Austria">Austria</option>
+                                                        <option value="Brazil">Brazil</option>
+                                                        <option value="Canada">Canada</option>
+                                                        <option value="Germany">Germany</option>
+                                                        <option value="India">India</option>
+                                                        <option value="Italy">Italy</option>
+                                                        <option value="Japan">Japan</option>
+                                                        <option value=">Netherlands">Netherlands</option>
+                                                        <option value=">New Zealand">New Zealand</option>
+                                                        <option value="Philippines">Philippines</option>
+                                                        <option value="Portugal">Portugal</option>
+                                                        <option value="South Africa">South Africa</option>
+                                                        <option value="Spain">Spain</option>
+                                                        <option value="Switzerland">Switzerland</option>
+                                                        <option value="Sweden">Sweden</option>
+                                                        <option value="Turkey">Turkey</option>
+                                                        <option value="j-United Arab Emirates">j-United Arab Emirates</option>
+                                                        <option value="j-United Kingdom">j-United Kingdom</option>
+                                                        <option value="USA">USA</option>
+                                                    </select>
+                                                    <span class="input-group-addon">
+                                                      <i class="icofont icofont-globe"></i>
+
+                                                  </span>
+                                              </div>
+                                          </div>
+
+                                          <div class="col-sm-2 col-lg-2">
+                                            <b><label for="name-2" class="block">PIN Code *</label></b>
+                                        </div>
+                                        <div class="col-sm-4 col-lg-4 ">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control"/>
+                                                <span class="input-group-addon">
+                                                 <i class="icofont icofont-ui-user"></i>
+                                             </span>
+                                         </div>
+                                     </div>    </div>
+
+
+
+                                     <div class="row">   
+
+                                        <div class="col-sm-2 col-lg-2">
+                                            <b><label for="name-1" class="block">Required Experience</label></b>
+                                        </div>
+                                        <div class="col-sm-8 col-lg-8 ">
+
+                                            <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+
+                                            <span id="ex6SliderVal">(3)</span>
+
+
+
+                                        </div>
+
+                                    </div><br>
+
+                                    <div class="row">
+                                        <div class="col-sm-2 col-lg-2">
+                                            <b><label for="name-1" class="block">Required Skills *</label></b>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-6 ">
+                                            <div class="input-group">
+                                               <select class="js-example-tags col-sm-12" multiple="multiple">
+                                                                <option value="AL">Java</option>
+                                                                <option value="WY">JavaScript</option>
                                                                 <option value="WY">JQuery</option>
-                                                                <option value="WY">Bootstrap</option>
-                                                                <option value="WY">AJAX</option>
+                                                                <option value="WY">Ajax</option>
                                                                 <option value="WY">JSON</option>
-                                                                 <option value="WY">Maven</option>
-                                                                <option value="WY">Spring</option>
-                                                                <option value="WY">Hibernate</option>
                                                             </select>
 
-                                                                                        <span class="input-group-addon">
-                                                                                           <i class="icofont icofont-ui-user"></i>
-                                                                                       </span>
-                                                                                   </div>
-                                                                               </div>
-                                                                              
-                                                                                 </div>
 
+                                                <span class="input-group-addon">
+                                                 <i class="icofont icofont-ui-user"></i>
+                                             </span>
+                                         </div>
+                                     </div>
 
-                                                      </div>
-                                                  </div>
+                                 </div>
+ 
+
+                             </div>
+                         </div>
                                                   <div class="tab-pane" id="profile7" role="tabpanel">
                                                    
                                                   <div class="card-block">
@@ -968,161 +1012,333 @@
 
                                                 </div>
                                                 <div class="tab-pane" id="messages7" role="tabpanel">
-                                                  
-                                                <!-- Task list card start -->
-                                               
-                                                   
-                                                    <div class="card-block task-list">
-                                                        <div>
-                                                            <table id="simpletable" class="table dt-responsive task-list-table table-striped table-bordered nowrap">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>#</th>
-                                                                        <th>Task list</th>
-                                                                        <th>Last Commit</th>
-                                                                        <th>Status</th>
-                                                                        <th>Assigned User</th>
-                                                                        <th>Action</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody class="task-page">
-                                                                    <tr>
-                                                                        <td>#12</td>
-                                                                        <td>Add Proper Cursor In Sortable Page</td>
-                                                                        <td>
-                                                                            <input type="date" class="form-control" />
-                                                                        </td>
-                                                                        <td>
-                                                                            <select name="select" class="form-control form-control-sm">
-                                                                                <option value="opt1">Open</option>
-                                                                                <option value="opt2">Resolved</option>
-                                                                                <option value="opt3">Invalid</option>
-                                                                                <option value="opt4">On hold</option>
-                                                                                <option value="opt5">Close</option>
-                                                                            </select>
-                                                                        </td>
-                                                                        <td>
-                                                                            <a href="#"><img class="img-fluid img-circle" src="assets/images/avatar-1.png" alt="avatar-1"></a>
-                                                                            <a href="#"><img class="img-fluid img-circle" src="assets/images/avatar-2.png" alt="avatar-2"></a>
-                                                                            <a href="#"><i class="icofont icofont-plus f-w-600"></i></a>
-                                                                        </td>
-                                                                        <td class="text-center">
-                                                                            <a class="dropdown-toggle addon-btn" data-toggle="dropdown" aria-expanded="true">
-                                                                                <i class="icofont icofont-ui-settings"></i>
-                                                                            </a>
-                                                                            <div class="dropdown-menu dropdown-menu-right">
-                                                                                <a class="dropdown-item" href="#"><i class="icofont icofont-attachment"></i>Attach File</a>
-                                                                                <a class="dropdown-item" href="#"><i class="icofont icofont-ui-edit"></i>Edit Task</a>
-                                                                                <div role="separator" class="dropdown-divider"></div>
-                                                                                <a class="dropdown-item" href="#"><i class="icofont icofont-refresh"></i>Reassign Task</a>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>#56</td>
-                                                                        <td>Edit the draft for the icons</td>
-                                                                        <td>
-                                                                            <input type="date" class="form-control" />
-                                                                        </td>
-                                                                        <td>
-                                                                            <select name="select" class="form-control form-control-sm">
-                                                                                <option value="opt1">Open</option>
-                                                                                <option value="opt2">Resolved</option>
-                                                                                <option value="opt3">Invalid</option>
-                                                                                <option value="opt4">On hold</option>
-                                                                                <option value="opt5">Close</option>
-                                                                            </select>
-                                                                        </td>
-                                                                        <td>
-                                                                            <a href="#"><img class="img-fluid img-circle" src="assets/images/avatar-1.png" alt="avatar-1"></a>
-                                                                            <a href="#"><img class="img-fluid img-circle" src="assets/images/avatar-2.png" alt="avatar-2"></a>
-                                                                            <a href="#"><i class="icofont icofont-plus f-w-600"></i></a>
-                                                                        </td>
-                                                                        <td class="text-center">
-                                                                            <a class="dropdown-toggle addon-btn" data-toggle="dropdown" aria-expanded="true">
-                                                                                <i class="icofont icofont-ui-settings"></i>
-                                                                            </a>
-                                                                            <div class="dropdown-menu dropdown-menu-right">
-                                                                                <a class="dropdown-item" href="#"><i class="icofont icofont-attachment"></i>Attach File</a>
-                                                                                <a class="dropdown-item" href="#"><i class="icofont icofont-ui-edit"></i>Edit Task</a>
-                                                                                <div role="separator" class="dropdown-divider"></div>
-                                                                                <a class="dropdown-item" href="#"><i class="icofont icofont-refresh"></i>Reassign Task</a>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>#78</td>
-                                                                        <td>Create UI design model</td>
-                                                                        <td>
-                                                                            <input type="date" class="form-control" />
-                                                                        </td>
-                                                                        <td>
-                                                                            <select name="select" class="form-control form-control-sm">
-                                                                                <option value="opt1">Open</option>
-                                                                                <option value="opt2">Resolved</option>
-                                                                                <option value="opt3">Invalid</option>
-                                                                                <option value="opt4">On hold</option>
-                                                                                <option value="opt5">Close</option>
-                                                                            </select>
-                                                                        </td>
-                                                                        <td>
-                                                                            <a href="#"><img class="img-fluid img-circle" src="assets/images/avatar-1.png" alt="avatar-1"></a>
-                                                                            <a href="#"><img class="img-fluid img-circle" src="assets/images/avatar-2.png" alt="avatar-2"></a>
-                                                                            <a href="#"><img class="img-fluid img-circle" src="assets/images/avatar-3.png" alt="avatar-3"></a>
-                                                                            <a href="#"><i class="icofont icofont-plus f-w-600"></i></a>
-                                                                        </td>
-                                                                        <td class="text-center">
-                                                                            <a class="dropdown-toggle addon-btn" data-toggle="dropdown" aria-expanded="true">
-                                                                                <i class="icofont icofont-ui-settings"></i>
-                                                                            </a>
-                                                                            <div class="dropdown-menu dropdown-menu-right">
-                                                                                <a class="dropdown-item" href="#"><i class="icofont icofont-attachment"></i>Attach File</a>
-                                                                                <a class="dropdown-item" href="#"><i class="icofont icofont-ui-edit"></i>Edit Task</a>
-                                                                                <div role="separator" class="dropdown-divider"></div>
-                                                                                <a class="dropdown-item" href="#"><i class="icofont icofont-refresh"></i>Reassign Task</a>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>#35</td>
-                                                                        <td>Checkbox Design issue</td>
-                                                                        <td>
-                                                                            <input type="date" class="form-control" />
-                                                                        </td>
-                                                                        <td>
-                                                                            <select name="select" class="form-control form-control-sm">
-                                                                                <option value="opt1">Open</option>
-                                                                                <option value="opt2">Resolved</option>
-                                                                                <option value="opt3">Invalid</option>
-                                                                                <option value="opt4">On hold</option>
-                                                                                <option value="opt5">Close</option>
-                                                                            </select>
-                                                                        </td>
-                                                                        <td>
-                                                                            <a href="#"><img class="img-fluid img-circle" src="assets/images/avatar-1.png" alt="avatar-1"></a>
-                                                                            <a href="#"><i class="icofont icofont-plus f-w-600"></i></a>
-                                                                        </td>
-                                                                        <td class="text-center">
-                                                                            <a class="dropdown-toggle addon-btn" data-toggle="dropdown" aria-expanded="true">
-                                                                                <i class="icofont icofont-ui-settings"></i>
-                                                                            </a>
-                                                                            <div class="dropdown-menu dropdown-menu-right">
-                                                                                <a class="dropdown-item" href="#"><i class="icofont icofont-attachment"></i>Attach File</a>
-                                                                                <a class="dropdown-item" href="#"><i class="icofont icofont-ui-edit"></i>Edit Task</a>
-                                                                                <div role="separator" class="dropdown-divider"></div>
-                                                                                <a class="dropdown-item" href="#"><i class="icofont icofont-refresh"></i>Reassign Task</a>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                   <div class="row">
+                                                                            <div class=" col-sm-4 text-center">
+                                                                               <h4>Job post to public *</h4>                                                                            </div>
+                                                                            <div class="col-sm-2">                   
+  <input type="checkbox" class="js-default" checked />
+     </div>
+                                                                        
+                                                                         <div class="col-sm-4 text-center">
+                                                                          <h4>Job post to internal team *</h4>
+                                                                        </div>
+                                                                        <div class="col-sm-2 ">                                                                          
+                                                                               <input type="checkbox" class="js-primary" checked /> </div>  
+                                                                 </div><br/>
+ <div class="row">                                               <!-- Task list card start -->
+<div class="col-sm-4">
+                                        <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-header-text"><i class="icofont icofont-users-alt-4"></i>  Assigned users</h5>
+                                </div>
+                                <div class="card-block user-box assign-user">
+                                    <div class="media">
+                                        <div class="media-left media-middle photo-table">
+                                            <a href="#">
+                                                <img class="img-circle" src="assets/images/avatar-3.png" alt="chat-user">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h6>Sortino media</h6>
+                                            <p>Software Engineer</p>
+                                        </div>
+                                        <div>
+                                            <a href="#!" class="text-muted"> <i class="icofont icofont-ui-delete"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left media-middle photo-table">
+                                            <a href="#">
+                                                <img class="img-circle" src="assets/images/avatar-2.png" alt="chat-user">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h6>Larry heading </h6>
+                                            <p>Web Designer</p>
+                                        </div>
+                                        <div>
+                                            <a href="#!" class="text-muted"> <i class="icofont icofont-ui-delete"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left media-middle photo-table">
+                                            <a href="#">
+                                                <img class="img-circle" src="assets/images/avatar-1.png" alt="chat-user">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h6>Mark</h6>
+                                            <p>Chief Financial Officer (CFO)</p>
+                                        </div>
+                                        <div>
+                                            <a href="#!" class="text-muted"> <i class="icofont icofont-ui-delete"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="media p-0 d-flex">
+                                        <div class="media-left media-middle photo-table">
+                                            <a href="#">
+                                                <img class="img-circle" src="assets/images/avatar-4.png" alt="chat-user">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h6>John Doe</h6>
+                                            <p>Senior Marketing Designer</p>
+                                        </div>
+                                        <div>
+                                            <a href="#!" class="text-muted"> <i class="icofont icofont-ui-delete"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 pull-right">
+                            <div class="card">
+ <div class="col-lg-12 col-xl-12">
+                                                                                                      
+                                                                <!-- Nav tabs -->
+                                                                <ul class="nav nav-tabs md-tabs" role="tablist">
+                                                                    <li class="nav-item big-font2">
+                                                                        <a class="nav-link active" data-toggle="tab" href="#home3" role="tab">Company Recruiter</a>
+                                                                        <div class="slides"></div>
+                                                                    </li>
+                                                                    <li class="nav-item big-font2">
+                                                                        <a class="nav-link" data-toggle="tab" href="#profile3" role="tab">Partner Recruiter</a>
+                                                                        <div class="slides"></div>
+                                                                    </li>
+                                                                   
+                                                                </ul>
+                                                                <!-- Tab panes -->
+                                                                <div class="tab-content card-block">
+                                                                    <div class="tab-pane active" id="home3" role="tabpanel">
+                                                                        <div class="row">
+                                                                        <div class="col-lg-4 ">
+                                                        <div class="card rounded-card user-card">
+                                                            <div class="card-block">
+                                                                <div class="img-hover">
+                                                                     <img class="img-fluid img-circle" src="assets/images/avatar-4.png" alt="chat-user">
+                                                                    <div class="img-overlay">
+                                                                        <span>
+                                                                          <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                          <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                      </span>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="user-content">
+                                                                <h4 class="">Howard Hatfield</h4>
+                                                                <h5 class="">UX/UI designer</h5>
+                                                            </div>
                                                         </div>
-                                                  
-                                                    <!-- Zero config.table card end -->
-                                                    <!-- Default ordering table card start -->
-                                                    <!-- Default ordering table card end -->
+                                                    </div>
                                                 </div>
-                                                <!-- Task list card end -->
+                                                 <div class="col-lg-4">
+                                                        <div class="card rounded-card user-card">
+                                                            <div class="card-block">
+                                                                <div class="img-hover">
+                                                                    <img class="img-fluid img-circle" src="assets/images/avatar-1.png" alt="chat-user">
+                                                                    <div class="img-overlay">
+                                                                        <span>
+                                                                          <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                          <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                      </span>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="user-content">
+                                                                <h4 class="">Howard Hatfield</h4>
+                                                                <h5 class="">UX/UI designer</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                           
+                                                 <div class="col-lg-4 ">
+                                                        <div class="card rounded-card user-card">
+                                                            <div class="card-block">
+                                                                <div class="img-hover">
+                                                                    <img class="img-fluid img-circle" src="assets/images/avatar-2.png" alt="chat-user">
+                                                                    <div class="img-overlay">
+                                                                        <span>
+                                                                          <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                          <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                      </span>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="user-content">
+                                                                <h4 class="">Howard Hatfield</h4>
+                                                                <h5 class="">UX/UI designer</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                 <div class="col-lg-4 ">
+                                                        <div class="card rounded-card user-card">
+                                                            <div class="card-block">
+                                                                <div class="img-hover">
+                                                                   <img class="img-fluid img-circle" src="assets/images/avatar-3.png" alt="chat-user">
+                                                                    <div class="img-overlay">
+                                                                        <span>
+                                                                          <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                          <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                      </span>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="user-content">
+                                                                <h4 class="">Howard Hatfield</h4>
+                                                                <h5 class="">UX/UI designer</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                                                    </div>
+                                                                    <div class="tab-pane" id="profile3" role="tabpanel">
+                                                                        <div class="row">
+                                                                        <div class="col-lg-4 ">
+                                                        <div class="card rounded-card user-card">
+                                                            <div class="card-block">
+                                                                <div class="img-hover">
+                                                                     <img class="img-fluid img-circle" src="assets/images/avatar-4.png" alt="chat-user">
+                                                                    <div class="img-overlay">
+                                                                        <span>
+                                                                          <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                          <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                      </span>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="user-content">
+                                                                <h4 class="">Howard Hatfield</h4>
+                                                                <h5 class="">UX/UI designer</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                 <div class="col-lg-4">
+                                                        <div class="card rounded-card user-card">
+                                                            <div class="card-block">
+                                                                <div class="img-hover">
+                                                                    <img class="img-fluid img-circle" src="assets/images/avatar-1.png" alt="chat-user">
+                                                                    <div class="img-overlay">
+                                                                        <span>
+                                                                          <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                          <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                      </span>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="user-content">
+                                                                <h4 class="">Howard Hatfield</h4>
+                                                                <h5 class="">UX/UI designer</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                           
+                                                 <div class="col-lg-4 ">
+                                                        <div class="card rounded-card user-card">
+                                                            <div class="card-block">
+                                                                <div class="img-hover">
+                                                                    <img class="img-fluid img-circle" src="assets/images/avatar-2.png" alt="chat-user">
+                                                                    <div class="img-overlay">
+                                                                        <span>
+                                                                          <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                          <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                      </span>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="user-content">
+                                                                <h4 class="">Howard Hatfield</h4>
+                                                                <h5 class="">UX/UI designer</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                 <div class="col-lg-4 ">
+                                                        <div class="card rounded-card user-card">
+                                                            <div class="card-block">
+                                                                <div class="img-hover">
+                                                                   <img class="img-fluid img-circle" src="assets/images/avatar-3.png" alt="chat-user">
+                                                                    <div class="img-overlay">
+                                                                        <span>
+                                                                          <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                          <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                      </span>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="user-content">
+                                                                <h4 class="">Howard Hatfield</h4>
+                                                                <h5 class="">UX/UI designer</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                 <div class="col-lg-4">
+                                                        <div class="card rounded-card user-card">
+                                                            <div class="card-block">
+                                                                <div class="img-hover">
+                                                                    <img class="img-fluid img-circle" src="assets/images/avatar-1.png" alt="chat-user">
+                                                                    <div class="img-overlay">
+                                                                        <span>
+                                                                          <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                          <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                      </span>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="user-content">
+                                                                <h4 class="">Howard Hatfield</h4>
+                                                                <h5 class="">UX/UI designer</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                           
+                                                 <div class="col-lg-4 ">
+                                                        <div class="card rounded-card user-card">
+                                                            <div class="card-block">
+                                                                <div class="img-hover">
+                                                                    <img class="img-fluid img-circle" src="assets/images/avatar-2.png" alt="chat-user">
+                                                                    <div class="img-overlay">
+                                                                        <span>
+                                                                          <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                          <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                      </span>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="user-content">
+                                                                <h4 class="">Howard Hatfield</h4>
+                                                                <h5 class="">UX/UI designer</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                 <div class="col-lg-4 ">
+                                                        <div class="card rounded-card user-card">
+                                                            <div class="card-block">
+                                                                <div class="img-hover">
+                                                                   <img class="img-fluid img-circle" src="assets/images/avatar-3.png" alt="chat-user">
+                                                                    <div class="img-overlay">
+                                                                        <span>
+                                                                          <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                          <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                      </span>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="user-content">
+                                                                <h4 class="">Howard Hatfield</h4>
+                                                                <h5 class="">UX/UI designer</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                                    </div>
+                                                                 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                        </div>
+                    </div>
+                    </div>
+
 
                                                 </div>
                                                
@@ -1254,6 +1470,12 @@
 <!-- range slider js -->
         <script type="text/javascript" src="../bower_components/seiyria-bootstrap-slider/js/bootstrap-slider.js"></script>
 <script type="text/javascript" src="../bower_components/select2/js/select2.full.min.js"></script>
+<!-- Date-dropper js -->
+<script type="text/javascript" src="../bower_components/datedropper/js/datedropper.min.js"></script>
+   <!-- Switch component js -->
+    <script type="text/javascript" src="../bower_components/switchery/js/switchery.min.js"></script>
+
+
 <script>
 
    $(function() {
@@ -1286,6 +1508,31 @@ $('#ex1').bootstrapSlider({
     </script>
     <script>
     $('#skill-select').select2();    
+    </script>
+    <script>
+$("#dropper-default").dateDropper( {
+        dropWidth: 200,
+        dropPrimaryColor: "#1abc9c", 
+        dropBorder: "1px solid #1abc9c"
+    }),
+$("#dropper-animation").dateDropper( {
+        dropWidth: 200,
+        init_animation: "bounce",
+        dropPrimaryColor: "#1abc9c", 
+        dropBorder: "1px solid #1abc9c"
+    })
+    </script>
+    <script>
+ $(".js-example-tags").select2({
+        tags: true
+    });
+    </script>
+    <script>
+var elemdefault = document.querySelector('.js-default');
+    var switchery = new Switchery(elemdefault, { color: '#bdc3c7', jackColor: '#fff' });
+
+    var elemprimary = document.querySelector('.js-primary');
+    var switchery = new Switchery(elemprimary, { color: '#1abc9c', jackColor: '#fff' });
     </script>
 </body>
 
