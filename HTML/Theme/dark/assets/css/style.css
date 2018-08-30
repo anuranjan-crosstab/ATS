@@ -19371,4 +19371,8 @@ width: 99.5% !important;
   background-size: cover;
 }
 
+.questions-candidate textarea {
+  width: 100%;
+}
+
 /* Custom End */
