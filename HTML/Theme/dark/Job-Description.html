@@ -954,23 +954,37 @@
 
                                                         </div>
                                                         <div class="tab-pane" id="messages7" role="tabpanel">
-                                                            <div class="row">
-                                                                <div class=" col-sm-4 text-center">
-                                                                    <h5>Job post to public *</h5>
-                                                                </div>
-                                                                <div class="col-sm-2">                   
-                                                                    <input type="checkbox" class="js-default" checked>
-                                                                </div>
-                                                                <div class="col-sm-4 text-center">
-                                                                    <h5>Job post to internal team *</h5>
-                                                                </div>
-                                                                <div class="col-sm-2 ">
-                                                                    <input type="checkbox" class="js-primary" checked>
-                                                                </div>  
-                                                            </div>
-                                                            <br>
+                                                            
+                                                        
                                                             <div class="row">                            <!-- Task list card start -->
                                                                 <div class="col-sm-4">
+                                                                    <div class="card">
+                                                                        <div class="card-header">
+                                                                            <h5 class="card-header-text"><i class="icofont icofont-users-alt-4"></i>  Settings</h5>
+                                                                        </div>
+                                                                       <br>
+                                                                          <div class="row">
+
+                                                                            <div class=" col-sm-8 ">
+                                                                                <h6>Job post to public</h6>
+                                                                            </div>
+                                                                            <div class="col-sm-2">                   
+                                                                                <input type="checkbox" class="js-small" checked>
+                                                                            </div>
+                                                                          <!--   <div class="col-sm-12"></div> --><br/><br/>
+                                                                            <div class="col-sm-8 ">
+                                                                                <h6>Job post to internal team</h6>
+                                                                            </div>
+                                                                            <div class="col-sm-2 ">
+                                                                                <input type="checkbox" class="js-small2" checked>
+                                                                            </div>
+                                                                        </div>
+                                                          
+                                                                            
+                                                                          
+                                                                           
+                                                                        
+                                                                    </div>
                                                                     <div class="card">
                                                                         <div class="card-header">
                                                                             <h5 class="card-header-text"><i class="icofont icofont-users-alt-4"></i>  Assigned users</h5>
@@ -1034,6 +1048,7 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
+                                                                     
                                                                 </div>
 
                                                                 <div class="col-sm-8">
@@ -1420,11 +1435,10 @@ $("#dropper-animation").dateDropper( {
     });
     </script>
     <script>
-var elemdefault = document.querySelector('.js-default');
-    var switchery = new Switchery(elemdefault, { color: '#bdc3c7', jackColor: '#fff' });
-
-    var elemprimary = document.querySelector('.js-primary');
-    var switchery = new Switchery(elemprimary, { color: '#1abc9c', jackColor: '#fff' });
+var elemsmall = document.querySelector('.js-small');
+ var switchery = new Switchery(elemsmall, { color: '#1abc9c', jackColor: '#fff', size: 'small' });
+ var elemsmall = document.querySelector('.js-small2');
+ var switchery = new Switchery(elemsmall, { color: '#1abc9c', jackColor: '#fff', size: 'small' });
     </script>
 </body>
 
