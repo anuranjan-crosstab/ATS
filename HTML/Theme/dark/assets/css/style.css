@@ -19376,4 +19376,12 @@ width: 99.5% !important;
   width: 100%;
 }
 
+#PreviewPicture
+{
+   background-image:url('../images/11.jpg');
+   background-size:100% ,auto;
+   margin:0; /* If you want no margin */
+   padding:0; /*if your want to padding */
+}
+
 /* Custom End */
