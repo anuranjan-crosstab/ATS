@@ -42,7 +42,16 @@
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- color .css -->
+    <!--vediojs -->
+    <link rel="stylesheet" type="text/css" href="../bower_components/vediojs/css/video-js.min.css">
+    <link rel="stylesheet" type="text/css" href="../bower_components/vediojs/css/videojs.record.min.css">
+    <style>
+.myVideo-dimensions {
+    width: 100%;
+    height: 400px;
+}
 
+</style>
 </head>
 
 <body class="multi-step-sign-up" id="candidate-apply">
@@ -283,11 +292,46 @@
                             </div>
                         </div>
                     </div>
+                    <div class="sub-title text-center">
+                        <h6>or</h6>
+                    </div>
+                    <div class="sub-title text-center">
+                        <a href="#" data-toggle="modal" data-target="#vediocv">Do you want to record your own CV</a>
+                    </div>
                 </div>
             <button type="button" name="previous" class="btn btn-inverse btn-outline-inverse previous" value="Previous">Previous</button>
             <button type="button" name="next" class="btn btn-primary" value="submit">Submit</button>
         </fieldset>
     </form>
+    <div class="modal fade" id="vediocv" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Record CV</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <video id="myVideo" class="video-js vjs-default-skin">
+                            <p class="vjs-no-js">
+                                To view this video please enable JavaScript, or consider upgrading to a
+                                web browser that
+                                <a href="http://videojs.com/html5-video-support/" target="_blank">
+                                    supports HTML5 video.
+                                </a>
+                            </p>
+                        </video>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Send</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Warning Section Starts -->
     <!-- Older IE warning message -->
     <!--[if lt IE 9]>
@@ -363,6 +407,56 @@
     <script src="assets/js/demo-12.js"></script>
     <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="assets/js/jquery.mousewheel.min.js"></script>
+<!-- vediojs-->
+<script src="../bower_components/vediojs/js/adapter-latest.js"></script>
+<script src="../bower_components/vediojs/js/RecordRTC.js"></script>
+<script src="../bower_components/vediojs/js/video.min.js"></script>
+<script src="../bower_components/vediojs/js/videojs.record.min.js"></script>
+<script>
+var options = {
+    controls: true,
+    width: 320,
+    height: 240,
+    plugins: {
+        record: {
+            audio: true,
+            video: true,
+            maxLength: 10,
+            debug: true
+        }
+    }
+};
+
+// use correct video mimetype for opera
+if (!!window.opera || navigator.userAgent.indexOf('OPR/') !== -1) {
+    options.plugins.record.videoMimeType = 'video/webm\;codecs=vp8'; // or vp9
+}
+
+var player = videojs("myVideo", options, function(){
+    // print version information at startup
+    var msg = 'Using video.js ' + videojs.VERSION +
+        ' with videojs-record ' + videojs.getPluginVersion('record') +
+        ' and recordrtc ' + RecordRTC.version;
+    videojs.log(msg);
+});
+
+// error handling
+player.on('deviceError', function() {
+    console.log('device error:', player.deviceErrorCode);
+});
+
+// user clicked the record button and started recording
+player.on('startRecord', function() {
+    console.log('started recording!');
+});
+
+// user completed recording and stream is available
+player.on('finishRecord', function() {
+    // the blob object contains the recorded data that
+    // can be downloaded by the user, stored on server etc.
+    console.log('finished recording: ', player.recordedData);
+});
+</script>
 
 </body>
 

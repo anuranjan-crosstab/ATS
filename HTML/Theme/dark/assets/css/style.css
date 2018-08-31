@@ -19320,7 +19320,7 @@ width: 99.5% !important;
 }
 
 #msform .form-candidate li.active {
-  text-shadow: 2px 2px #1a1a1a;
+  color: #efefef !important;
 }
 
 #msform .form-candidate li::before {
@@ -19335,6 +19335,7 @@ width: 99.5% !important;
 
 .wizard > .content {
   min-height: 35em;
+  overflow-y: scroll;
 }
 
   .big-font{
@@ -19367,7 +19368,7 @@ width: 99.5% !important;
 }
 
 #candidate-apply {
-  background: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url("../images/job-front.jpg") no-repeat fixed center;
+  background: linear-gradient( rgba(93, 93, 93, 0.73) 100%, rgba(0, 0, 0, 0.5)100%),url(../images/job-front.jpg) no-repeat fixed center;
   background-size: cover;
 }
 
