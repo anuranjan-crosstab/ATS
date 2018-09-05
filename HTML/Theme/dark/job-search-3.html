@@ -31,11 +31,17 @@
     <link rel="stylesheet" type="text/css" href="assets/pages/flag-icon/flag-icon.min.css">
     <!-- Menu-Search css -->
     <link rel="stylesheet" type="text/css" href="assets/pages/menu-search/css/component.css">
+    <!-- animation nifty modal window effects css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/component.css">
+    <!-- Select 2 css -->
+      <link rel="stylesheet" href="../bower_components/select2/css/select2.min.css" />
+      <!-- Multi Select css -->
+      <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap-multiselect/css/bootstrap-multiselect.css" />
+      <link rel="stylesheet" type="text/css" href="../bower_components/multiselect/css/multi-select.css" />
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- color .css -->
-
-        <link rel="stylesheet" type="text/css" href="assets/css/linearicons.css" >
+    <link rel="stylesheet" type="text/css" href="assets/css/linearicons.css" >
     <link rel="stylesheet" type="text/css" href="assets/css/simple-line-icons.css">
     <link rel="stylesheet" type="text/css" href="assets/css/ionicons.css">
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
@@ -2612,7 +2618,7 @@
             <!-- Page header start -->
             <div class="page-header">
                 <div class="page-header-title">
-                    <h4>Task Board</h4>
+                    <h4>Job Board</h4>
                 </div>
                 <div class="page-header-breadcrumb">
                     <ul class="breadcrumb-title">
@@ -2621,9 +2627,9 @@
                                 <i class="icofont icofont-home"></i>
                             </a>
                         </li>
-                        <li class="breadcrumb-item"><a href="#!">Task</a>
+                        <li class="breadcrumb-item"><a href="#!">Job</a>
                         </li>
-                        <li class="breadcrumb-item"><a href="#!">Task Board</a>
+                        <li class="breadcrumb-item"><a href="#!">Job Board</a>
                         </li>
                     </ul>
                 </div>
@@ -2632,420 +2638,11 @@
             <!-- Page body start -->
             <div class="page-body">
                 <div class="row">
-                    <!-- Right column start -->
-                    <div class="col-xl-3 col-lg-12 push-xl-9">
-                                            <!-- Filter card start -->
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5><i class="icofont icofont-filter m-r-5"></i>Filter</h5>
-                                                </div>
-                                                <div class="card-block">
-                                                    <form action="#">
-                                                        <div class="form-group row">
-                                                            <div class="col-sm-12">
-                                                                <input type="text" class="form-control" placeholder="Job-title">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <div class="col-sm-12">
-                                                                <input type="text" class="form-control" placeholder="Location">
-                                                            </div>
-                                                        </div>
-                                                        <!-- <div class="form-group row">
-                                                            <div class="col-sm-12">
-                                                                <select class="form-control">
-                                                                    <option>Select Job Type</option>
-                                                                    <option>Full Time</option>
-                                                                    <option>Part Time</option>
-                                                                    <option>Remote</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="text-right">
-                                                            <button type="submit" class="btn btn-primary">
-                                                                <i class="icofont icofont-job-search m-r-5"></i> Job Find
-                                                            </button>
-                                                        </div> -->
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <!-- Filter card end -->
-                                            <!-- Location card start -->
-                                            <div class="card job-right-header">
-                                                <div class="card-header">
-                                                    <h5>Location</h5>
-                                                    <div class="card-header-right">
-                                                        <label class="label label-danger">Add</label>
-                                                    </div>
-                                                </div>
-                                                <div class="card-block">
-                                                    <form action="#">
-                                                        <div class="checkbox-fade fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                            </label>
-                                                            <div>Amsterdam, North Holland Province, Netherlands</div>
-                                                        </div>
-                                                        <div class="checkbox-fade fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                            </label>
-                                                            <div>Koog aan de Zaan, North Holland Province, Netherlands</div>
-                                                        </div>
-                                                        <div class="checkbox-fade fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                            </label>
-                                                            <div>Amsterdam Binnenstad en Oostelijk Havengebied, North Holland Province, Netherlands</div>
-                                                        </div>
-                                                        <div class="checkbox-fade fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                            </label>
-                                                            <div>Hoofddorp, North Holland Province, Netherlands</div>
-                                                        </div>
-                                                        <div class="checkbox-fade fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                            </label>
-                                                            <div>Alkmaar, North Holland Province, Netherlands</div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <div class="card-footer text-center">
-                                                    <a href="#!">All Location</a>
-                                                </div>
-                                            </div>
-                                            <!-- Location card end -->
-                                            <!-- Job Title card start -->
-                                            <div class="card job-right-header">
-                                                <div class="card-header">
-                                                    <h5>Job Title</h5>
-                                                    <div class="card-header-right">
-                                                        <label class="label label-danger">Add</label>
-                                                    </div>
-                                                </div>
-                                                <div class="card-block">
-                                                    <form action="#">
-                                                        <div class="checkbox-fade fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                            </label>
-                                                            <div>
-                                                                Developer
-                                                                <span class="text-muted">(30)</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="checkbox-fade fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                            </label>
-                                                            <div>
-                                                                Front end designer
-                                                                <span class="text-muted">(48)</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="checkbox-fade fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                            </label>
-                                                            <div>
-                                                                UX designer
-                                                                <span class="text-muted">(37)</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="checkbox-fade fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                            </label>
-                                                            <div>
-                                                                Software engineer
-                                                                <span class="text-muted">(57)</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="checkbox-fade fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                            </label>
-                                                            <div>
-                                                                PHP developer
-                                                                <span class="text-muted">(60)</span>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <div class="card-footer text-center">
-                                                    <a href="#!">All Job Titles</a>
-                                                </div>
-                                            </div>
-                                            <!-- Job Title card end -->
-                                            <!-- Specific Skills card start -->
-                                            <div class="card job-right-header">
-                                                <div class="card-header">
-                                                    <h5>Specific Skills</h5>
-                                                    <div class="card-header-right">
-                                                        <label class="label label-danger">Add</label>
-                                                    </div>
-                                                </div>
-                                                <div class="card-block">
-                                                    <form action="#">
-                                                        <div class="checkbox-fade fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                            </label>
-                                                            <div>
-                                                                HTML / CSS / SCSS
-                                                                <span class="text-muted">(30)</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="checkbox-fade fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                            </label>
-                                                            <div>
-                                                                Javascript
-                                                                <span class="text-muted">(48)</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="checkbox-fade fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                            </label>
-                                                            <div>
-                                                                Jquery
-                                                                <span class="text-muted">(37)</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="checkbox-fade fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                            </label>
-                                                            <div>
-                                                                Angular JS
-                                                                <span class="text-muted">(57)</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="checkbox-fade fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                            </label>
-                                                            <div>
-                                                                Node js
-                                                                <span class="text-muted">(60)</span>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <div class="card-footer text-center">
-                                                    <a href="#!">All Skills</a>
-                                                </div>
-                                            </div>
-                                            <!-- Specific Skills card end -->
-                                            <!-- Date Posted card start -->
-                                            <div class="card job-right-header">
-                                                <div class="card-header">
-                                                    <h5>Date Posted</h5>
-                                                    <div class="card-header-right">
-                                                        <label class="label label-danger">Add</label>
-                                                    </div>
-                                                </div>
-                                                <div class="card-block">
-                                                    <form action="#">
-                                                        <div class="form-radio">
-                                                            <div class="radio radiofill radio-inline">
-                                                                <label>
-                                                                    <input type="radio" name="radio" checked="checked">
-                                                                    <i class="helper"></i> Today
-                                                                    <span class="text-muted">(30)</span>
-                                                                </label>
-                                                            </div>
-                                                            <div class="radio radiofill radio-inline">
-                                                                <label>
-                                                                    <input type="radio" name="radio">
-                                                                    <i class="helper"></i> Yesterday
-                                                                    <span class="text-muted">(85)</span>
-                                                                </label>
-                                                            </div>
-                                                            <div class="radio radiofill radio-inline">
-                                                                <label>
-                                                                    <input type="radio" name="radio">
-                                                                    <i class="helper"></i> Last-week
-                                                                    <span class="text-muted">(184)</span>
-                                                                </label>
-                                                            </div>
-                                                            <div class="radio radiofill radio-inline">
-                                                                <label>
-                                                                    <input type="radio" name="radio">
-                                                                    <i class="helper"></i> Last month
-                                                                    <span class="text-muted">(195)</span>
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <div class="card-footer text-center">
-                                                    <a href="#!">All Skills</a>
-                                                </div>
-                                            </div>
-                                            <!-- Date Posted card end -->
-                                            <!-- Company card start -->
-                                            <div class="card job-right-header">
-                                                <div class="card-header">
-                                                    <h5>Company</h5>
-                                                    <div class="card-header-right">
-                                                        <label class="label label-danger">Add</label>
-                                                    </div>
-                                                </div>
-                                                <div class="card-block">
-                                                    <form action="#">
-                                                        <div class="checkbox-fade fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                            </label>
-                                                            <div>
-                                                                Phoenixcoded
-                                                            </div>
-                                                        </div>
-                                                        <div class="checkbox-fade fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                            </label>
-                                                            <div>
-                                                                Peacock
-                                                            </div>
-                                                        </div>
-                                                        <div class="checkbox-fade fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                            </label>
-                                                            <div>
-                                                                Amazon
-                                                            </div>
-                                                        </div>
-                                                        <div class="checkbox-fade fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                            </label>
-                                                            <div>
-                                                                Flipkart
-                                                            </div>
-                                                        </div>
-                                                        <div class="checkbox-fade fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                            </label>
-                                                            <div>
-                                                                Snapdeal
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <div class="card-footer text-center">
-                                                    <a href="#!">All Companies</a>
-                                                </div>
-                                            </div>
-                                            <!-- Company card end -->
-                                            <!-- Recent Searches card start -->
-                                            <div class="card job-right-header">
-                                                <div class="card-header">
-                                                    <h5>Recent Searches</h5>
-                                                    <div class="card-header-right">
-                                                        <label class="label label-danger">Add</label>
-                                                    </div>
-                                                </div>
-                                                <div class="card-block">
-                                                    <form action="#">
-                                                        <div>
-                                                            Senior Web designer
-                                                            <p>Amsterdam</p>
-                                                        </div>
-                                                        <div>
-                                                            PHP Devloper
-                                                            <p>Amsterdam</p>
-                                                        </div>
-                                                        <div>
-                                                            Fresher UI designer
-                                                            <p>Amsterdam</p>
-                                                        </div>
-                                                        <div>
-                                                            Wordpress devloper
-                                                            <p>Amsterdam</p>
-                                                        </div>
-                                                        <div>
-                                                            Opencart devloper
-                                                            <p>Amsterdam</p>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <!-- Recent Searches card end -->
-                    </div>
-                    <!-- Right column end -->
                     <!-- Left column start -->
-                    <div class="col-xl-9 col-lg-12 pull-xl-3 filter-bar">
+                    <div class="col-xl-12 col-lg-12 filter-bar">
                         <!-- Nav Filter tab start -->
                         <nav class="navbar navbar-light bg-faded m-b-30 p-10">
-                            <ul class="nav navbar-nav">
+                            <ul class="nav navbar-nav" id="job-list-filter">
                                 <li class="nav-item active">
                                     <a class="nav-link" href="#!">Filter: <span class="sr-only">(current)</span></a>
                                 </li>
@@ -3056,51 +2653,186 @@
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="#!">Today</a>
                                         <a class="dropdown-item" href="#!">Yesterday</a>
-                                        <a class="dropdown-item" href="#!">This week</a>
-                                        <a class="dropdown-item" href="#!">This month</a>
+                                        <a class="dropdown-item" href="#!">Last week</a>
+                                        <a class="dropdown-item" href="#!">Last month</a>
                                         <a class="dropdown-item" href="#!">This year</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#!">Custom</a>
                                     </div>
                                 </li>
                                 <!-- end of by date dropdown -->
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#!" id="bystatus" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-chart-histogram-alt"></i> Status</a>
-                                    <div class="dropdown-menu" aria-labelledby="bystatus">
-                                        <a class="dropdown-item" href="#!">Show all</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#!">Open</a>
-                                        <a class="dropdown-item" href="#!">On hold</a>
-                                        <a class="dropdown-item" href="#!">Resolved</a>
-                                        <a class="dropdown-item" href="#!">Closed</a>
-                                        <a class="dropdown-item" href="#!">Dublicate</a>
-                                        <a class="dropdown-item" href="#!">Wontfix</a>
+                                    <div class="dropdown-menu" aria-labelledby="bystatus" style="padding-left: 10px;">
+                                        <form>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>See All</span>
+                                                </label>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>Open</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>On hold</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>Resolved</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>Closed</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>Hired</span>
+                                                </label>
+                                            </div>
+                                        </form>
                                     </div>
                                 </li>
                                 <!-- end of by status dropdown -->
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#!" id="bypriority" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-location-pin"></i> Location</a>
-                                    <div class="dropdown-menu" aria-labelledby="bypriority">
-                                        <a class="dropdown-item" href="#!">Show all</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#!">Amsterdam, North Holland Province, Netherlands</a>
-                                        <a class="dropdown-item" href="#!">Koog aan de Zaan, North Holland Province, Netherlands</a>
-                                        <a class="dropdown-item" href="#!">Amsterdam Binnenstad en Oostelijk Havengebied, North Holland Province, Netherlands</a>
-                                        <a class="dropdown-item" href="#!">Hoofddorp, North Holland Province, Netherlands</a>
+                                    <a class="nav-link dropdown-toggle" href="#!" id="bypriority" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-location-pin"></i> Country</a>
+                                    <div class="dropdown-menu" aria-labelledby="bystatus" style="padding-left: 10px;">
+                                        <form>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>See All</span>
+                                                </label>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>India</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>USA</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>Canada</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>England</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>Phillipines</span>
+                                                </label>
+                                            </div>
+                                        </form>
                                     </div>
                                 </li>
                                 <!-- end of by title dropdown -->
-                                <li class="nav-item dropdown">
+                                <!-- <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#!" id="bypriority" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-job-search"></i> Job Title</a>
-                                    <div class="dropdown-menu" aria-labelledby="bypriority">
-                                        <a class="dropdown-item" href="#!">Show all</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#!">Developer</a>
-                                        <a class="dropdown-item" href="#!">Front end designer </a>
-                                        <a class="dropdown-item" href="#!">UX designer</a>
-                                        <a class="dropdown-item" href="#!">Software engineer </a>
+                                    <div class="dropdown-menu" aria-labelledby="bystatus" style="padding-left: 10px; min-width: 14em;">
+                                        <form>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>See All</span>
+                                                </label>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>Web Developer</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>Team Lead</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>Front End Developer</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>Business Analyst</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>Business Developer</span>
+                                                </label>
+                                            </div>
+                                        </form>
                                     </div>
-                                </li>
+                                </li> -->
                                 <!-- end of by skills dropdown -->
-                                <li class="nav-item dropdown">
+                                <!-- <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#!" id="bypriority" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-sub-listing"></i> Skills</a>
                                     <div class="dropdown-menu" aria-labelledby="bypriority">
                                         <a class="dropdown-item" href="#!">Show all</a>
@@ -3110,18 +2842,58 @@
                                         <a class="dropdown-item" href="#!">UX designer</a>
                                         <a class="dropdown-item" href="#!">Software engineer </a>
                                     </div>
-                                </li>
+                                </li> -->
                                 <!-- end of by company dropdown -->
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#!" id="bypriority" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-company"></i> Company</a>
-                                    <div class="dropdown-menu" aria-labelledby="bypriority">
-                                        <a class="dropdown-item" href="#!">Show all</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#!">Phoenixcoded</a>
-                                        <a class="dropdown-item" href="#!">Peacock</a>
-                                        <a class="dropdown-item" href="#!">Amazon</a>
-                                        <a class="dropdown-item" href="#!">Snapdeal</a>
+                                    <a class="nav-link dropdown-toggle" href="#!" id="bypriority" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-company"></i> Assigned To</a>
+                                    <div class="dropdown-menu" aria-labelledby="bystatus" style="padding-left: 10px;">
+                                        <form>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>See All</span>
+                                                </label>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>Company</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>Partner 1</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>Partner 2</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span> <span>Partner 3</span>
+                                                </label>
+                                            </div>
+                                        </form>
                                     </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#!" id="bypriority"><i class="icofont icofont-ui-close"></i> Reset Default</a>
                                 </li>
                                 </ul>
                                 <!-- <div class="nav-item nav-grid">
@@ -3134,14 +2906,34 @@
                                     </button>
                                 </div> -->
                                 <!-- end of by priority dropdown -->
-                            
+                                    <form style="width: 100%; margin-top: 10px;">
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <input type="text" class="form-control" placeholder="Job Title">
+                                             </div>
+                                            <div class="col-sm-3">
+                                                <input type="text" class="form-control" placeholder="Location">
+                                             </div>
+                                             <div class="input-group col-sm-6">
+                                        <select class="js-example-tokenizer col-sm-12" multiple="multiple">
+                                            <option value="AL">PHP</option>
+                                            <option value="WY">MySQL</option>
+                                            <option value="WY">GIT</option>
+                                            <option value="WY">AJAX</option>
+                                            <option value="WY">jQuery</option>
+                                        </select>
+                                        <span class="input-group-addon"> Skills
+                                        </span>
+                                    </div>
+                                        </div>
+                                    </form>
                         </nav>
                         <!-- Nav Filter tab end -->
                         <!-- Task board design block start-->
                         <div class="row">
                                         <!-- Left column start -->
                                         <div class="col-lg-12">
-                                             <div class="">
+                                            <div class="job-card card-columns">
                                                 <!-- Job card start -->
                                                 <div class="card">
                                                     <div class="card-header">
@@ -3188,10 +2980,10 @@
                                                         <div class="job-meta-data"><i class="icofont icofont-user"></i>Full-time</div>
                                                     </div>
                                                     <div class="card-footer">
-                                                        <div class="task-list-table">
+                                                        <div class="task-list-table animation-model">
                                                             <a href="#!"><img class="img-fluid img-circle" src="assets/images/avatar-1.png" alt="1" /></a>
                                                             <a href="#!"><img class="img-fluid img-circle" src="assets/images/avatar-2.png" alt="1" /></a>
-                                                            <a href="#!"><i class="icofont icofont-plus"></i></a>
+                                                            <a href="#!" class="waves-effect md-trigger" data-modal="modal-8"><i class="icofont icofont-plus"></i></a>
                                                         </div>
                                                         <div class="task-board">
                                                             <div class="dropdown-secondary dropdown">
@@ -3217,6 +3009,37 @@
                                                     <!-- end of card-footer -->
                                                 </div>
                                                 <!-- Job card end -->
+
+                                                <div class="md-modal md-effect-8" id="modal-8">
+                                                    <div class="md-content">
+                                                        <h3>Assign To</h3>
+                                                        <div class="col-sm-12">
+                                                            <select id='custom-headers' class="searchable" multiple='multiple'>
+                                                                <option value='elem_1' selected>elem 1</option>
+                                                                <option value='elem_2'>elem 2</option>
+                                                                <option value='elem_3'>elem 3</option>
+                                                                <option value='elem_4' selected>elem 4</option>
+                                                                <option value='elem_5'>elem 5</option>
+                                                                <option value='elem_6'>elem 6</option>
+                                                                <option value='elem_7'>elem 7</option>
+                                                                <option value='elem_8'>elem 8</option>
+                                                                <option value='elem_9'>elem 9</option>
+                                                                <option value='elem_10'>elem 10</option>
+                                                                <option value='elem_11'>elem 11</option>
+                                                                <option value='elem_12'>elem 12</option>
+                                                                <option value='elem_13'>elem 13</option>
+                                                                <option value='elem_14'>elem 14</option>
+                                                                <option value='elem_15'>elem 15</option>
+                                                                <option value='elem_16'>elem 16</option>
+                                                            </select>
+                                                            <br>
+                                                            <div class="col-sm-12">
+                                                                <button type="button" class="btn btn-primary waves-effect md-close">Save</button>
+                                                                <button type="button" class="btn btn-default waves-effect md-close">Cancel</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             
                                                 <!-- Job card start -->
                                                 <div class="card">
@@ -3705,6 +3528,13 @@
     <script type="text/javascript" src="../bower_components/modernizr/js/css-scrollbars.js"></script>
     <!-- classie js -->
     <script type="text/javascript" src="../bower_components/classie/js/classie.js"></script>
+    <!-- sweet alert js -->
+<script type="text/javascript" src="../bower_components/sweetalert/js/sweetalert.min.js"></script>
+<script type="text/javascript" src="assets/js/modal.js"></script>
+<!-- sweet alert modal.js intialize js -->
+<!-- modalEffects js nifty modal window effects -->
+<script type="text/javascript" src="assets/js/modalEffects.js"></script>
+<script type="text/javascript" src="assets/js/classie.js"></script>
     <!-- task board js -->
     <script type="text/javascript" src="assets/pages/task-board/task-board.js"></script>
     <!-- i18next.min.js -->
@@ -3712,12 +3542,66 @@
     <script type="text/javascript" src="../bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js"></script>
     <script type="text/javascript" src="../bower_components/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js"></script>
     <script type="text/javascript" src="../bower_components/jquery-i18next/js/jquery-i18next.min.js"></script>
+    <!-- Select 2 js -->
+<script type="text/javascript" src="../bower_components/select2/js/select2.full.min.js"></script>
+<!-- Multiselect js -->
+<script type="text/javascript" src="../bower_components/bootstrap-multiselect/js/bootstrap-multiselect.js">
+</script>
+<script type="text/javascript" src="../bower_components/multiselect/js/jquery.multi-select.js"></script>
+<script type="text/javascript" src="assets/js/jquery.quicksearch.js"></script>
     <!-- Custom js -->
     <script type="text/javascript" src="assets/js/script.js"></script>
         <script src="assets/js/pcoded.min.js"></script>
 <script src="assets/js/demo-12.js"></script>
 <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="assets/js/jquery.mousewheel.min.js"></script>
+
+<script>
+    // Automatic tokenization
+    $(".js-example-tokenizer").select2({
+        tags: true,
+        tokenSeparators: [',', ' '],
+        placeholder: "Select Required Skills",
+        width: '175px'
+    });
+</script>
+<script>
+    $('.searchable').multiSelect({
+      selectableHeader: "<input type='text' class='search-input' style='width: 100%;margin-bottom: 10px;' autocomplete='off' placeholder='Search to Add'>",
+      selectionHeader: "<input type='text' class='search-input' style='width: 100%;margin-bottom: 10px;' autocomplete='off' placeholder='Search to Remove'>",
+      afterInit: function(ms){
+        var that = this,
+            $selectableSearch = that.$selectableUl.prev(),
+            $selectionSearch = that.$selectionUl.prev(),
+            selectableSearchString = '#'+that.$container.attr('id')+' .ms-elem-selectable:not(.ms-selected)',
+            selectionSearchString = '#'+that.$container.attr('id')+' .ms-elem-selection.ms-selected';
+
+        that.qs1 = $selectableSearch.quicksearch(selectableSearchString)
+        .on('keydown', function(e){
+          if (e.which === 40){
+            that.$selectableUl.focus();
+            return false;
+          }
+        });
+
+        that.qs2 = $selectionSearch.quicksearch(selectionSearchString)
+        .on('keydown', function(e){
+          if (e.which == 40){
+            that.$selectionUl.focus();
+            return false;
+          }
+        });
+      },
+      afterSelect: function(){
+        this.qs1.cache();
+        this.qs2.cache();
+      },
+      afterDeselect: function(){
+        this.qs1.cache();
+        this.qs2.cache();
+      }
+    });
+</script>
 </body>
 
 </html>

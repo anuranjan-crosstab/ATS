@@ -19384,4 +19384,19 @@ width: 99.5% !important;
    padding:0; /*if your want to padding */
 }
 
+.job-badge {
+  right: 100px;
+}
+
+.job-meta-data {
+  font-size: 15px;
+}
+
+#job-list-filter li a {
+  font-size: 18px;
+}
+
+#job-list-filter li {
+  padding-right: 20px;
+}
 /* Custom End */
