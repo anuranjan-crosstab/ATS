@@ -2938,9 +2938,9 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="media">
-                                                            <a class="media-left media-middle" href="#">
+                                                            <!-- <a class="media-left media-middle" href="#">
                                                                 <img class="media-object img-60" src="assets/images/avatar-3.png" alt="Generic placeholder image">
-                                                            </a>
+                                                            </a> -->
                                                             <div class="media-body media-middle">
                                                                 <div class="company-name">
                                                                     <p>Front End Developer</p>
@@ -3010,44 +3010,44 @@
                                                 </div>
                                                 <!-- Job card end -->
 
-                                                <div class="md-modal md-effect-8" id="modal-8">
-                                                    <div class="md-content">
-                                                        <h3>Assign To</h3>
-                                                        <div class="col-sm-12">
-                                                            <select id='custom-headers' class="searchable" multiple='multiple'>
-                                                                <option value='elem_1' selected>elem 1</option>
-                                                                <option value='elem_2'>elem 2</option>
-                                                                <option value='elem_3'>elem 3</option>
-                                                                <option value='elem_4' selected>elem 4</option>
-                                                                <option value='elem_5'>elem 5</option>
-                                                                <option value='elem_6'>elem 6</option>
-                                                                <option value='elem_7'>elem 7</option>
-                                                                <option value='elem_8'>elem 8</option>
-                                                                <option value='elem_9'>elem 9</option>
-                                                                <option value='elem_10'>elem 10</option>
-                                                                <option value='elem_11'>elem 11</option>
-                                                                <option value='elem_12'>elem 12</option>
-                                                                <option value='elem_13'>elem 13</option>
-                                                                <option value='elem_14'>elem 14</option>
-                                                                <option value='elem_15'>elem 15</option>
-                                                                <option value='elem_16'>elem 16</option>
-                                                            </select>
-                                                            <br>
+                                                    <div class="md-modal md-effect-8" id="modal-8">
+                                                        <div class="md-content">
+                                                            <h3>Assign To</h3>
                                                             <div class="col-sm-12">
-                                                                <button type="button" class="btn btn-primary waves-effect md-close">Save</button>
-                                                                <button type="button" class="btn btn-default waves-effect md-close">Cancel</button>
+                                                                <select id='custom-headers' class="searchable" multiple='multiple'>
+                                                                    <option value='elem_1' selected>elem 1</option>
+                                                                    <option value='elem_2'>elem 2</option>
+                                                                    <option value='elem_3'>elem 3</option>
+                                                                    <option value='elem_4' selected>elem 4</option>
+                                                                    <option value='elem_5'>elem 5</option>
+                                                                    <option value='elem_6'>elem 6</option>
+                                                                    <option value='elem_7'>elem 7</option>
+                                                                    <option value='elem_8'>elem 8</option>
+                                                                    <option value='elem_9'>elem 9</option>
+                                                                    <option value='elem_10'>elem 10</option>
+                                                                    <option value='elem_11'>elem 11</option>
+                                                                    <option value='elem_12'>elem 12</option>
+                                                                    <option value='elem_13'>elem 13</option>
+                                                                    <option value='elem_14'>elem 14</option>
+                                                                    <option value='elem_15'>elem 15</option>
+                                                                    <option value='elem_16'>elem 16</option>
+                                                                </select>
+                                                                <br>
+                                                                <div class="col-sm-12">
+                                                                    <button type="button" class="btn btn-primary waves-effect">Save</button>
+                                                                    <button type="button" class="btn btn-default waves-effect md-close">Cancel</button>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
                                             
                                                 <!-- Job card start -->
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="media">
-                                                            <a class="media-left media-middle" href="#">
+                                                            <!-- <a class="media-left media-middle" href="#">
                                                                 <img class="media-object img-60" src="assets/images/avatar-3.png" alt="Generic placeholder image">
-                                                            </a>
+                                                            </a> -->
                                                             <div class="media-body media-middle">
                                                                 <div class="company-name">
                                                                     <p>Team Lead</p>
@@ -3090,7 +3090,7 @@
                                                         <div class="task-list-table">
                                                             <a href="#!"><img class="img-fluid img-circle" src="assets/images/avatar-1.png" alt="1" /></a>
                                                             <a href="#!"><img class="img-fluid img-circle" src="assets/images/avatar-2.png" alt="1" /></a>
-                                                            <a href="#!"><i class="icofont icofont-plus"></i></a>
+                                                            <a href="#!"><i class="icofont icofont-plus" data-toggle="modal" data-target="#large-Modal"></i></a>
                                                         </div>
                                                         <div class="task-board">
                                                             <div class="dropdown-secondary dropdown">
@@ -3116,14 +3116,320 @@
                                                     <!-- end of card-footer -->
                                                 </div>
                                                 <!-- Job card end -->
+
+                                                <!-- Modal large-->
+                                                                <div class="modal fade" id="large-Modal" tabindex="-1" role="dialog">
+                                                                    <div class="modal-dialog modal-lg" role="document">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                                <h4 class="modal-title">Assigned To</h4>
+                                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                    <span aria-hidden="true">&times;</span>
+                                                                                </button>
+                                                                            </div>
+                                                                            <div class="modal-body" style="height: 68vh;">
+                                                            <div class="row">                            <!-- Task list card start -->
+                                                                <div class="col-sm-4" style="height: 64vh; overflow-y: auto;">
+                                                                    <div class="new-card">
+                                                                        <div class="card-header">
+                                                                            <h5 class="card-header-text"><i class="icofont icofont-users-alt-4"></i>  Assigned users</h5>
+                                                                        </div>
+                                                                        <div class="card-block user-box assign-user">
+                                                                            <div class="media">
+                                                                                <div class="media-left media-middle photo-table">
+                                                                                    <a href="#">
+                                                                                        <img class="img-circle" src="assets/images/avatar-3.png" alt="chat-user">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="media-body">
+                                                                                    <h6>Sortino media</h6>
+                                                                                    <p>Recruiter</p>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="#!" class="text-muted"> <i class="icofont icofont-ui-delete"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media">
+                                                                                <div class="media-left media-middle photo-table">
+                                                                                    <a href="#">
+                                                                                        <img class="img-circle" src="assets/images/avatar-3.png" alt="chat-user">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="media-body">
+                                                                                    <h6>Sortino media</h6>
+                                                                                    <p>Recruiter</p>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="#!" class="text-muted"> <i class="icofont icofont-ui-delete"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media">
+                                                                                <div class="media-left media-middle photo-table">
+                                                                                    <a href="#">
+                                                                                        <img class="img-circle" src="assets/images/avatar-3.png" alt="chat-user">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="media-body">
+                                                                                    <h6>Sortino media</h6>
+                                                                                    <p>Recruiter</p>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="#!" class="text-muted"> <i class="icofont icofont-ui-delete"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media">
+                                                                                <div class="media-left media-middle photo-table">
+                                                                                    <a href="#">
+                                                                                        <img class="img-circle" src="assets/images/avatar-3.png" alt="chat-user">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="media-body">
+                                                                                    <h6>Sortino media</h6>
+                                                                                    <p>Recruiter</p>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="#!" class="text-muted"> <i class="icofont icofont-ui-delete"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media">
+                                                                                <div class="media-left media-middle photo-table">
+                                                                                    <a href="#">
+                                                                                        <img class="img-circle" src="assets/images/avatar-2.png" alt="chat-user">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="media-body">
+                                                                                    <h6>Larry heading </h6>
+                                                                                    <p>Senior Recruiter</p>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="#!" class="text-muted"> <i class="icofont icofont-ui-delete"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media">
+                                                                                <div class="media-left media-middle photo-table">
+                                                                                    <a href="#">
+                                                                                        <img class="img-circle" src="assets/images/avatar-2.png" alt="chat-user">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="media-body">
+                                                                                    <h6>Larry heading </h6>
+                                                                                    <p>Senior Recruiter</p>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="#!" class="text-muted"> <i class="icofont icofont-ui-delete"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media">
+                                                                                <div class="media-left media-middle photo-table">
+                                                                                    <a href="#">
+                                                                                        <img class="img-circle" src="assets/images/avatar-2.png" alt="chat-user">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="media-body">
+                                                                                    <h6>Larry heading </h6>
+                                                                                    <p>Senior Recruiter</p>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="#!" class="text-muted"> <i class="icofont icofont-ui-delete"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media">
+                                                                                <div class="media-left media-middle photo-table">
+                                                                                    <a href="#">
+                                                                                        <img class="img-circle" src="assets/images/avatar-2.png" alt="chat-user">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="media-body">
+                                                                                    <h6>Larry heading </h6>
+                                                                                    <p>Senior Recruiter</p>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="#!" class="text-muted"> <i class="icofont icofont-ui-delete"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media">
+                                                                                <div class="media-left media-middle photo-table">
+                                                                                    <a href="#">
+                                                                                        <img class="img-circle" src="assets/images/avatar-1.png" alt="chat-user">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="media-body">
+                                                                                    <h6>Mark</h6>
+                                                                                    <p>HR</p>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="#!" class="text-muted"> <i class="icofont icofont-ui-delete"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media p-0 d-flex">
+                                                                                <div class="media-left media-middle photo-table">
+                                                                                    <a href="#">
+                                                                                        <img class="img-circle" src="assets/images/avatar-4.png" alt="chat-user">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="media-body">
+                                                                                    <h6>John Doe</h6>
+                                                                                    <p>Recruiter</p>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="#!" class="text-muted"> <i class="icofont icofont-ui-delete"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                     
+                                                                </div>
+
+                                                                <div class="col-sm-8">
+                                                                    <div class="new-card">
+                                                                        <div class="card-block">
+                                                                            <!-- Row start -->
+                                                                            <div class="row">
+                                                                                <div class="col-lg-12">     
+                                                                                    <!-- Nav tabs -->
+                                                                                    <ul class="nav nav-tabs xl-tabs" role="tablist">
+                                                                                        <li class="nav-item">
+                                                                                            <a class="nav-link active" data-toggle="tab" href="#home3" role="tab">Company Recruiters</a>
+                                                                                            <!-- <div class="slide"></div> -->
+                                                                                        </li>
+                                                                                        <li class="nav-item">
+                                                                                            <a class="nav-link" data-toggle="tab" href="#profile3" role="tab">Partners</a>
+                                                                                            <!-- <div class="slide"></div> -->
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <!-- Tab panes -->
+                                                                                    <div class="tab-content card-block">
+                                                                                        <div class="tab-pane active" id="home3" role="tabpanel">
+                                                                                            <div class="row">
+                                                                                                <div class="col-lg-4">
+                                                                                                    <div class="card rounded-card user-card">
+                                                                                                        <div class="card-block">
+                                                                                                            <div class="img-hover">
+                                                                                                                <img class="img-fluid img-circle" src="assets/images/avatar-2.png" alt="chat-user">
+                                                                                                                <div class="img-overlay">
+                                                                                                                    <span>
+                                                                                                                        <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                                                                        <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                                                                    </span>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="user-content">
+                                                                                                                <h4 class="">Howard Hatfield</h4>
+                                                                                                                <h5 class="">Recruiter</h5>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-lg-4">
+                                                                                                    <div class="card rounded-card user-card">
+                                                                                                        <div class="card-block">
+                                                                                                            <div class="img-hover">
+                                                                                                                <img class="img-fluid img-circle" src="assets/images/avatar-1.png" alt="chat-user">
+                                                                                                                <div class="img-overlay">
+                                                                                                                    <span>
+                                                                                                                        <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                                                                        <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                                                                    </span>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="user-content">
+                                                                                                                <h4 class="">James Doy</h4>
+                                                                                                                <h5 class="">Recruiter</h5>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                
+                                                                                               
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="tab-pane" id="profile3" role="tabpanel">
+                                                                                            <div class="row">
+                                                                                                <div class="col-lg-4">
+                                                                                                    <div class="card rounded-card user-card">
+                                                                                                        <div class="card-block">
+                                                                                                            <div class="img-hover">
+                                                                                                                <img class="img-fluid img-circle" src="assets/images/avatar-2.png" alt="chat-user">
+                                                                                                                <div class="img-overlay">
+                                                                                                                    <span>
+                                                                                                                        <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                                                                        <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                                                                    </span>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="user-content">
+                                                                                                                <h4 class="">Howard Hatfield</h4>
+                                                                                                                <h5 class="">Microsoft</h5>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-lg-4">
+                                                                                                    <div class="card rounded-card user-card">
+                                                                                                        <div class="card-block">
+                                                                                                            <div class="img-hover">
+                                                                                                                <img class="img-fluid img-circle" src="assets/images/avatar-3.png" alt="chat-user">
+                                                                                                                <div class="img-overlay">
+                                                                                                                    <span>
+                                                                                                                        <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                                                                        <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                                                                    </span>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="user-content">
+                                                                                                                <h4 class="">Micheal Chord</h4>
+                                                                                                                <h5 class="">Oracle</h5>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-lg-4">
+                                                                                                    <div class="card rounded-card user-card">
+                                                                                                        <div class="card-block">
+                                                                                                            <div class="img-hover">
+                                                                                                                <img class="img-fluid img-circle" src="assets/images/avatar-1.png" alt="chat-user">
+                                                                                                                <div class="img-overlay">
+                                                                                                                    <span>
+                                                                                                                        <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                                                                        <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                                                                    </span>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="user-content">
+                                                                                                                <h4 class="">J V Jack</h4>
+                                                                                                                <h5 class="">Delloite</h5>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                               
+                                                                                              
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <button type="button" class="btn btn-default waves-effect " data-dismiss="modal">Close</button>
+                                                                                <button type="button" class="btn btn-primary waves-effect waves-light ">Save changes</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                            
                                                 <!-- Job card start -->
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="media">
-                                                            <a class="media-left media-middle" href="#">
+                                                            <!-- <a class="media-left media-middle" href="#">
                                                                 <img class="media-object img-60" src="assets/images/avatar-3.png" alt="Generic placeholder image">
-                                                            </a>
+                                                            </a> -->
                                                             <div class="media-body media-middle">
                                                                 <div class="company-name">
                                                                     <p>Web Developer</p>
@@ -3197,9 +3503,9 @@
                                                  <div class="card">
                                                     <div class="card-header">
                                                         <div class="media">
-                                                            <a class="media-left media-middle" href="#">
+                                                            <!-- <a class="media-left media-middle" href="#">
                                                                 <img class="media-object img-60" src="assets/images/avatar-3.png" alt="Generic placeholder image">
-                                                            </a>
+                                                            </a> -->
                                                             <div class="media-body media-middle">
                                                                 <div class="company-name">
                                                                     <p>Front End Developer</p>
@@ -3273,9 +3579,9 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="media">
-                                                            <a class="media-left media-middle" href="#">
+                                                            <!-- <a class="media-left media-middle" href="#">
                                                                 <img class="media-object img-60" src="assets/images/avatar-3.png" alt="Generic placeholder image">
-                                                            </a>
+                                                            </a> -->
                                                             <div class="media-body media-middle">
                                                                 <div class="company-name">
                                                                     <p>Business Analyst</p>
@@ -3350,9 +3656,9 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="media">
-                                                            <a class="media-left media-middle" href="#">
+                                                            <!-- <a class="media-left media-middle" href="#">
                                                                 <img class="media-object img-60" src="assets/images/avatar-3.png" alt="Generic placeholder image">
-                                                            </a>
+                                                            </a> -->
                                                             <div class="media-body media-middle">
                                                                 <div class="company-name">
                                                                     <p>Business Developer</p>

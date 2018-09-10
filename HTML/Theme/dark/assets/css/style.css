@@ -19399,4 +19399,8 @@ width: 99.5% !important;
 #job-list-filter li {
   padding-right: 20px;
 }
+
+.multSelktrImg span{position: relative;top: 10px;vertical-align: middle;display: inline-flex;}
+.multSelktrImg input {vertical-align: -2px;}
+.multSelktrImg img {position: relative;height: 30px;margin: 2px 6px;top: -10px;}
 /* Custom End */
