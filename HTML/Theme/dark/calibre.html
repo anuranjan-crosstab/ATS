@@ -642,10 +642,17 @@
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
-                                <li class="active">
+                                <li class="">
                                     <a href="job-search-3.html">
                                         <span class="pcoded-micon"><i class="ti-user"></i></span>
                                         <span class="pcoded-mtext" data-i18n="nav.sample-page.main">Job Search</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="job-search-3.html">
+                                        <span class="pcoded-micon"><i class="ti-user"></i></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.sample-page.main">Calibre</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
@@ -703,63 +710,6 @@
                                     </div>
                                 </li>
                                 <!-- end of by date dropdown -->
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#!" id="bystatus" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-chart-histogram-alt"></i> Status</a>
-                                    <div class="dropdown-menu" aria-labelledby="bystatus" style="padding-left: 10px;">
-                                        <form>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>See All</span>
-                                                </label>
-                                            </div>
-                                            <div class="dropdown-divider"></div>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>Open</span>
-                                                </label>
-                                            </div>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>On hold</span>
-                                                </label>
-                                            </div>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>Resolved</span>
-                                                </label>
-                                            </div>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>Closed</span>
-                                                </label>
-                                            </div>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>Hired</span>
-                                                </label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </li>
-                                <!-- end of by status dropdown -->
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#!" id="bypriority" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-location-pin"></i> Country</a>
                                     <div class="dropdown-menu" aria-labelledby="bystatus" style="padding-left: 10px;">
@@ -887,7 +837,7 @@
                                 </li> -->
                                 <!-- end of by company dropdown -->
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#!" id="bypriority" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-company"></i> Assigned To</a>
+                                    <a class="nav-link dropdown-toggle" href="#!" id="bypriority" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-company"></i> Company</a>
                                     <div class="dropdown-menu" aria-labelledby="bystatus" style="padding-left: 10px;">
                                         <form>
                                             <div class="checkbox-fade fade-in-primary">
@@ -934,8 +884,8 @@
                                         </form>
                                     </div>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#!" id="bypriority"><i class="icofont icofont-ui-close"></i> Reset Default</a>
+                                <li class="nav-item dropdown" style="position: absolute; top: 0; right: 0; padding-right: 0;">
+                                    <a class="nav-link" href="#!" id="bypriority"><i class="icofont icofont-ui-close"></i></a>
                                 </li>
                                 </ul>
                                 <!-- <div class="nav-item nav-grid">
@@ -955,18 +905,18 @@
                                              </div>
                                             <div class="col-sm-3">
                                                 <input type="text" class="form-control" placeholder="Location">
-                                             </div>
-                                             <div class="input-group col-sm-6">
-                                        <select class="js-example-tokenizer col-sm-12" multiple="multiple">
-                                            <option value="AL">PHP</option>
-                                            <option value="WY">MySQL</option>
-                                            <option value="WY">GIT</option>
-                                            <option value="WY">AJAX</option>
-                                            <option value="WY">jQuery</option>
-                                        </select>
-                                        <span class="input-group-addon"> Skills
-                                        </span>
-                                    </div>
+                                            </div>
+                                            <div class="input-group col-sm-6">
+                                                <select class="js-example-tokenizer col-sm-12" multiple="multiple">
+                                                    <option value="AL">PHP</option>
+                                                    <option value="WY">MySQL</option>
+                                                    <option value="WY">GIT</option>
+                                                    <option value="WY">AJAX</option>
+                                                    <option value="WY">jQuery</option>
+                                                </select>
+                                                <span class="input-group-addon"> Skills
+                                                </span>
+                                            </div>
                                         </div>
                                     </form>
                         </nav>
@@ -980,21 +930,21 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="media">
-                                                            <!-- <a class="media-left media-middle" href="#">
+                                                            <a class="media-left media-middle" href="#">
                                                                 <img class="media-object img-60" src="assets/images/avatar-3.png" alt="Generic placeholder image">
-                                                            </a> -->
+                                                            </a>
                                                             <div class="media-body media-middle">
                                                                 <div class="company-name">
-                                                                    <p>Front End Developer</p>
+                                                                    <p>Steve Jones</p>
                                                                     <span class="text-muted f-14">December 16, 2017</span>
                                                                 </div>
                                                                 <div class="job-badge">
-                                                                    <label class="label bg-primary">2 Openings</label>
+                                                                    <label class="label bg-primary">HCL</label>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="card-header-right">
-                                                            <div class="dropdown-default dropdown open">
+                                                            <!-- <div class="dropdown-default dropdown open">
                                                                 <i class="icofont icofont-filter dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
                                                                 <div class="dropdown-menu">
                                                                     <a class="dropdown-item waves-effect waves-light" href="#">Today</a>
@@ -1003,43 +953,38 @@
                                                                     <div class="dropdown-divider"></div>
                                                                     <a class="dropdown-item waves-effect waves-light" href="#">Custom</a>
                                                                 </div>
-                                                            </div>
+                                                            </div> -->
                                                             <i class="icofont icofont-refresh"></i>
                                                             <i class="icofont icofont-rounded-down"></i>
                                                         </div>
                                                     </div>
                                                     <div class="card-block">
                                                         <div class="job-lable">
-                                                            <label class="label">HTML 5</label>
-                                                            <label class="label">CSS 3</label>
-                                                            <label class="label">JavaScript</label>
-                                                            <label class="label">Bootstrap</label>
+                                                            <label class="label">Finance</label>
+                                                            <label class="label">Leadership</label>
                                                         </div>
-                                                        <h6 class="job-card-desc">Job Description</h6>
+                                                        <h6 class="job-card-desc">Skills</h6>
                                                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.</p>
                                                         <div class="job-meta-data"><i class="icofont icofont-safety"></i>Noida, U.P., India</div>
                                                         <div class="job-meta-data"><i class="icofont icofont-university"></i>5-10 Years</div>
                                                         <div class="job-meta-data"><i class="icofont icofont-user"></i>Full-time</div>
                                                     </div>
                                                     <div class="card-footer">
-                                                        <div class="task-list-table animation-model">
+                                                        <!-- <div class="task-list-table animation-model">
                                                             <a href="#!"><img class="img-fluid img-circle" src="assets/images/avatar-1.png" alt="1" /></a>
                                                             <a href="#!"><img class="img-fluid img-circle" src="assets/images/avatar-2.png" alt="1" /></a>
                                                             <a href="#!" class="waves-effect md-trigger" data-modal="modal-8"><i class="icofont icofont-plus"></i></a>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="task-board">
                                                             <div class="dropdown-secondary dropdown">
-                                                                <button class="btn btn-primary" type="button"><i class="icofont icofont-external-link"></i> Submit</button>
+                                                                <button class="btn btn-primary" type="button"><i class="icofont icofont-plus"></i> Add</button>
                                                                 <!-- end of dropdown menu -->
                                                             </div>
                                                             <div class="dropdown-secondary dropdown">
-                                                                <button class="btn btn-default dropdown-toggle waves-light b-none txt-muted" type="button" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-wheel"></i> Manage</button>
+                                                                <button class="btn btn-default dropdown-toggle waves-light b-none txt-muted" type="button" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-wheel"></i> View</button>
                                                                 <div class="dropdown-menu" aria-labelledby="dropdown2" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-                                                                    <a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-ui-edit"></i> Edit</a>
-                                                                    <a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-ui-alarm"></i> Change Status</a>
-                                                                    <a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-spinner-alt-5"></i> Reassign</a>
-                                                                    <div class="dropdown-divider"></div>
-                                                                    <a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-close-line"></i> Remove</a>
+                                                                    <a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-ui-edit"></i> Quick</a>
+                                                                    <a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-ui-alarm"></i> Detail</a>
                                                                 </div>
                                                                 <!-- end of dropdown menu -->
                                                             </div>
@@ -1087,9 +1032,9 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="media">
-                                                            <!-- <a class="media-left media-middle" href="#">
+                                                            <a class="media-left media-middle" href="#">
                                                                 <img class="media-object img-60" src="assets/images/avatar-3.png" alt="Generic placeholder image">
-                                                            </a> -->
+                                                            </a>
                                                             <div class="media-body media-middle">
                                                                 <div class="company-name">
                                                                     <p>Team Lead</p>
@@ -1469,9 +1414,9 @@
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <div class="media">
-                                                            <!-- <a class="media-left media-middle" href="#">
+                                                            <a class="media-left media-middle" href="#">
                                                                 <img class="media-object img-60" src="assets/images/avatar-3.png" alt="Generic placeholder image">
-                                                            </a> -->
+                                                            </a>
                                                             <div class="media-body media-middle">
                                                                 <div class="company-name">
                                                                     <p>Web Developer</p>
@@ -1545,9 +1490,9 @@
                                                  <div class="card">
                                                     <div class="card-header">
                                                         <div class="media">
-                                                            <!-- <a class="media-left media-middle" href="#">
+                                                            <a class="media-left media-middle" href="#">
                                                                 <img class="media-object img-60" src="assets/images/avatar-3.png" alt="Generic placeholder image">
-                                                            </a> -->
+                                                            </a>
                                                             <div class="media-body media-middle">
                                                                 <div class="company-name">
                                                                     <p>Front End Developer</p>
@@ -1585,82 +1530,6 @@
                                                         <div class="job-meta-data"><i class="icofont icofont-safety"></i>Bengaluru, Karnataka, India</div>
                                                         <div class="job-meta-data"><i class="icofont icofont-university"></i>5-10 Years</div>
                                                         <div class="job-meta-data"><i class="icofont icofont-user"></i>Full-time</div>
-                                                    </div>
-                                                    <div class="card-footer">
-                                                        <div class="task-list-table">
-                                                            <a href="#!"><img class="img-fluid img-circle" src="assets/images/avatar-1.png" alt="1" /></a>
-                                                            <a href="#!"><img class="img-fluid img-circle" src="assets/images/avatar-2.png" alt="1" /></a>
-                                                            <a href="#!"><i class="icofont icofont-plus"></i></a>
-                                                        </div>
-                                                        <div class="task-board">
-                                                            <div class="dropdown-secondary dropdown">
-                                                                <button class="btn btn-primary" type="button"><i class="icofont icofont-external-link"></i> Submit</button>
-                                                                <!-- end of dropdown menu -->
-                                                            </div>
-                                                            <div class="dropdown-secondary dropdown">
-                                                                <button class="btn btn-default dropdown-toggle waves-light b-none txt-muted" type="button" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-wheel"></i> Manage</button>
-                                                                <div class="dropdown-menu" aria-labelledby="dropdown2" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-                                                                    <a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-ui-edit"></i> Edit</a>
-                                                                    <a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-ui-alarm"></i> Change Status</a>
-                                                                    <a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-spinner-alt-5"></i> Reassign</a>
-                                                                    <div class="dropdown-divider"></div>
-                                                                    <a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-close-line"></i> Remove</a>
-                                                                </div>
-                                                                <!-- end of dropdown menu -->
-                                                            </div>
-                                                            <!-- end of dropdown-secondary -->
-                                                            <!-- end of seconadary -->
-                                                        </div>
-                                                        <!-- end of pull-right class -->
-                                                    </div>
-                                                    <!-- end of card-footer -->
-                                                </div>
-                                                <!-- Job card end -->
-                                           
-                                                <!-- Job card start -->
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <div class="media">
-                                                            <!-- <a class="media-left media-middle" href="#">
-                                                                <img class="media-object img-60" src="assets/images/avatar-3.png" alt="Generic placeholder image">
-                                                            </a> -->
-                                                            <div class="media-body media-middle">
-                                                                <div class="company-name">
-                                                                    <p>Business Analyst</p>
-                                                                    <span class="text-muted f-14">December 16, 2017</span>
-                                                                </div>
-                                                                <div class="job-badge">
-                                                                    <label class="label bg-primary">2 Openings</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-header-right">
-                                                            <div class="dropdown-default dropdown open">
-                                                                <i class="icofont icofont-filter dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-                                                                <div class="dropdown-menu">
-                                                                    <a class="dropdown-item waves-effect waves-light" href="#">Today</a>
-                                                                    <a class="dropdown-item waves-effect waves-light" href="#">Last Week</a>
-                                                                    <a class="dropdown-item waves-effect waves-light" href="#">Last Month</a>
-                                                                    <div class="dropdown-divider"></div>
-                                                                    <a class="dropdown-item waves-effect waves-light" href="#">Custom</a>
-                                                                </div>
-                                                            </div>
-                                                            <i class="icofont icofont-refresh"></i>
-                                                            <i class="icofont icofont-rounded-down"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <div class="job-lable">
-                                                            <label class="label">DFD</label>
-                                                            <label class="label">Client Relationship</label>
-                                                            <label class="label">Sales</label>
-                                                            <label class="label">Marketing</label>
-                                                        </div>
-                                                        <h6 class="job-card-desc">Job Description</h6>
-                                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.</p>
-                                                        <div class="job-meta-data"><i class="icofont icofont-safety"></i>Noida, U.P., India</div>
-                                                        <div class="job-meta-data"><i class="icofont icofont-university"></i>5-10 Years</div>
-                                                        <div class="job-meta-data"><i class="icofont icofont-user"></i>Contract</div>
                                                     </div>
                                                     <div class="card-footer">
                                                         <div class="task-list-table">
