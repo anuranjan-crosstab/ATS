@@ -19403,4 +19403,10 @@ width: 99.5% !important;
 .multSelktrImg span{position: relative;top: 10px;vertical-align: middle;display: inline-flex;}
 .multSelktrImg input {vertical-align: -2px;}
 .multSelktrImg img {position: relative;height: 30px;margin: 2px 6px;top: -10px;}
+
+.card-img {
+  max-width: 100%;
+
+border-radius: 50%;
+}
 /* Custom End */
