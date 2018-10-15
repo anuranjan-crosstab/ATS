@@ -19406,7 +19406,14 @@ width: 99.5% !important;
 
 .card-img {
   max-width: 100%;
+  border-radius: 50%;
+}
 
-border-radius: 50%;
+#custom-heading-job {
+  line-height: 40px;
+  font-weight: 200;
+  font-size: 34px;
+  padding-top: 60px;
+  color: #ffffff;
 }
 /* Custom End */

@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mash Able - Premium Admin Template</title>
+    <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Phoenixcoded">
+  <meta name="keywords" content=", Flat ui, Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+  <meta name="author" content="Phoenixcoded">
+  <!-- Favicon icon -->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <!-- Google font-->
+  <link href="https://fonts.googleapis.com/css?family=Mada:300,400,500,600,700" rel="stylesheet">
+  <!-- Required Fremwork -->
+  <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/css/bootstrap.min.css">
+  <!-- themify-icons line icon -->
+  <link href="assets/pages/jquery.filer/css/jquery.filer.css" type="text/css" rel="stylesheet" />
+  <link href="assets/pages/jquery.filer/css/themes/jquery.filer-dragdropbox-theme.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+  <!-- ico font -->
+   <!-- Range slider css -->
+      <link rel="stylesheet" type="text/css" href="../bower_components/seiyria-bootstrap-slider/css/bootstrap-slider.css">
+     <link rel="stylesheet" href="../bower_components/select2/css/select2.min.css" />
+   <!-- Switch component css -->
+    <link rel="stylesheet" type="text/css" href="../bower_components/switchery/css/switchery.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+  <!-- flag icon framework css -->
+  <link rel="stylesheet" type="text/css" href="assets/pages/flag-icon/flag-icon.min.css">
+  <!-- Menu-Search css -->
+  <link rel="stylesheet" type="text/css" href="assets/pages/menu-search/css/component.css">
+  <!--forms-wizard css-->
+  <link rel="stylesheet" type="text/css" href="../bower_components/jquery.steps/css/jquery.steps.css">
+  <!-- Style.css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!--color css-->
+ <!-- Date-Dropper css -->
+      <link rel="stylesheet" type="text/css" href="../bower_components/datedropper/css/datedropper.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="assets/css/linearicons.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/simple-line-icons.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/ionicons.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+</head>
+
+<body>
+    <!-- Pre-loader start -->
+    <div class="theme-loader">
+        <div class="ball-scale">
+            <div></div>
+        </div>
+    </div>
+    <!-- Pre-loader end -->
+
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+
+            <nav class="navbar header-navbar pcoded-header">
+                <div class="navbar-wrapper">
+                    <div class="navbar-logo">
+                        <a class="mobile-menu" id="mobile-collapse" href="#!">
+                            <i class="ti-menu"></i>
+                        </a>
+                        <a class="mobile-search morphsearch-search" href="#">
+                            <i class="ti-search"></i>
+                        </a>
+                        <a href="index.html">
+                            <img class="img-fluid" src="assets/images/logo.png" alt="Theme-Logo" />
+                        </a>
+                        <a class="mobile-options">
+                            <i class="ti-more"></i>
+                        </a>
+                    </div>
+                    <div class="navbar-container container-fluid">
+                        <div>
+                            <ul class="nav-left">
+                                <li>
+                                    <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
+                                </li>
+                                <li>
+                                    <a class="main-search morphsearch-search" href="#">
+                                        <!-- themify icon -->
+                                        <i class="ti-search"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" onclick="javascript:toggleFullScreen()">
+                                        <i class="ti-fullscreen"></i>
+                                    </a>
+                                </li>
+                                <li class="mega-menu-top">
+                                    <a href="#">
+                                        Mega
+                                        <i class="ti-angle-down"></i>
+                                    </a>
+                                    <ul class="show-notification row">
+                                        <li class="col-sm-3">
+                                            <h6 class="mega-menu-title">Popular Links</h6>
+                                            <ul class="mega-menu-links">
+                                                <li><a href="form-elements-component.html">Form Elements</a></li>
+                                                <li><a href="button.html">Buttons</a></li>
+                                                <li><a href="map-google.html">Maps</a></li>
+                                                <li><a href="user-card.html">Contact Cards</a></li>
+                                                <li><a href="user-profile.html">User Information</a></li>
+                                                <li><a href="auth-lock-screen.html">Lock Screen</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="col-sm-3">
+                                            <h6 class="mega-menu-title">Mailbox</h6>
+                                            <ul class="mega-mailbox">
+                                                <li>
+                                                    <a href="#" class="media">
+                                                        <div class="media-left">
+                                                            <i class="ti-folder"></i>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <h5>Data Backup</h5>
+                                                            <small class="text-muted">Store your data</small>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="media">
+                                                        <div class="media-left">
+                                                            <i class="ti-headphone-alt"></i>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <h5>Support</h5>
+                                                            <small class="text-muted">24-hour support</small>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="media">
+                                                        <div class="media-left">
+                                                            <i class="ti-dropbox"></i>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <h5>Drop-box</h5>
+                                                            <small class="text-muted">Store large amount of data in one-box only
+                                                            </small>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="media">
+                                                        <div class="media-left">
+                                                            <i class="ti-location-pin"></i>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <h5>Location</h5>
+                                                            <small class="text-muted">Find Your Location with ease of use</small>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="col-sm-3">
+                                            <h6 class="mega-menu-title">Gallery</h6>
+                                            <div class="row m-b-20">
+                                                <div class="col-sm-4"><img class="img-fluid img-thumbnail" src="assets/images/mega-menu/01.jpg" alt="Gallery-1">
+                                                </div>
+                                                <div class="col-sm-4"><img class="img-fluid img-thumbnail" src="assets/images/mega-menu/02.jpg" alt="Gallery-2">
+                                                </div>
+                                                <div class="col-sm-4"><img class="img-fluid img-thumbnail" src="assets/images/mega-menu/03.jpg" alt="Gallery-3">
+                                                </div>
+                                            </div>
+                                            <div class="row m-b-20">
+                                                <div class="col-sm-4"><img class="img-fluid img-thumbnail" src="assets/images/mega-menu/04.jpg" alt="Gallery-4">
+                                                </div>
+                                                <div class="col-sm-4"><img class="img-fluid img-thumbnail" src="assets/images/mega-menu/05.jpg" alt="Gallery-5">
+                                                </div>
+                                                <div class="col-sm-4"><img class="img-fluid img-thumbnail" src="assets/images/mega-menu/06.jpg" alt="Gallery-6">
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary btn-sm btn-block">Browse Gallery</button>
+                                        </li>
+                                        <li class="col-sm-3">
+                                            <h6 class="mega-menu-title">Contact Us</h6>
+                                            <div class="mega-menu-contact">
+                                                <div class="form-group row">
+                                                    <label for="example-text-input" class="col-3 col-form-label">Name</label>
+                                                    <div class="col-9">
+                                                        <input class="form-control" type="text" placeholder="Artisanal kale" id="example-text-input">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="example-search-input" class="col-3 col-form-label">Email</label>
+                                                    <div class="col-9">
+                                                        <input class="form-control" type="email" placeholder="Enter your E-mail Id" id="example-search-input">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="example-search-input" class="col-3 col-form-label">Contact</label>
+                                                    <div class="col-9">
+                                                        <input class="form-control" type="number" placeholder="+91-9898989898" id="example-search-input-2">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="exampleTextarea" class="col-3 col-form-label">Message</label>
+                                                    <div class="col-9">
+                                                        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav-right">
+                                <li class="header-notification lng-dropdown">
+                                    <a href="#" id="dropdown-active-item">
+                                        <i class="flag-icon flag-icon-gb m-r-5"></i> English
+                                    </a>
+                                    <ul class="show-notification">
+                                        <li>
+                                            <a href="#" data-lng="en">
+                                                <i class="flag-icon flag-icon-gb m-r-5"></i> English
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-lng="es">
+                                                <i class="flag-icon flag-icon-es m-r-5"></i> Spanish
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-lng="pt">
+                                                <i class="flag-icon flag-icon-pt m-r-5"></i> Portuguese
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-lng="fr">
+                                                <i class="flag-icon flag-icon-fr m-r-5"></i> French
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header-notification">
+                                    <a href="#!">
+                                        <i class="ti-bell"></i>
+                                        <span class="badge">5</span>
+                                    </a>
+                                    <ul class="show-notification">
+                                        <li>
+                                            <h6>Notifications</h6>
+                                            <label class="label label-danger">New</label>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <img class="d-flex align-self-center" src="assets/images/user.png" alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <h5 class="notification-user">John Doe</h5>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                    <span class="notification-time">30 minutes ago</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <img class="d-flex align-self-center" src="assets/images/user.png" alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <h5 class="notification-user">Joseph William</h5>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                    <span class="notification-time">30 minutes ago</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <img class="d-flex align-self-center" src="assets/images/user.png" alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <h5 class="notification-user">Sara Soudein</h5>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                    <span class="notification-time">30 minutes ago</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header-notification">
+                                    <a href="#!" class="displayChatbox">
+                                        <i class="ti-comments"></i>
+                                        <span class="badge">9</span>
+                                    </a>
+                                </li>
+                                <li class="user-profile header-notification">
+                                    <a href="#!">
+                                        <img src="assets/images/user.png" alt="User-Profile-Image">
+                                        <span>John Doe</span>
+                                        <i class="ti-angle-down"></i>
+                                    </a>
+                                    <ul class="show-notification profile-notification">
+                                        <li>
+                                            <a href="#!">
+                                                <i class="ti-settings"></i> Settings
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="user-profile.html">
+                                                <i class="ti-user"></i> Profile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="email-inbox.html">
+                                                <i class="ti-email"></i> My Messages
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="auth-lock-screen.html">
+                                                <i class="ti-lock"></i> Lock Screen
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                <i class="ti-layout-sidebar-left"></i> Logout
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- search -->
+                            <div id="morphsearch" class="morphsearch">
+                                <form class="morphsearch-form">
+                                    <input class="morphsearch-input" type="search" placeholder="Search..." />
+                                    <button class="morphsearch-submit" type="submit">Search</button>
+                                </form>
+                                <div class="morphsearch-content">
+                                    <div class="dummy-column">
+                                        <h2>People</h2>
+                                        <a class="dummy-media-object" href="#!">
+                                            <img class="round" src="http://0.gravatar.com/avatar/81b58502541f9445253f30497e53c280?s=50&d=identicon&r=G" alt="Sara Soueidan" />
+                                            <h3>Sara Soueidan</h3>
+                                        </a>
+                                        <a class="dummy-media-object" href="#!">
+                                            <img class="round" src="http://1.gravatar.com/avatar/9bc7250110c667cd35c0826059b81b75?s=50&d=identicon&r=G" alt="Shaun Dona" />
+                                            <h3>Shaun Dona</h3>
+                                        </a>
+                                    </div>
+                                    <div class="dummy-column">
+                                        <h2>Popular</h2>
+                                        <a class="dummy-media-object" href="#!">
+                                            <img src="assets/images/avatar-1.png" alt="PagePreloadingEffect" />
+                                            <h3>Page Preloading Effect</h3>
+                                        </a>
+                                        <a class="dummy-media-object" href="#!">
+                                            <img src="assets/images/avatar-1.png" alt="DraggableDualViewSlideshow" />
+                                            <h3>Draggable Dual-View Slideshow</h3>
+                                        </a>
+                                    </div>
+                                    <div class="dummy-column">
+                                        <h2>Recent</h2>
+                                        <a class="dummy-media-object" href="#!">
+                                            <img src="assets/images/avatar-1.png" alt="TooltipStylesInspiration" />
+                                            <h3>Tooltip Styles Inspiration</h3>
+                                        </a>
+                                        <a class="dummy-media-object" href="#!">
+                                            <img src="assets/images/avatar-1.png" alt="NotificationStyles" />
+                                            <h3>Notification Styles Inspiration</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- /morphsearch-content -->
+                                <span class="morphsearch-close"><i class="icofont icofont-search-alt-1"></i></span>
+                            </div>
+                            <!-- search end -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Sidebar chat start -->
+            <div id="sidebar" class="users p-chat-user showChat">
+                <div class="had-container">
+                    <div class="card card_main p-fixed users-main">
+                        <div class="user-box">
+                            <div class="card-block">
+                                <div class="right-icon-control">
+                                    <input type="text" class="form-control  search-text" placeholder="Search Friend" id="search-friends">
+                                    <div class="form-icon">
+                                        <i class="icofont icofont-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-friend-list">
+                                <div class="media userlist-box" data-id="1" data-status="online" data-username="Josephin Doe" data-toggle="tooltip" data-placement="left" title="Josephin Doe">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-circle" src="assets/images/avatar-1.png" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Josephin Doe</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="2" data-status="online" data-username="Lary Doe" data-toggle="tooltip" data-placement="left" title="Lary Doe">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-circle" src="assets/images/task/task-u1.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Lary Doe</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="3" data-status="online" data-username="Alice" data-toggle="tooltip" data-placement="left" title="Alice">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-circle" src="assets/images/avatar-2.png" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Alice</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="4" data-status="online" data-username="Alia" data-toggle="tooltip" data-placement="left" title="Alia">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-circle" src="assets/images/task/task-u2.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Alia</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="5" data-status="online" data-username="Suzen" data-toggle="tooltip" data-placement="left" title="Suzen">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-circle" src="assets/images/task/task-u3.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Suzen</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="6" data-status="offline" data-username="Michael Scofield" data-toggle="tooltip" data-placement="left" title="Michael Scofield">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-circle" src="assets/images/avatar-3.png" alt="Generic placeholder image">
+                                        <div class="live-status bg-danger"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Michael Scofield</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="7" data-status="online" data-username="Irina Shayk" data-toggle="tooltip" data-placement="left" title="Irina Shayk">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-circle" src="assets/images/avatar-4.png" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Irina Shayk</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="8" data-status="offline" data-username="Sara Tancredi" data-toggle="tooltip" data-placement="left" title="Sara Tancredi">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-circle" src="assets/images/avatar-5.png" alt="Generic placeholder image">
+                                        <div class="live-status bg-danger"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Sara Tancredi</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="9" data-status="online" data-username="Samon" data-toggle="tooltip" data-placement="left" title="Samon">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-circle" src="assets/images/avatar-1.png" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Samon</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="10" data-status="online" data-username="Daizy Mendize" data-toggle="tooltip" data-placement="left" title="Daizy Mendize">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-circle" src="assets/images/task/task-u3.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Daizy Mendize</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="11" data-status="offline" data-username="Loren Scofield" data-toggle="tooltip" data-placement="left" title="Loren Scofield">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-circle" src="assets/images/avatar-3.png" alt="Generic placeholder image">
+                                        <div class="live-status bg-danger"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Loren Scofield</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="12" data-status="online" data-username="Shayk" data-toggle="tooltip" data-placement="left" title="Shayk">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-circle" src="assets/images/avatar-4.png" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Shayk</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="13" data-status="offline" data-username="Sara" data-toggle="tooltip" data-placement="left" title="Sara">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-circle" src="assets/images/task/task-u3.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-danger"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Sara</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="14" data-status="online" data-username="Doe" data-toggle="tooltip" data-placement="left" title="Doe">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-circle" src="assets/images/avatar-1.png" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Doe</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="15" data-status="online" data-username="Lary" data-toggle="tooltip" data-placement="left" title="Lary">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-circle" src="assets/images/task/task-u1.jpg" alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Lary</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar inner chat start-->
+            <div class="showChat_inner">
+                <div class="media chat-inner-header">
+                    <a class="back_chatBox">
+                        <i class="icofont icofont-rounded-left"></i> Josephin Doe
+                    </a>
+                </div>
+                <div class="media chat-messages">
+                    <a class="media-left photo-table" href="#!">
+                        <img class="media-object img-circle m-t-5" src="assets/images/avatar-1.png" alt="Generic placeholder image">
+                    </a>
+                    <div class="media-body chat-menu-content">
+                        <div class="">
+                            <p class="chat-cont">I'm just looking around. Will you tell me something about yourself?</p>
+                            <p class="chat-time">8:20 a.m.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="media chat-messages">
+                    <div class="media-body chat-menu-reply">
+                        <div class="">
+                            <p class="chat-cont">I'm just looking around. Will you tell me something about yourself?</p>
+                            <p class="chat-time">8:20 a.m.</p>
+                        </div>
+                    </div>
+                    <div class="media-right photo-table">
+                        <a href="#!">
+                            <img class="media-object img-circle m-t-5" src="assets/images/avatar-2.png" alt="Generic placeholder image">
+                        </a>
+                    </div>
+                </div>
+                <div class="chat-reply-box p-b-20">
+                    <div class="right-icon-control">
+                        <input type="text" class="form-control search-text" placeholder="Share Your Thoughts">
+                        <div class="form-icon">
+                            <i class="icofont icofont-paper-plane"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar inner chat end-->
+            <div class="pcoded-main-container">
+                <div class="pcoded-wrapper">
+                    <nav class="pcoded-navbar">
+                        <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+                        <div class="pcoded-inner-navbar main-menu">
+
+                            <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">Navigation</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="pcoded-hasmenu">
+                                    <a href="javascript:void(0)">
+                                        <span class="pcoded-micon"><i class="ti-home"></i></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                    <ul class="pcoded-submenu">
+                                        <li class="">
+                                            <a href="index.html">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext" data-i18n="nav.dash.default">Default</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="dashboard-ecommerce.html">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext" data-i18n="nav.dash.ecommerce">Ecommerce</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="dashboard-crm.html">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext" data-i18n="nav.dash.crm">CRM</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="dashboard-analytics.html">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext" data-i18n="nav.dash.analytics">Analytics</span>
+                                                <span class="pcoded-badge label label-info ">NEW</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="dashboard-project.html">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext" data-i18n="nav.dash.project">Project</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                    <a href="Job-Submission.html">
+                                        <span class="pcoded-micon"><i class="ti-user"></i></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.sample-page.main">Applicant Submission</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="Job-Description.html">
+                                        <span class="pcoded-micon"><i class="ti-briefcase"></i></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.sample-page.main">Job Description</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="candidate-apply.html">
+                                        <span class="pcoded-micon"><i class="ti-user"></i></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.sample-page.main">Candidate Application</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="pcoded-content">
+                        <div class="pcoded-inner-content">
+                            <!-- Main-body start -->
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <!-- Page header start -->
+                                    <div class="page-header">
+                                        <div class="page-header-title">
+                                            <h4>Job Description Form</h4>
+                                            <!-- <span>Lorem ipsum dolor sit <code>amet</code>, consectetur adipisicing elit</span> -->
+                                        </div>
+                                        <div class="page-header-breadcrumb">
+                                            <ul class="breadcrumb-title">
+                                                <li class="breadcrumb-item">
+                                                    <a href="index.html">
+                                                        <i class="icofont icofont-home"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="breadcrumb-item"><a href="#!">Applicant Submission Form</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Page header end -->
+                                    <!-- Page body start -->
+                                    <div class="page-body">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <!-- Form wizard with validation card start -->
+                                                <div class="card">
+                                                    <div class="card-block">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div id="wizard-3">
+                                                                    <div class="col-lg-12 col-xl-12">
+                                                                        <ul class="nav nav-tabs md-tabs " role="tablist">
+                                                                            <li class="nav-item big-font">
+                                                                                <a class="nav-link active big-font" data-toggle="tab" href="#home7" role="tab"><i class="icofont icofont-briefcase-alt-2"></i>&nbsp;&nbsp;&nbsp;Job Details</a>
+                                                                                <div class="slide"></div>
+                                                                            </li>
+                                                                            <li class="nav-item " >
+                                                                                <a class="nav-link big-font" data-toggle="tab" href="#profile7" role="tab"><i class="icofont icofont-pencil-alt-2"></i>&nbsp;&nbsp;&nbsp;Create Questionnaire</a>
+                                                                                <div class="slide"></div>
+                                                                            </li>
+                                                                            <li class="nav-item ">
+                                                                                <a class="nav-link big-font" data-toggle="tab" href="#messages7" role="tab"><i class="icofont icofont-business-man-alt-2"></i>&nbsp;&nbsp;&nbsp;Assign to ...</a>
+                                                                                <div class="slide"></div>
+                                                                            </li>
+                                                                        </ul>
+                                                                <!-- Tab panes -->
+                                                                <div class="tab-content card-block">
+                                                                    <div class="tab-pane active" id="home7" role="tabpanel">
+                                                                    <div class="card-block" id="its-height">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-4 col-lg-4 ">
+                                                                                <div class="input-group">
+                                                                                    <input type="text" class="form-control" placeholder="Company">
+                                                                                    <span class="input-group-addon">
+                                                                                       <i class="icofont icofont-company"></i>
+                                                                                    </span>
+                                                                               </div>
+                                                                            </div>
+                                                                            <div class="col-sm-4 col-lg-4 ">
+                                                                                <div class="input-group">
+                                                                                    <input type="text" class="form-control" placeholder="Job Title">
+                                                                                    <span class="input-group-addon">
+                                                                                       <i class="icofont icofont-job-search"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-sm-4 col-lg-4 ">
+                                                                                <div class="input-group">
+                                                                                    <input type="text" class="form-control" placeholder="Location">
+                                                                                    <span class="input-group-addon">
+                                                                                       <i class="icofont icofont-location-pin"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <hr>
+                                                                        <br>
+                                                                        <div class="row">
+                                                                            <div class="col-sm-2 col-lg-2">
+                                                                                <b><label for="name-1" class="block">Job Function </label></b>
+                                                                            </div>
+                                                                            <div class="col-sm-10">
+                                                                                <div class="input-group">
+                                                                                    <select class="js-example-tags col-sm-12" multiple="multiple">
+                                                                                        <option value="AL">HR</option>
+                                                                                        <option value="WY">Development</option>
+                                                                                        <option value="WY">Finance</option>
+                                                                                        <option value="WY">Marketing</option>
+                                                                                        <option value="WY">Networking</option>
+                                                                                    </select>
+                                                                                    <span class="input-group-addon">
+                                                                                        <i class="icofont icofont-listing-number"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-sm-2 col-lg-2">
+                                                                                <b><label for="phone-1" class="block">Upload JD</label></b>
+                                                                            </div>
+                                                                            <div class="col-sm-10 col-lg-10">
+                                                                                <input type="file" name="files[]" id="filer_input"  multiple="multiple">
+                                                                            </div>
+                                                                        </div>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-2 col-lg-2">
+                                                                            <b><label for="name-1" class="block">Start Date </label></b>
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-lg-4">
+                                                                            <div class="input-group">
+                                                                                <input id="dropper-default" class="form-control" type="text" placeholder="Select your date" />
+
+                                                                                <span class="input-group-addon">
+                                                                                    <i class="icofont icofont-calendar"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-2 col-lg-2">
+                                                                            <b><label for="name-2" class="block">End Date </label></b>
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-lg-4 ">
+                                                                            <div class="input-group">
+                                                                                <input id="dropper-animation" class="form-control" type="text" placeholder="Select your date" />
+                                                                                <span class="input-group-addon">
+                                                                                    <i class="icofont icofont-calendar"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>  
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-sm-2 col-lg-2">
+                                                                            <b> <label for="name-1" class="block">Country </label></b>
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-lg-4 ">
+                                                                            <div class="input-group">
+                                                                                <select class="form-control">
+                                                                                    <option value="" selected>Select country</option>
+                                                                                    <option value="Australia">Australia</option>
+                                                                                    <option value="Austria">Austria</option>
+                                                                                    <option value="Brazil">Brazil</option>
+                                                                                    <option value="Canada">Canada</option>
+                                                                                    <option value="Germany">Germany</option>
+                                                                                    <option value="India">India</option>
+                                                                                    <option value="Italy">Italy</option>
+                                                                                    <option value="Japan">Japan</option>
+                                                                                    <option value=">Netherlands">Netherlands</option>
+                                                                                    <option value=">New Zealand">New Zealand</option>
+                                                                                    <option value="Philippines">Philippines</option>
+                                                                                    <option value="Portugal">Portugal</option>
+                                                                                    <option value="South Africa">South Africa</option>
+                                                                                    <option value="Spain">Spain</option>
+                                                                                    <option value="Switzerland">Switzerland</option>
+                                                                                    <option value="Sweden">Sweden</option>
+                                                                                    <option value="Turkey">Turkey</option>
+                                                                                    <option value="j-United Arab Emirates">j-United Arab Emirates</option>
+                                                                                    <option value="j-United Kingdom">j-United Kingdom</option>
+                                                                                    <option value="USA">USA</option>
+                                                                                </select>
+                                                                                <span class="input-group-addon">
+                                                                                <i class="icofont icofont-globe-alt"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-2 col-lg-2">
+                                                                            <b><label for="name-2" class="block">City </label></b>
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-lg-4 ">
+                                                                            <div class="input-group">
+                                                                                <input type="text" class="form-control"/>
+                                                                                <span class="input-group-addon">
+                                                                                    <i class="icofont icofont-ui-map"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>  
+                                                                    </div>
+
+                                                                    <!-- Image upload card start -->
+                                                                    <div class="row">
+
+                                                                        <div class="col-sm-2 col-lg-2">
+                                                                            <b><label for="name-2" class="block">PIN Code </label></b>
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-lg-4 ">
+                                                                            <div class="input-group">
+                                                                                <input type="text" class="form-control">
+                                                                                <span class="input-group-addon">
+                                                                                 <i class="icofont icofont-pin"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <div class="row">   
+
+                                                                        <div class="col-sm-2 col-lg-2">
+                                                                            <b><label for="name-1" class="block">Required Experience</label></b>
+                                                                        </div>
+                                                                        <div class="col-sm-8 col-lg-8 ">
+                                                                            <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14">
+                                                                            <span id="ex6SliderVal">(3)</span>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <br>
+
+                                                                    <div class="row">
+                                                                        <div class="col-sm-2 col-lg-2">
+                                                                            <b><label for="name-1" class="block">Required Skills </label></b>
+                                                                        </div>
+                                                                        <div class="col-sm-6 col-lg-6 ">
+                                                                            <div class="input-group">
+                                                                                <select class="js-example-tags col-sm-12" multiple="multiple">
+                                                                                    <option value="AL">Java</option>
+                                                                                    <option value="WY">JavaScript</option>
+                                                                                    <option value="WY">JQuery</option>
+                                                                                    <option value="WY">Ajax</option>
+                                                                                    <option value="WY">JSON</option>
+                                                                                </select>
+                                                                                <span class="input-group-addon">
+                                                                                    <i class="icofont icofont-listing-number"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                  <div class="tab-pane" id="profile7" role="tabpanel">
+                                                   
+                                                  <div class="card-block">
+                                                        <h5>Question Of Quality Assurnace Job Post</h5>
+                                                    </div>
+                                                    <div class="card-block p-t-0">
+                                                        <div class="card-msg b-b-default p-b-10">
+														
+                                                            <div class="card-msg-contain">
+                                                              <h6>What is your experience in Quality Assurance?</h6>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-msg b-b-default p-t-10 p-b-10">
+                                                            <div class="card-msg-contain">
+                                                               <h6>How quality assurance iprove the market?</h6>
+                                                              </div>
+														</div>
+                                                        <div class="card-msg b-b-default p-t-10 p-b-10">
+                                                            <div class="card-msg-contain">
+                                                               <h6>Name some automation challenges that SQA team faces while testing</h6>
+                                                             </div>
+                                                        </div>
+                                                        <div class="card-msg p-t-10">
+                                                           
+                                                            <div class="card-msg-contain">
+                                                               <h6>What are roles of software quality assurance engineer?</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="post-new-contain row card-block">
+                                                                <div class="col-md-1 col-xs-3 post-profile">
+                                                                    <img src="assets/images/social/pro_icon.jpg" class="img-fluid" alt="">
+                                                                </div>
+                                                                <form class="col-md-11 col-xs-9">
+                                                                    <div class="">
+                                                                        <textarea id="post-message" class="form-control post-input" rows="3" cols="10" required="" placeholder="Write Questions...."></textarea>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                            <div class="post-new-footer b-t-muted p-15">
+                                                                <span class="image-upload m-r-15" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add Photos">
+                                                                  <label for="file-input" class="file-upload-lbl">
+                                                                    <i class="icofont icofont-image text-muted"></i>
+                                                                </label>
+                                                                <input id="file-input" type="file" accept="image/x-png,image/gif,image/jpeg">
+                                                            </span>
+                                                            <i class="icofont icofont-ui-user text-muted"></i>
+                                                            <i class="icofont icofont-ui-map text-muted"></i>
+                                                            <span><a href="#" id="post-new" class="btn btn-primary waves-effect waves-light f-right" >ADD</a></span>
+                                                            
+                                                        </div>
+                                                   
+
+
+                                                        </div>
+                                                        <div class="tab-pane" id="messages7" role="tabpanel">
+                                                            
+                                                        
+                                                            <div class="row">                            <!-- Task list card start -->
+                                                                <div class="col-sm-4">
+                                                                    <div class="new-card">
+                                                                        <div class="card-header">
+                                                                            <h5 class="card-header-text"><i class="icofont icofont-users-alt-4"></i>  Settings</h5>
+                                                                        </div>
+                                                                       <br>
+                                                                          <div class="row">
+
+                                                                            <div class=" col-sm-10 ">
+                                                                                <h6>Job post to public</h6>
+                                                                            </div>
+                                                                            <div class="col-sm-2">                   
+                                                                                <input type="checkbox" class="js-small" checked>
+                                                                            </div>
+                                                                          <!--   <div class="col-sm-12"></div> --><br/><br/>
+                                                                            <div class="col-sm-10 ">
+                                                                                <h6>Job post to internal team</h6>
+                                                                            </div>
+                                                                            <div class="col-sm-2 ">
+                                                                                <input type="checkbox" class="js-small2" checked>
+                                                                            </div>
+                                                                        </div>
+                                                          
+                                                                            
+                                                                          
+                                                                           
+                                                                        
+                                                                    </div>
+                                                                    <div class="new-card">
+                                                                        <div class="card-header">
+                                                                            <h5 class="card-header-text"><i class="icofont icofont-users-alt-4"></i>  Assigned users</h5>
+                                                                        </div>
+                                                                        <div class="card-block user-box assign-user">
+                                                                            <div class="media">
+                                                                                <div class="media-left media-middle photo-table">
+                                                                                    <a href="#">
+                                                                                        <img class="img-circle" src="assets/images/avatar-3.png" alt="chat-user">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="media-body">
+                                                                                    <h6>Sortino media</h6>
+                                                                                    <p>Recruiter</p>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="#!" class="text-muted"> <i class="icofont icofont-ui-delete"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media">
+                                                                                <div class="media-left media-middle photo-table">
+                                                                                    <a href="#">
+                                                                                        <img class="img-circle" src="assets/images/avatar-2.png" alt="chat-user">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="media-body">
+                                                                                    <h6>Larry heading </h6>
+                                                                                    <p>Senior Recruiter</p>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="#!" class="text-muted"> <i class="icofont icofont-ui-delete"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media">
+                                                                                <div class="media-left media-middle photo-table">
+                                                                                    <a href="#">
+                                                                                        <img class="img-circle" src="assets/images/avatar-1.png" alt="chat-user">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="media-body">
+                                                                                    <h6>Mark</h6>
+                                                                                    <p>HR</p>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="#!" class="text-muted"> <i class="icofont icofont-ui-delete"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media p-0 d-flex">
+                                                                                <div class="media-left media-middle photo-table">
+                                                                                    <a href="#">
+                                                                                        <img class="img-circle" src="assets/images/avatar-4.png" alt="chat-user">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="media-body">
+                                                                                    <h6>John Doe</h6>
+                                                                                    <p>Recruiter</p>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="#!" class="text-muted"> <i class="icofont icofont-ui-delete"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                     
+                                                                </div>
+
+                                                                <div class="col-sm-8">
+                                                                    <div class="new-card">
+                                                                        <div class="card-block">
+                                                                            <!-- Row start -->
+                                                                            <div class="row">
+                                                                                <div class="col-lg-12">     
+                                                                                    <!-- Nav tabs -->
+                                                                                    <ul class="nav nav-tabs md-tabs" role="tablist">
+                                                                                        <li class="nav-item">
+                                                                                            <a class="nav-link active" data-toggle="tab" href="#home3" role="tab">Company Recruiters</a>
+                                                                                            <div class="slide"></div>
+                                                                                        </li>
+                                                                                        <li class="nav-item">
+                                                                                            <a class="nav-link" data-toggle="tab" href="#profile3" role="tab">Partners</a>
+                                                                                            <div class="slide"></div>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <!-- Tab panes -->
+                                                                                    <div class="tab-content card-block">
+                                                                                        <div class="tab-pane active" id="home3" role="tabpanel">
+                                                                                            <div class="row">
+                                                                                                <div class="col-lg-4">
+                                                                                                    <div class="card rounded-card user-card">
+                                                                                                        <div class="card-block">
+                                                                                                            <div class="img-hover">
+                                                                                                                <img class="img-fluid img-circle" src="assets/images/avatar-2.png" alt="chat-user">
+                                                                                                                <div class="img-overlay">
+                                                                                                                    <span>
+                                                                                                                        <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                                                                        <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                                                                    </span>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="user-content">
+                                                                                                                <h4 class="">Howard Hatfield</h4>
+                                                                                                                <h5 class="">Recruiter</h5>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-lg-4">
+                                                                                                    <div class="card rounded-card user-card">
+                                                                                                        <div class="card-block">
+                                                                                                            <div class="img-hover">
+                                                                                                                <img class="img-fluid img-circle" src="assets/images/avatar-1.png" alt="chat-user">
+                                                                                                                <div class="img-overlay">
+                                                                                                                    <span>
+                                                                                                                        <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                                                                        <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                                                                    </span>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="user-content">
+                                                                                                                <h4 class="">James Doy</h4>
+                                                                                                                <h5 class="">Recruiter</h5>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                
+                                                                                               
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="tab-pane" id="profile3" role="tabpanel">
+                                                                                            <div class="row">
+                                                                                                <div class="col-lg-4">
+                                                                                                    <div class="card rounded-card user-card">
+                                                                                                        <div class="card-block">
+                                                                                                            <div class="img-hover">
+                                                                                                                <img class="img-fluid img-circle" src="assets/images/avatar-2.png" alt="chat-user">
+                                                                                                                <div class="img-overlay">
+                                                                                                                    <span>
+                                                                                                                        <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                                                                        <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                                                                    </span>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="user-content">
+                                                                                                                <h4 class="">Howard Hatfield</h4>
+                                                                                                                <h5 class="">Microsoft</h5>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-lg-4">
+                                                                                                    <div class="card rounded-card user-card">
+                                                                                                        <div class="card-block">
+                                                                                                            <div class="img-hover">
+                                                                                                                <img class="img-fluid img-circle" src="assets/images/avatar-3.png" alt="chat-user">
+                                                                                                                <div class="img-overlay">
+                                                                                                                    <span>
+                                                                                                                        <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                                                                        <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                                                                    </span>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="user-content">
+                                                                                                                <h4 class="">Micheal Chord</h4>
+                                                                                                                <h5 class="">Oracle</h5>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-lg-4">
+                                                                                                    <div class="card rounded-card user-card">
+                                                                                                        <div class="card-block">
+                                                                                                            <div class="img-hover">
+                                                                                                                <img class="img-fluid img-circle" src="assets/images/avatar-1.png" alt="chat-user">
+                                                                                                                <div class="img-overlay">
+                                                                                                                    <span>
+                                                                                                                        <a href="#" class="btn btn-sm btn-primary" data-popup="lightbox"><i class="icofont icofont-plus"></i></a>
+                                                                                                                        <a href="" class="btn btn-sm btn-primary"><i class="icofont icofont-link-alt"></i></a>
+                                                                                                                    </span>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="user-content">
+                                                                                                                <h4 class="">J V Jack</h4>
+                                                                                                                <h5 class="">Delloite</h5>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                               
+                                                                                              
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page body end -->
+    </div>
+</div>
+<!-- Main-body end -->
+
+<div id="styleSelector">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- Warning Section Starts -->
+<!-- Older IE warning message -->
+    <!--[if lt IE 9]>
+<div class="ie-warning">
+    <h1>Warning!!</h1>
+    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+    <div class="iew-container">
+        <ul class="iew-download">
+            <li>
+                <a href="http://www.google.com/chrome/">
+                    <img src="assets/images/browser/chrome.png" alt="Chrome">
+                    <div>Chrome</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mozilla.org/en-US/firefox/new/">
+                    <img src="assets/images/browser/firefox.png" alt="Firefox">
+                    <div>Firefox</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.opera.com">
+                    <img src="assets/images/browser/opera.png" alt="Opera">
+                    <div>Opera</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.apple.com/safari/">
+                    <img src="assets/images/browser/safari.png" alt="Safari">
+                    <div>Safari</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                    <img src="assets/images/browser/ie.png" alt="">
+                    <div>IE (9 & above)</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p>Sorry for the inconvenience!</p>
+</div>
+<![endif]-->
+<!-- Warning Section Ends -->
+<!-- Required Jquery -->
+<script type="text/javascript" src="../bower_components/jquery/js/jquery.min.js"></script>
+<script type="text/javascript" src="../bower_components/jquery-ui/js/jquery-ui.min.js"></script> 
+<script type="text/javascript" src="../bower_components/popper.js/js/popper.min.js"></script>
+<script type="text/javascript" src="../bower_components/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- jquery slimscroll js -->
+<script type="text/javascript" src="../bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+
+<!-- modernizr js -->
+<script type="text/javascript" src="../bower_components/modernizr/js/modernizr.js"></script>
+<script type="text/javascript" src="../bower_components/modernizr/js/css-scrollbars.js"></script>
+
+<!-- classie js -->
+<script type="text/javascript" src="../bower_components/classie/js/classie.js"></script>
+
+<!-- i18next.min.js -->
+<script type="text/javascript" src="../bower_components/i18next/js/i18next.min.js"></script>
+<script type="text/javascript" src="../bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js"></script>
+<script type="text/javascript" src="../bower_components/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js"></script>
+<script type="text/javascript" src="../bower_components/jquery-i18next/js/jquery-i18next.min.js"></script>
+
+<!--Forms - Wizard js-->
+<script src="../bower_components/jquery.cookie/js/jquery.cookie.js"></script>
+<script src="../bower_components/jquery.steps/js/jquery.steps.js"></script>
+<script src="../bower_components/jquery-validation/js/jquery.validate.js"></script>
+
+<!-- Validation js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+<script type="text/javascript" src="assets/pages/form-validation/validate.js"></script>
+
+<!-- Custom js -->
+<script type="text/javascript" src="assets/js/script.js"></script>
+<script src="assets/pages/forms-wizard-validation/form-wizard.js"></script>
+<!-- jquery file upload js -->
+<script src="assets/pages/jquery.filer/js/jquery.filer.min.js"></script>
+<script src="assets/pages/filer/custom-filer.js" type="text/javascript"></script>
+<script src="assets/pages/filer/jquery.fileuploads.init.js" type="text/javascript"></script>
+
+<script src="assets/js/pcoded.min.js"></script>
+<script src="assets/js/demo-12.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/jquery.mousewheel.min.js"></script>
+<!-- range slider js -->
+<script type="text/javascript" src="../bower_components/seiyria-bootstrap-slider/js/bootstrap-slider.js"></script>
+<script type="text/javascript" src="../bower_components/select2/js/select2.full.min.js"></script>
+<!-- Date-dropper js -->
+<script type="text/javascript" src="../bower_components/datedropper/js/datedropper.min.js"></script>
+<!-- Switch component js -->
+<script type="text/javascript" src="../bower_components/switchery/js/switchery.min.js"></script>
+
+
+<script>
+
+   $(function() {
+      $("#filer_input").on("change", function(){
+         var files = !!this.files ? this.files : [];
+   if (!files.length || !window.FileReader) return; // Check if File is selected, or no FileReader support
+   if (/^image/.test( files[0].type)){ //  Allow only image upload
+    var ReaderObj = new FileReader(); // Create instance of the FileReader
+    ReaderObj.readAsDataURL(files[0]); // read the file uploaded
+    ReaderObj.onloadend = function(){ // set uploaded image data as background of div
+        $("#PreviewPicture").css("background-image", "url("+this.result+")");
+        $("#PreviewPicture").css("background-size", "100% 100%");
+    }
+}else{
+    alert("Upload an image");
+}
+});
+  });
+
+</script>
+<script>
+$('#ex1').bootstrapSlider({
+  formatter: function(value) {
+    $("#ex1").on("slide", function(slideEvt) {
+    $("#ex6SliderVal").text(slideEvt.value+" "+"years");
+});
+  }
+});
+
+    </script>
+    <script>
+    $('#skill-select').select2();    
+    </script>
+    <script>
+$("#dropper-default").dateDropper( {
+        dropWidth: 200,
+        dropPrimaryColor: "#1abc9c", 
+        dropBorder: "1px solid #1abc9c"
+    }),
+$("#dropper-animation").dateDropper( {
+        dropWidth: 200,
+        init_animation: "bounce",
+        dropPrimaryColor: "#1abc9c", 
+        dropBorder: "1px solid #1abc9c"
+    })
+    </script>
+    <script>
+ $(".js-example-tags").select2({
+        tags: true
+    });
+    </script>
+    <script>
+var elemsmall = document.querySelector('.js-small');
+ var switchery = new Switchery(elemsmall, { color: '#1abc9c', jackColor: '#fff', size: 'small' });
+ var elemsmall = document.querySelector('.js-small2');
+ var switchery = new Switchery(elemsmall, { color: '#1abc9c', jackColor: '#fff', size: 'small' });
+    </script>
+</body>
+
+</html>

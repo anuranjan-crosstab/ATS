@@ -649,10 +649,17 @@
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
-                                <li class="active">
+                                <li class="">
                                     <a href="job-search-3.html">
                                         <span class="pcoded-micon"><i class="ti-user"></i></span>
                                         <span class="pcoded-mtext" data-i18n="nav.sample-page.main">Calibre</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="job-search-3.html">
+                                        <span class="pcoded-micon"><i class="ti-user"></i></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.sample-page.main">Create Job</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
@@ -667,7 +674,7 @@
             <!-- Page header start -->
             <div class="page-header">
                 <div class="page-header-title">
-                    <h4>Job Board</h4>
+                    <h4>Create Job</h4>
                 </div>
                 <div class="page-header-breadcrumb">
                     <ul class="breadcrumb-title">
@@ -676,9 +683,9 @@
                                 <i class="icofont icofont-home"></i>
                             </a>
                         </li>
-                        <li class="breadcrumb-item"><a href="#!">Job</a>
+                        <li class="breadcrumb-item"><a href="#!">Jobs</a>
                         </li>
-                        <li class="breadcrumb-item"><a href="#!">Job Board</a>
+                        <li class="breadcrumb-item"><a href="#!">Create Job</a>
                         </li>
                     </ul>
                 </div>
@@ -689,495 +696,58 @@
                 <div class="row">
                     <!-- Left column start -->
                     <div class="col-xl-12 col-lg-12 filter-bar">
-                        <!-- Nav Filter tab start -->
-                        <nav class="navbar navbar-light bg-faded m-b-30 p-10">
-                            <ul class="nav navbar-nav" id="job-list-filter">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#!">Filter: <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#!" id="bydate" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-clock-time"></i> Date</a>
-                                    <div class="dropdown-menu" aria-labelledby="bydate">
-                                        <a class="dropdown-item" href="#!">Show all</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#!">Today</a>
-                                        <a class="dropdown-item" href="#!">Yesterday</a>
-                                        <a class="dropdown-item" href="#!">Last week</a>
-                                        <a class="dropdown-item" href="#!">Last month</a>
-                                        <a class="dropdown-item" href="#!">This year</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#!">Custom</a>
-                                    </div>
-                                </li>
-                                <!-- end of by date dropdown -->
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#!" id="bypriority" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-location-pin"></i> Country</a>
-                                    <div class="dropdown-menu" aria-labelledby="bystatus" style="padding-left: 10px;">
-                                        <form>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>See All</span>
-                                                </label>
-                                            </div>
-                                            <div class="dropdown-divider"></div>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>India</span>
-                                                </label>
-                                            </div>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>USA</span>
-                                                </label>
-                                            </div>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>Canada</span>
-                                                </label>
-                                            </div>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>England</span>
-                                                </label>
-                                            </div>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>Phillipines</span>
-                                                </label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </li>
-                                <!-- end of by title dropdown -->
-                                <!-- <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#!" id="bypriority" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-job-search"></i> Job Title</a>
-                                    <div class="dropdown-menu" aria-labelledby="bystatus" style="padding-left: 10px; min-width: 14em;">
-                                        <form>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>See All</span>
-                                                </label>
-                                            </div>
-                                            <div class="dropdown-divider"></div>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>Web Developer</span>
-                                                </label>
-                                            </div>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>Team Lead</span>
-                                                </label>
-                                            </div>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>Front End Developer</span>
-                                                </label>
-                                            </div>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>Business Analyst</span>
-                                                </label>
-                                            </div>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>Business Developer</span>
-                                                </label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </li> -->
-                                <!-- end of by skills dropdown -->
-                                <!-- <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#!" id="bypriority" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-sub-listing"></i> Skills</a>
-                                    <div class="dropdown-menu" aria-labelledby="bypriority">
-                                        <a class="dropdown-item" href="#!">Show all</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#!">Developer</a>
-                                        <a class="dropdown-item" href="#!">Front end designer </a>
-                                        <a class="dropdown-item" href="#!">UX designer</a>
-                                        <a class="dropdown-item" href="#!">Software engineer </a>
-                                    </div>
-                                </li> -->
-                                <!-- end of by company dropdown -->
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#!" id="bypriority" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-company"></i> Company</a>
-                                    <div class="dropdown-menu" aria-labelledby="bystatus" style="padding-left: 10px;">
-                                        <form>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>See All</span>
-                                                </label>
-                                            </div>
-                                            <div class="dropdown-divider"></div>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>Company</span>
-                                                </label>
-                                            </div>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>Partner 1</span>
-                                                </label>
-                                            </div>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>Partner 2</span>
-                                                </label>
-                                            </div>
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr">
-                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                    </span> <span>Partner 3</span>
-                                                </label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown" style="position: absolute; top: 0; right: 0; padding-right: 0;">
-                                    <a class="nav-link" href="#!" id="bypriority"><i class="icofont icofont-ui-close"></i></a>
-                                </li>
-                                </ul>
-                                <div class="nav-item nav-grid" style="padding-right: 30px">
-                                    <span class="m-r-15">View Mode: </span>
-                                    <button type="button" class="btn btn-sm btn-primary waves-effect waves-light m-r-10" data-toggle="tooltip" data-placement="top" title="list view">
-                                        <i class="icofont icofont-listine-dots"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-sm btn-primary waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="grid view">
-                                        <i class="icofont icofont-table"></i>
-                                    </button>
-                                </div>
-                                <!-- end of by priority dropdown -->
-                                    <form style="width: 100%; margin-top: 10px;">
-                                        <div class="form-group row">
-                                            <div class="col-sm-3">
-                                                <input type="text" class="form-control" placeholder="Job Title">
-                                             </div>
-                                            <div class="col-sm-3">
-                                                <input type="text" class="form-control" placeholder="Location">
-                                            </div>
-                                            <div class="input-group col-sm-6">
-                                                <select class="js-example-tokenizer col-sm-12" multiple="multiple">
-                                                    <option value="AL">PHP</option>
-                                                    <option value="WY">MySQL</option>
-                                                    <option value="WY">GIT</option>
-                                                    <option value="WY">AJAX</option>
-                                                    <option value="WY">jQuery</option>
-                                                </select>
-                                                <span class="input-group-addon"> Skills
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </form>
-                        </nav>
-                        <!-- Nav Filter tab end -->
                         <!-- Task board design block start-->
                         <div class="row">
-                                        <!-- Left column start -->
-                                        <div class="col-lg-12">
-                                            <div class="job-card card-columns">
-                                                <!-- Job card start -->
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <div class="media">
-                                                            <a class="media-left media-middle" href="#">
-                                                                <img class="media-object img-60" src="assets/images/avatar-3.png" alt="Generic placeholder image">
-                                                            </a>
-                                                            <div class="media-body media-middle">
-                                                                <div class="company-name">
-                                                                    <p>Steve Jones</p>
-                                                                    <span class="text-muted f-14">December 16, 2017</span>
-                                                                </div>
-                                                                <div class="job-badge">
-                                                                    <label class="label bg-primary">HCL</label>
-                                                                </div>
+                            <!-- Left column start -->
+                            <div class="col-lg-12">
+                                <div class="job-card">
+                                    <!-- Job card start -->
+                                    <div class="card" style="background-image: url('./job.png'); background-attachment: fixed; background-size: cover; background-repeat: no-repeat; height: 80vh">
+                                        <div style="width: 100%; height: 100%; background-color: #060606b3;">
+                                                                                    <div class="card-block">
+                                            <div class="row justify-content-center">
+                                                <div class="col-sm-6">
+                                                    <h4 class="sub-title text-center" id="custom-heading-job">Add the quality candidates you find anywhere.</h4>
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon" id="basic-addon7"><i class="icofont icofont-company"></i></span>
+                                                                <input type="text" class="form-control" placeholder="Company">
                                                             </div>
                                                         </div>
-                                                        <div class="card-header-right">
-                                                            <i class="icofont icofont-refresh"></i>
-                                                            <i class="icofont icofont-rounded-down"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <div class="job-lable">
-                                                            <label class="label">Finance</label>
-                                                            <label class="label">Leadership</label>
-                                                        </div>
-                                                        <h6 class="job-card-desc">Skills</h6>
-                                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.</p>
-                                                        <div class="job-meta-data"><i class="icofont icofont-safety"></i>Noida, U.P., India</div>
-                                                        <div class="job-meta-data"><i class="icofont icofont-university"></i>5-10 Years</div>
-                                                        <div class="job-meta-data"><i class="icofont icofont-user"></i>Full-time</div>
-                                                    </div>
-                                                    <div class="card-footer">
-                                                        <div class="task-board">
-                                                            <div class="dropdown-secondary dropdown">
-                                                                <button class="btn btn-primary" type="button"><i class="icofont icofont-plus"></i> Add</button>
-                                                                <!-- end of dropdown menu -->
+                                                        <div class="col-sm-12">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon" id="basic-addon7"><i class="icofont icofont-job-search"></i></span>
+                                                                <input type="text" class="form-control" placeholder="Job Title">
                                                             </div>
-                                                            <div class="dropdown-secondary dropdown">
-                                                                <button class="btn btn-default dropdown-toggle waves-light b-none txt-muted" type="button" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-wheel"></i> View</button>
-                                                                <div class="dropdown-menu" aria-labelledby="dropdown2" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-                                                                    <a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-ui-edit"></i> Quick</a>
-                                                                    <a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-ui-alarm"></i> Detail</a>
-                                                                </div>
-                                                                <!-- end of dropdown menu -->
-                                                            </div>
-                                                            <!-- end of dropdown-secondary -->
-                                                            <!-- end of seconadary -->
                                                         </div>
-                                                        <!-- end of pull-right class -->
+                                                        <div class="col-sm-12">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon" id="basic-addon7"><i class="icofont icofont-location-pin"></i></span>
+                                                                <input type="text" class="form-control" placeholder="Location">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                            <div class="form-group">
+                                                                <button class="btn btn-primary btn-block">Next</button>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <!-- end of card-footer -->
                                                 </div>
-                                                <!-- Job card end -->
-                                            
-                                                <!-- Job card start -->
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <div class="media">
-                                                            <a class="media-left media-middle" href="#">
-                                                                <img class="media-object img-60" src="assets/images/avatar-3.png" alt="Generic placeholder image">
-                                                            </a>
-                                                            <div class="media-body media-middle">
-                                                                <div class="company-name">
-                                                                    <p>Steve Jones</p>
-                                                                    <span class="text-muted f-14">December 16, 2017</span>
-                                                                </div>
-                                                                <div class="job-badge">
-                                                                    <label class="label bg-primary">HCL</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-header-right">
-                                                            <i class="icofont icofont-refresh"></i>
-                                                            <i class="icofont icofont-rounded-down"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <div class="job-lable">
-                                                            <label class="label">Finance</label>
-                                                            <label class="label">Leadership</label>
-                                                        </div>
-                                                        <h6 class="job-card-desc">Skills</h6>
-                                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.</p>
-                                                        <div class="job-meta-data"><i class="icofont icofont-safety"></i>Noida, U.P., India</div>
-                                                        <div class="job-meta-data"><i class="icofont icofont-university"></i>5-10 Years</div>
-                                                        <div class="job-meta-data"><i class="icofont icofont-user"></i>Full-time</div>
-                                                    </div>
-                                                    <div class="card-footer">
-                                                        <div class="task-board">
-                                                            <div class="dropdown-secondary dropdown">
-                                                                <button class="btn btn-primary" type="button"><i class="icofont icofont-plus"></i> Add</button>
-                                                                <!-- end of dropdown menu -->
-                                                            </div>
-                                                            <div class="dropdown-secondary dropdown">
-                                                                <button class="btn btn-default dropdown-toggle waves-light b-none txt-muted" type="button" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-wheel"></i> View</button>
-                                                                <div class="dropdown-menu" aria-labelledby="dropdown2" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-                                                                    <a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-ui-edit"></i> Quick</a>
-                                                                    <a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-ui-alarm"></i> Detail</a>
-                                                                </div>
-                                                                <!-- end of dropdown menu -->
-                                                            </div>
-                                                            <!-- end of dropdown-secondary -->
-                                                            <!-- end of seconadary -->
-                                                        </div>
-                                                        <!-- end of pull-right class -->
-                                                    </div>
-                                                    <!-- end of card-footer -->
-                                                </div>
-                                                <!-- Job card end -->
-                                           
-                                                <!-- Job card start -->
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <div class="media">
-                                                            <a class="media-left media-middle" href="#">
-                                                                <img class="media-object img-60" src="assets/images/avatar-3.png" alt="Generic placeholder image">
-                                                            </a>
-                                                            <div class="media-body media-middle">
-                                                                <div class="company-name">
-                                                                    <p>Steve Jones</p>
-                                                                    <span class="text-muted f-14">December 16, 2017</span>
-                                                                </div>
-                                                                <div class="job-badge">
-                                                                    <label class="label bg-primary">HCL</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-header-right">
-                                                            <i class="icofont icofont-refresh"></i>
-                                                            <i class="icofont icofont-rounded-down"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <div class="job-lable">
-                                                            <label class="label">Finance</label>
-                                                            <label class="label">Leadership</label>
-                                                        </div>
-                                                        <h6 class="job-card-desc">Skills</h6>
-                                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.</p>
-                                                        <div class="job-meta-data"><i class="icofont icofont-safety"></i>Noida, U.P., India</div>
-                                                        <div class="job-meta-data"><i class="icofont icofont-university"></i>5-10 Years</div>
-                                                        <div class="job-meta-data"><i class="icofont icofont-user"></i>Full-time</div>
-                                                    </div>
-                                                    <div class="card-footer">
-                                                        <div class="task-board">
-                                                            <div class="dropdown-secondary dropdown">
-                                                                <button class="btn btn-primary" type="button"><i class="icofont icofont-plus"></i> Add</button>
-                                                                <!-- end of dropdown menu -->
-                                                            </div>
-                                                            <div class="dropdown-secondary dropdown">
-                                                                <button class="btn btn-default dropdown-toggle waves-light b-none txt-muted" type="button" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-wheel"></i> View</button>
-                                                                <div class="dropdown-menu" aria-labelledby="dropdown2" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-                                                                    <a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-ui-edit"></i> Quick</a>
-                                                                    <a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-ui-alarm"></i> Detail</a>
-                                                                </div>
-                                                                <!-- end of dropdown menu -->
-                                                            </div>
-                                                            <!-- end of dropdown-secondary -->
-                                                            <!-- end of seconadary -->
-                                                        </div>
-                                                        <!-- end of pull-right class -->
-                                                    </div>
-                                                    <!-- end of card-footer -->
-                                                </div>
-                                                <!-- Job card end -->
-                                           
-                                                <!-- Job card start -->
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <div class="media">
-                                                            <a class="media-left media-middle" href="#">
-                                                                <img class="media-object img-60" src="assets/images/avatar-3.png" alt="Generic placeholder image">
-                                                            </a>
-                                                            <div class="media-body media-middle">
-                                                                <div class="company-name">
-                                                                    <p>Steve Jones</p>
-                                                                    <span class="text-muted f-14">December 16, 2017</span>
-                                                                </div>
-                                                                <div class="job-badge">
-                                                                    <label class="label bg-primary">HCL</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-header-right">
-                                                            <i class="icofont icofont-refresh"></i>
-                                                            <i class="icofont icofont-rounded-down"></i>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <div class="job-lable">
-                                                            <label class="label">Finance</label>
-                                                            <label class="label">Leadership</label>
-                                                        </div>
-                                                        <h6 class="job-card-desc">Skills</h6>
-                                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.</p>
-                                                        <div class="job-meta-data"><i class="icofont icofont-safety"></i>Noida, U.P., India</div>
-                                                        <div class="job-meta-data"><i class="icofont icofont-university"></i>5-10 Years</div>
-                                                        <div class="job-meta-data"><i class="icofont icofont-user"></i>Full-time</div>
-                                                    </div>
-                                                    <div class="card-footer">
-                                                        <div class="task-board">
-                                                            <div class="dropdown-secondary dropdown">
-                                                                <button class="btn btn-primary" type="button"><i class="icofont icofont-plus"></i> Add</button>
-                                                                <!-- end of dropdown menu -->
-                                                            </div>
-                                                            <div class="dropdown-secondary dropdown">
-                                                                <button class="btn btn-default dropdown-toggle waves-light b-none txt-muted" type="button" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-wheel"></i> View</button>
-                                                                <div class="dropdown-menu" aria-labelledby="dropdown2" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-                                                                    <a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-ui-edit"></i> Quick</a>
-                                                                    <a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-ui-alarm"></i> Detail</a>
-                                                                </div>
-                                                                <!-- end of dropdown menu -->
-                                                            </div>
-                                                            <!-- end of dropdown-secondary -->
-                                                            <!-- end of seconadary -->
-                                                        </div>
-                                                        <!-- end of pull-right class -->
-                                                    </div>
-                                                    <!-- end of card-footer -->
-                                                </div>
-                                                <!-- Job card end -->                                              
-                                            </div>                                               
-                                            
-
-                                            <!-- Pagination start -->
-                                            <nav aria-label="...">
-                                                <ul class="pagination justify-content-center m-t-20 m-b-20">
-                                                    <li class="page-item disabled">
-                                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                                    <li class="page-item active">
-                                                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#">Next</a>
-                                                    </li>
-                                                </ul>
-                                            </nav>
-                                            <!-- Pagination end -->
+                                            </div>
                                         </div>
-
-                                        <!-- Left column end -->
-                                        <!-- Right column start -->
                                         </div>
-                                        <!-- Right column end -->
                                     </div>
+                                    <!-- Job card end -->
+                        
+                                </div>                                               
+
+                            </div>
+                            <!-- Left column end -->
+                            <!-- Right column start -->
+                        </div>
+                    <!-- Right column end -->
+                    </div>
                         <!-- Task board design block end -->
                     </div>
                     <!-- Left column end -->
