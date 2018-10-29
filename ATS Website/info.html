@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pure Bricks</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta name="author" content="">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style2.css" rel="stylesheet">
+
+</head>
+
+<body id="body">
+
+  <!--==========================
+    Top Bar
+  ============================-->
+  <section id="topbar" class="d-none d-lg-block">
+    <div id="banner-full" style="background: url('./img/intro-carousel/banner4.jpg') ;background-repeat: no-repeat; background-size: cover; "></div>
+    <div class="container clearfix">
+      <div class="float-left" id="logo-here">
+      <div id="logo" class="pull-left">
+        <h2 style="margin: 0;"><a href="./index.html" class="scrollto">Pure<span>Bricks</span></a></h2>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+<!--         <div class="btn-group show-on-hover">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Support <span class="caret"></span>
+          </button>
+          <ul id="login-dp" class="dropdown-menu dropdown-menu-right" role="menu">
+            <li>
+               <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h4>Call us online</h4>
+                  </div>
+                  <div class="bottom">
+                    Call 0000 000 0000<br>
+                    Mon to Fri: 9am – 8.30pm<br>
+                    Weekends: 10am – 7.30pm
+                  </div>
+               </div>
+            </li>
+          </ul>
+        </div>
+ -->      </div>
+      <div class="float-right">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Register <span class="caret"></span>
+          </button>
+          <ul id="login-dp" class="dropdown-menu dropdown-menu-right" role="menu">
+            <li>
+               <div class="row">
+                  <div class="col-md-12">
+                    For fast registration
+                    <div class="social-buttons">
+                      <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i>   Register using Facebook</a>
+                    </div>
+                                   <hr><div class="text-center">or</div><hr>Register with your email
+                     <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                        <div class="form-group">
+                           <label class="sr-only" for="firstname">First Name</label>
+                           <input type="text" class="form-control" id="" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group">
+                           <label class="sr-only" for="lastname">Last Name</label>
+                           <input type="text" class="form-control" id="" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-group">
+                           <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                           <input type="email" class="form-control" id="" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                           <label class="sr-only" for="exampleInputEmail2">Password</label>
+                           <input type="password" class="form-control" id="" placeholder="Password" required>
+                        </div>
+                        <div class="form-group">
+                           <label class="sr-only" for="exampleInputPassword2">Confirm Password</label>
+                           <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Confirm Password" required>
+                        </div>
+                        <div class="form-group form-check-inline">
+                           <label class="form-check-label" for="exampleInputPassword2">Gender:</label>
+                           <input type="radio" class="form-control form-check-input" id="exampleInputPassword2">Male
+                           <input type="radio" class="form-control form-check-input" id="exampleInputPassword2">Female
+                        </div>
+                        <div class="form-group">
+                           <button type="submit" class="btn btn-primary btn-block">Register</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Login <span class="caret"></span>
+          </button>
+          <ul id="login-dp" class="dropdown-menu dropdown-menu-right" role="menu">
+            <li>
+               <div class="row">
+                  <div class="col-md-12">
+                    Login via
+                    <div class="social-buttons">
+                      <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i>   Facebook</a>
+                      <!-- <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a> -->
+                    </div>
+                    <hr><div class="text-center">or</div><hr> 
+                     <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                        <div class="form-group">
+                           <label class="sr-only" for="exampleInputEmail2">Email Address</label>
+                           <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                        </div>
+                        <div class="form-group">
+                           <label class="sr-only" for="exampleInputPassword2">Password</label>
+                           <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                                 <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                        </div>
+                        <div class="form-group">
+                           <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                        </div>
+                        <div class="checkbox">
+                           <label>
+                           <input type="checkbox"> keep me logged-in
+                           </label>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="bottom text-center">
+                    New here ? <a href="#"><b>Join Us</b></a>
+                  </div>
+               </div>
+            </li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-mine dropdown-toggle" data-toggle="dropdown">
+            <img src="./img/uk.png" style="width: 20px;"> UK <span class="caret"></span>
+          </button>
+          <ul id="login-dp" class="dropdown-menu dropdown-menu-right" role="menu">
+            <li>
+               <div class="row">
+                  <div class="col-md-12">
+                    In which country are you looking?
+                     <form class="form" role="form" method="post" action="#" accept-charset="UTF-8" id="login-nav">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                          <label class="form-check-label" for="inlineRadio1">UK</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                          <label class="form-check-label" for="inlineRadio2">USA</label>
+                        </div>
+                        <div class="form-group">
+                           <button type="submit" class="btn btn-primary btn-block">Save</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container" id="header-another">
+
+<!--       <div id="logo" class="pull-left">
+        <h1><a href="#body" class="scrollto">Pure<span>Bricks</span></a></h1>
+        Uncomment below if you prefer to use an image logo
+         <a href="#body"><img src="img/logo.png" alt="" title="" /></a>
+      </div> -->
+
+      <nav id="nav-menu-container">
+<!--         <ul class="nav-menu">
+          <li class="menu-active"><a href="#body">Search</a></li>
+          <li><a href="#about">Account</a></li>
+          <li><a href="#services">Messages</a></li>
+          <li><a href="#portfolio">Place a Free Advert</a></li>
+          <li><a href="#team">Browse</a></li>
+          <li class="menu-has-children"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul> -->
+        <ul class="nav-menu pull-right">
+          <li class=""><a href="./about.html">About Us</a></li>
+          <li class="menu-active"><a href="./info.html">Info & Advice</a></li>
+          <li><a href="#">Place a Free Advert</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="text-center" id="search-heading">
+      <h2>Info & Advice</h2>
+    </div>
+<!--     <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12" id="form-top">
+          <form>
+            <div class="form-group">
+              <br>
+              <input type="radio" name="emotion" id="one" class="input-hidden" />
+              <label for="one">
+                <img src="./img/circle.png" alt="Rent Room" />
+                  <div class="centered">Rent Room</div>
+              </label>
+
+              <input type="radio" name="emotion" id="two" class="input-hidden" />
+              <label for="two">
+                <img src="./img/circle.png" alt="Advertise Room" />
+                <div class="centered">Advertise Room</div>
+              </label>
+
+              <input type="radio" name="emotion" id="three" class="input-hidden" />
+              <label for="three">
+                <img src="./img/circle.png" alt="Rent Room" />
+                  <div class="centered">Buy Property</div>
+              </label>
+
+              <input type="radio" name="emotion" id="four" class="input-hidden" />
+              <label for="four">
+                <img src="./img/circle.png" alt="Advertise Room" />
+                <div class="centered">Sell Property</div>
+              </label>
+
+              <input type="radio" name="emotion" id="five" class="input-hidden" />
+              <label for="five">
+                <img src="./img/circle.png" alt="Rent Room" />
+                  <div class="centered">Co-living Rooms</div>
+              </label>
+
+              <input type="radio" name="emotion" id="six" class="input-hidden" />
+              <label for="six">
+                <img src="./img/circle.png" alt="Advertise Room" />
+                <div class="centered">Property Management</div>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Free Search</button><br><br>
+          </form>
+        </div>
+      </div>
+    </div> -->
+
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+
+        <div class="section-header text-center">
+          <h2>Info & Advice Overview</h2>
+          <p>If you're looking for information on flatsharing then you've found the right place. Whether you're new to sharing, have been sharing for years or have a spare room you're thinking of renting out we have plenty of information for you.</p>
+        </div>
+
+          <!-- Blog Post -->
+          <div class="card mb-4">
+            <img class="card-img-top" src="./img/buyer.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title text-center">For Buyers</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+              <a href="#" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Blog Post -->
+          <div class="card mb-4">
+            <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title text-center">For Sellers</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+              <a href="#" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Blog Post -->
+          <div class="card mb-4">
+            <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title text-center">For Landlords</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+              <a href="#" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Blog Post -->
+          <div class="card mb-4">
+            <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title text-center">For Tenants/Sharers</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+              <a href="#" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Blog Post -->
+          <div class="card mb-4">
+            <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title text-center">For live in/home Landlords</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+              <a href="#" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+<!--           <ul class="pagination justify-content-center mb-4">
+            <li class="page-item">
+              <a class="page-link" href="#">&larr; Older</a>
+            </li>
+            <li class="page-item disabled">
+              <a class="page-link" href="#">Newer &rarr;</a>
+            </li>
+          </ul> -->
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4" id="sidebar">
+
+          <!-- Search Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Search</h5>
+            <div class="card-body">
+              <form>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    Rent Room
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                    Advertise Room
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                    Buy Property
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                    Sell Property
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                    Co-living Rooms
+                  </label>
+                </div>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Where???" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary btn-primary" type="button">Go!</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Categories Widget -->
+<!--           <div class="card my-4">
+            <h5 class="card-header">Categories</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">HTML</a>
+                    </li>
+                    <li>
+                      <a href="#">Freebies</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">JavaScript</a>
+                    </li>
+                    <li>
+                      <a href="#">CSS</a>
+                    </li>
+                    <li>
+                      <a href="#">Tutorials</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Side Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Contact Us</h5>
+            <div class="card-body">
+              <ul class="list-unstyled quick-links" id="contact-list-sidebar">
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="javascript:void();"><i class="fa fa-phone"></i>Call us on 000 000 0000</a></li>
+                <li><a href="javascript:void();"><i class="fa fa-calendar"></i>Mon to Fri: 9am – 8.30pm</a></li>
+                <li><a href="javascript:void();"><i class="fa fa-calendar"></i>Weekends: 10am – 7.30pm</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+  </main>
+
+<!--==========================
+    Footer
+  ============================-->
+<!-- Footer -->
+  <section id="footer">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-6 col-sm-4 col-md-3">
+          <h5>About Us</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Vision</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About PureBricks</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Why use PureBricks?</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>How Purebricks Works</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Terms</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <h5>Our Services</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Advertise a room</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Place a room wanted ad</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Lend a property</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Purchase a property</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Student Accomodation</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Find a roommate</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <h5>Find your Home</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>England</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Scotland</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Wales</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Northern Ireland</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled quick-links">
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="javascript:void();"><i class="fa fa-phone"></i>Call us on 000 000 0000</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-calendar"></i>Mon to Fri: 9am – 8.30pm</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-calendar"></i>Weekends: 10am – 7.30pm</a></li>
+          </ul>
+        </div>
+      </div>
+<!--       <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-web"></i>Visit PureBricks.com</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-phone"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+      </div>   -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p></p>
+          <p class="h6">&copy PureBricks<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank"></a>All right reserved.</p>
+        </div>
+      </div>  
+    </div>
+  </section>
+  <!-- ./Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/sticky/sticky.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
