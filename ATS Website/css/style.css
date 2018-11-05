@@ -2394,3 +2394,271 @@ border-radius: 10px;
     /*height: 50%;*/
   }
 }
+
+  .border{
+    border-bottom:1px solid #F1F1F1;
+    margin-bottom:10px;
+  }
+  .main-secction{
+    box-shadow: 10px 10px 10px;
+  }
+  .image-section{
+    padding: 0px;
+  }
+  .image-section img{
+    width: 100%;
+    height:250px;
+    position: relative;
+  }
+  .user-image{
+    position: absolute;
+    margin-top:-50px;
+  }
+  .user-left-part{
+    margin: 0px;
+  }
+  .user-image img{
+    width:100px;
+    height:100px;
+  }
+  .user-profil-part{
+    padding-bottom:30px;
+    background-color:#FAFAFA;
+  }
+  .follow{    
+    margin-top:70px;   
+  }
+  .user-detail-row{
+    margin:0px; 
+  }
+  .user-detail-section2 p{
+    font-size:12px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .user-detail-section2{
+    margin-top:10px;
+  }
+  .user-detail-section2 span{
+    color:#7CBBC3;
+    font-size: 20px;
+  }
+  .user-detail-section2 small{
+    font-size:12px;
+    color:#D3A86A;
+  }
+  .profile-right-section{
+    padding: 20px 0px 10px 15px;
+    background-color: #FFFFFF;  
+  }
+  .profile-right-section-row{
+    margin: 0px;
+  }
+  .profile-header-section1 h1{
+    font-size: 25px;
+    margin: 0px;
+  }
+  .profile-header-section1 h5{
+    color: #0062cc;
+  }
+  .req-btn{
+    height:30px;
+    font-size:12px;
+  }
+  .profile-tag{
+    padding: 10px;
+    border:1px solid #F6F6F6;
+  }
+  .profile-tag p{
+    font-size: 12px;
+    color:black;
+  }
+  .profile-tag i{
+    color:#ADADAD;
+    font-size: 20px;
+  }
+  .image-right-part{
+    background-color: #FCFCFC;
+    margin: 0px;
+    padding: 5px;
+  }
+  .img-main-rightPart{
+    background-color: #FCFCFC;
+    margin-top: auto;
+  }
+  .image-right-detail{
+    padding: 0px;
+  }
+  .image-right-detail p{
+    font-size: 12px;
+  }
+  .image-right-detail a:hover{
+    text-decoration: none;
+  }
+  .image-right img{
+    width: 100%;
+  }
+  .image-right-detail-section2{
+    margin: 0px;
+  }
+  .image-right-detail-section2 p{
+    color:#38ACDF;
+    margin:0px;
+  }
+  .image-right-detail-section2 span{
+    color:#7F7F7F;
+  }
+
+.img-circle {
+    width: 20%;
+}
+
+.card {
+
+    border-radius: 2px;
+    border-top: 4px solid rgba(0, 115, 170, 0.5);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-bottom: 30px;
+
+}
+
+#jobs {
+  padding: 1em;
+}
+
+.nestable-primary {
+
+    background-color: #0073aa !important;
+    border-color: #0073aa;
+    color: #fff !important;
+
+}
+
+.nestable-success {
+
+    background-color: #2ecc71 !important;
+    border-color: #2ecc71;
+    color: #fff !important;
+
+}
+
+.nestable-warning {
+
+    background-color: #f1c40f !important;
+    border-color: #f1c40f;
+    color: #fff !important;
+
+}
+
+.nestable-danger {
+
+    background-color: #e74c3c !important;
+    border-color: #e74c3c;
+    color: #fff !important;
+
+}
+
+.card-comment-icon .btn-icon {
+
+    border-radius: 50%;
+    width: 60px;
+    line-height: 30px;
+    height: 60px;
+    padding: 3px;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.card-img {
+
+    max-width: 100%;
+    border-radius: 50%;
+
+}
+
+#jobs-card {
+
+    padding: 0.1rem;
+
+}
+
+.card .card-header span {
+
+    color: #9f9f9f;
+    display: block;
+    font-size: 13px;
+    margin-top: 5px;
+
+}
+
+.label {
+
+    border-radius: 4px;
+    font-size: 75%;
+    padding: 4px 7px;
+    margin-right: 5px;
+    font-weight: 700;
+    color: #fff !important;
+
+}
+
+.label-primary {
+
+    background-color: #0073aa;
+
+}
+
+.label {
+
+    border-radius: 2px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1;
+    margin-bottom: 0;
+    text-transform: capitalize;
+
+}
+
+.f-right {
+
+    float: right;
+
+}
+
+.tab-content {
+  margin-top: 30px;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #008081;
+  color: #ffffff;
+}
+
+.nav-tabs {
+
+    border-bottom: 2px solid #dee2e6;
+    border-image: url('../img/border.jpg') 21 23 repeat;
+
+}
+
+.nav-tabs .nav-link:hover {
+
+    border-color: #FCB300 #FCB300 #FCB300;
+
+}
+
+.nav-tabs .nav-item {
+  margin-right: 20px;
+}
+
+.progress {
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 0;
+}

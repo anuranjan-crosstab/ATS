@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Talent Cache</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta name="author" content="">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/fontawesome-all.css">
+  <link href="lib/dropzone/dropzone.css" rel="stylesheet">
+   <!-- Font-Awesome-Icons-CSS -->
+  <link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
+  <!-- MDBootstrap Datatables  -->
+  <link href="lib/datatables/datatables.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style2.css" rel="stylesheet">
+
+</head>
+
+<body id="body">
+
+  <!--==========================
+    Top Bar
+  ============================-->
+
+  <section id="topbar" class="d-none d-lg-block">
+    <div id="banner-full2" style="background: url('./img/intro-carousel/banner6.jpg'); background-repeat: no-repeat; background-size: cover;"></div>
+    <div class="container clearfix">
+      <div class="float-left" id="logo-here">
+      <div id="logo" class="pull-left">
+        <h2 style="margin: 0;"><a href="./index.html" class="scrollto">Talent<span>Cache</span></a></h2>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+<!--         <div class="btn-group show-on-hover">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Support <span class="caret"></span>
+          </button>
+          <ul id="login-dp" class="dropdown-menu dropdown-menu-right" role="menu">
+            <li>
+               <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h4>Call us online</h4>
+                  </div>
+                  <div class="bottom">
+                    Call 0000 000 0000<br>
+                    Mon to Fri: 9am – 8.30pm<br>
+                    Weekends: 10am – 7.30pm
+                  </div>
+               </div>
+            </li>
+          </ul>
+        </div>
+ -->      </div>
+      <div class="float-right">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Register <span class="caret"></span>
+          </button>
+          <ul id="login-dp" class="dropdown-menu dropdown-menu-right" role="menu">
+            <li>
+               <div class="row">
+                  <div class="col-md-12">
+                    For fast registration
+                    <div class="social-buttons">
+                      <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i>   Register using Facebook</a>
+                    </div>
+                                   <hr><div class="text-center">or</div><hr>Register with your email
+                     <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                        <div class="form-group">
+                           <label class="sr-only" for="firstname">First Name</label>
+                           <input type="text" class="form-control" id="" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group">
+                           <label class="sr-only" for="lastname">Last Name</label>
+                           <input type="text" class="form-control" id="" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-group">
+                           <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                           <input type="email" class="form-control" id="" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                           <label class="sr-only" for="exampleInputEmail2">Password</label>
+                           <input type="password" class="form-control" id="" placeholder="Password" required>
+                        </div>
+                        <div class="form-group">
+                           <label class="sr-only" for="exampleInputPassword2">Confirm Password</label>
+                           <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Confirm Password" required>
+                        </div>
+                        <div class="form-group form-check-inline">
+                           <label class="form-check-label" for="exampleInputPassword2">Gender:</label>
+                           <input type="radio" class="form-control form-check-input" id="exampleInputPassword2">Male
+                           <input type="radio" class="form-control form-check-input" id="exampleInputPassword2">Female
+                        </div>
+                        <div class="form-group">
+                           <button type="submit" class="btn btn-primary btn-block">Register</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Login <span class="caret"></span>
+          </button>
+          <ul id="login-dp" class="dropdown-menu dropdown-menu-right" role="menu">
+            <li>
+               <div class="row">
+                  <div class="col-md-12">
+                    Login via
+                    <div class="social-buttons">
+                      <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i>   Facebook</a>
+                      <!-- <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a> -->
+                    </div>
+                    <hr><div class="text-center">or</div><hr> 
+                     <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                        <div class="form-group">
+                           <label class="sr-only" for="exampleInputEmail2">Email Address</label>
+                           <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                        </div>
+                        <div class="form-group">
+                           <label class="sr-only" for="exampleInputPassword2">Password</label>
+                           <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                                 <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                        </div>
+                        <div class="form-group">
+                           <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                        </div>
+                        <div class="checkbox">
+                           <label>
+                           <input type="checkbox"> keep me logged-in
+                           </label>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="bottom text-center">
+                    New here ? <a href="#"><b>Join Us</b></a>
+                  </div>
+               </div>
+            </li>
+          </ul>
+        </div>
+<!--         <div class="btn-group">
+          <button type="button" class="btn btn-mine dropdown-toggle" data-toggle="dropdown">
+            <img src="./img/uk.png" style="width: 20px;"> UK <span class="caret"></span>
+          </button>
+          <ul id="login-dp" class="dropdown-menu dropdown-menu-right" role="menu">
+            <li>
+               <div class="row">
+                  <div class="col-md-12">
+                    In which country are you looking?
+                     <form class="form" role="form" method="post" action="#" accept-charset="UTF-8" id="login-nav">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                          <label class="form-check-label" for="inlineRadio1">UK</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                          <label class="form-check-label" for="inlineRadio2">USA</label>
+                        </div>
+                        <div class="form-group">
+                           <button type="submit" class="btn btn-primary btn-block">Save</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container" id="header-another">
+
+<!--       <div id="logo" class="pull-left">
+        <h1><a href="#body" class="scrollto">Pure<span>Bricks</span></a></h1>
+        Uncomment below if you prefer to use an image logo
+         <a href="#body"><img src="img/logo.png" alt="" title="" /></a>
+      </div> -->
+
+      <nav id="nav-menu-container">
+<!--         <ul class="nav-menu">
+          <li class="menu-active"><a href="#body">Search</a></li>
+          <li><a href="#about">Account</a></li>
+          <li><a href="#services">Messages</a></li>
+          <li><a href="#portfolio">Place a Free Advert</a></li>
+          <li><a href="#team">Browse</a></li>
+          <li class="menu-has-children"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul> -->
+        <ul class="nav-menu pull-right">
+          <li class=""><a href="./about.html">About Us</a></li>
+          <li class=""><a href="./info.html">Info & Advice</a></li>
+          <li><a href="#">Request A Demo</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro2">
+    <div class="text-center" id="search-heading2">
+      <h2>My Account</h2>
+      <!-- <button class="btn btn-outline-primary btn-lg">Request a Demo</button> -->
+    </div>
+<!--     <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12" id="form-top">
+          <form>
+            <div class="form-group">
+              <br>
+              <input type="radio" name="emotion" id="one" class="input-hidden" />
+              <label for="one">
+                <img src="./img/circle.png" alt="Rent Room" />
+                  <div class="centered">Rent Room</div>
+              </label>
+
+              <input type="radio" name="emotion" id="two" class="input-hidden" />
+              <label for="two">
+                <img src="./img/circle.png" alt="Advertise Room" />
+                <div class="centered">Advertise Room</div>
+              </label>
+
+              <input type="radio" name="emotion" id="three" class="input-hidden" />
+              <label for="three">
+                <img src="./img/circle.png" alt="Rent Room" />
+                  <div class="centered">Buy Property</div>
+              </label>
+
+              <input type="radio" name="emotion" id="four" class="input-hidden" />
+              <label for="four">
+                <img src="./img/circle.png" alt="Advertise Room" />
+                <div class="centered">Sell Property</div>
+              </label>
+
+              <input type="radio" name="emotion" id="five" class="input-hidden" />
+              <label for="five">
+                <img src="./img/circle.png" alt="Rent Room" />
+                  <div class="centered">Co-living Rooms</div>
+              </label>
+
+              <input type="radio" name="emotion" id="six" class="input-hidden" />
+              <label for="six">
+                <img src="./img/circle.png" alt="Advertise Room" />
+                <div class="centered">Property Management</div>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Free Search</button><br><br>
+          </form>
+        </div>
+      </div>
+    </div> -->
+
+  </section><!-- #intro -->
+
+  <main id="main">
+    <div class="container main-secction">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 image-section">
+          <img src="https://png.pngtree.com/thumb_back/fw800/back_pic/00/08/57/41562ad4a92b16a.jpg">
+        </div>
+        <div class="row user-left-part">
+          <div class="col-md-3 col-sm-3 col-xs-12 user-profil-part pull-left">
+            <div class="row ">
+              <div class="col-md-12 col-md-12-sm-12 col-xs-12 user-image text-center">
+                <img src="https://www.jamf.com/jamf-nation/img/default-avatars/generic-user-purple.png" class="rounded-circle">
+              </div>
+              <div class="col-md-12 col-sm-12 col-xs-12 user-detail-section1 text-center">
+                <button id="btn-contact" (click)="clearModal()" data-toggle="modal" data-target="#contact" class="btn btn-success btn-block follow">Contact Me</button> 
+                <!-- <button class="btn btn-warning btn-block">Descargar Curriculum</button> -->
+              </div>
+              <div class="row user-detail-row">
+                <div class="col-md-12 col-sm-12 user-detail-section2 pull-left">
+                  <div class="border"></div>
+                  <p>FOLLOWER</p>
+                  <span>320</span>
+                </div>                           
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="card-header-text d-inline-block">Companies</h5>
+                  <!-- <span class="friend-more f-right">see 12 more</span> -->
+                  <span class="label label-primary f-right"> See 12 More </span>
+                </div>
+                <div class="card-block friend-box">
+                  <img class="media-object img-circle" src="./img/avatar-1.png" alt="">
+                  <img class="media-object img-circle" src="./img/avatar-2.png" alt="">
+                  <img class="media-object img-circle" src="./img/avatar-3.png" alt="">
+                  <img class="media-object img-circle" src="./img/avatar-4.png" alt="">
+                  <img class="media-object img-circle" src="./img/avatar-1.png" alt="">
+                  <img class="media-object img-circle" src="./img/avatar-4.png" alt="">
+                  <img class="media-object img-circle" src="./img/avatar-3.png" alt="">
+                  <img class="media-object img-circle" src="./img/avatar-2.png" alt="">
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-9 col-sm-9 col-xs-12 pull-right profile-right-section">
+            <div class="row profile-right-section-row">
+              <div class="col-md-12 profile-header">
+                <div class="row">
+                  <div class="col-md-8 col-sm-6 col-xs-6 profile-header-section1 pull-left">
+                    <h1>Juan Perez</h1>
+                    <h5>Developer</h5>
+                  </div>
+                  <div class="col-md-4 col-sm-6 col-xs-6 profile-header-section1 text-right pull-rigth">
+                    <a href="/search" class="btn btn-primary btn-block">Follow</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-12">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#companies" role="tab" data-toggle="tab"><i class="fas fa-user-circle"></i> Companies</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about2" role="tab" data-toggle="tab"><i class="fas fa-info-circle"></i> About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#skills" role="tab" data-toggle="tab"><i class="fas fa-info-circle"></i> Skills</a>
+                      </li> 
+                      <li class="nav-item">
+                        <a class="nav-link" href="#cv" role="tab" data-toggle="tab"><i class="fas fa-info-circle"></i> CV</a>
+                      </li>                                               
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane fade show active" id="companies">
+                        <div class="row">
+                          <div class="col-md-6 col-xl-3">
+                            <div class="card">
+                              <div class="card-block-big card-task nestable-primary" id="jobs">
+                                <div class="card-block card-comment-icon" id="jobs-card">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <h2 class="text-left f-60 m-0">68</h2>
+                                    </div>
+                                    <div class="col-6">
+                                      <button class="btn btn-primary btn-icon"><img src="./img/hcl.jpeg" class="card-img"></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6 col-xl-3">
+                            <div class="card" id="color_green">
+                              <div class="card-block-big card-task nestable-success" id="jobs">
+                                <div class="card-block card-comment-icon"id="jobs-card">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <h2 class="text-left f-60 m-0">91</h2>
+                                    </div>
+                                    <div class="col-6">
+                                      <button class="btn btn-success btn-icon"><img src="./img/accenture.png" class="card-img"></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6 col-xl-3">
+                            <div class="card" id="color_yellow">
+                              <div class="card-block-big card-task nestable-warning" id="jobs">
+                                <div class="card-block card-comment-icon"id="jobs-card">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <h2 class="text-left f-60 m-0">87</h2>
+                                    </div>
+                                    <div class="col-6">
+                                      <button class="btn btn-warning btn-icon"><img src="./img/tcs.jpg" class="card-img"></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6 col-xl-3">
+                            <div class="card" id="color_red">
+                              <div class="card-block-big card-task nestable-danger"  id="jobs">
+                                <div class="card-block card-comment-icon" id="jobs-card">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <h2 class="text-left f-60 m-0">90</h2>
+                                    </div>
+                                    <div class="col-6">
+                                      <button class="btn btn-danger btn-icon"><img src="./img/infosys.jpg" class="card-img"></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6 col-xl-3">
+                            <div class="card">
+                              <div class="card-block-big card-task nestable-primary" id="jobs">
+                                <div class="card-block card-comment-icon" id="jobs-card">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <h2 class="text-left f-60 m-0">81</h2>
+                                    </div>
+                                    <div class="col-6">
+                                      <button class="btn btn-primary btn-icon"><img src="./img/wipro.jpg" class="card-img"></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6 col-xl-3">
+                            <div class="card" id="color_green">
+                              <div class="card-block-big card-task nestable-success" id="jobs">
+                                <div class="card-block card-comment-icon"id="jobs-card">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <h2 class="text-left f-60 m-0">20</h2>
+                                    </div>
+                                    <div class="col-6">
+                                      <button class="btn btn-success btn-icon"><img src="./img/ibm.jpg" class="card-img"></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6 col-xl-3">
+                            <div class="card" id="color_red">
+                              <div class="card-block-big card-task nestable-warning"  id="jobs">
+                                <div class="card-block card-comment-icon" id="jobs-card">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <h2 class="text-left f-60 m-0">77</h2>
+                                    </div>
+                                    <div class="col-6">
+                                      <button class="btn btn-warning btn-icon waves-effect" data-toggle="tooltip" data-placement="top" title="Click to see list of Dell employees"><img src="./img/honeywell.jpg" class="card-img"></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6 col-xl-3">
+                            <div class="card" id="color_red">
+                              <div class="card-block-big card-task nestable-danger"  id="jobs">
+                                <div class="card-block card-comment-icon" id="jobs-card">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <h2 class="text-left f-60 m-0">77</h2>
+                                    </div>
+                                    <div class="col-6">
+                                      <button class="btn btn-danger btn-icon waves-effect" data-toggle="tooltip" data-placement="top" title="Click to see list of Dell employees"><img src="./img/dell.jpg" class="card-img"></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div role="tabpanel" class="tab-pane fade" id="about2">
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <div class="card">
+                              <div class="card-header">
+                                <h5 class="card-header-text">Basic Information</h5>
+                                <button id="edit-btn" type="button" class="btn btn-primary waves-effect waves-light f-right">
+                                  <i class="icofont icofont-edit"></i>
+                                </button>
+                              </div>
+                              <div class="card-block">
+                                <div id="view-info" class="row">
+                                  <div class="col-lg-6 col-md-12">
+                                    <form>
+                                      <table class="table table-responsive m-b-0">
+                                        <tr>
+                                          <th class="social-label b-none p-t-0">Full Name
+                                          </th>
+                                          <td class="social-user-name b-none p-t-0 text-muted">Anuranjan Verma</td>
+                                        </tr>
+                                        <tr>
+                                          <th class="social-label b-none">Gender</th>
+                                          <td class="social-user-name b-none text-muted">Male</td>
+                                        </tr>
+                                        <tr>
+                                          <th class="social-label b-none">Birth Date</th>
+                                          <td class="social-user-name b-none text-muted">September 25th, 1990</td>
+                                        </tr>
+                                        <tr>
+                                          <th class="social-label b-none">Martail Status</th>
+                                          <td class="social-user-name b-none text-muted">Single</td>
+                                        </tr>
+                                        <tr>
+                                          <th class="social-label b-none p-b-0">Location</th>
+                                          <td class="social-user-name b-none p-b-0 text-muted">Noida, India</td>
+                                        </tr>
+                                      </table>
+                                    </form>
+                                  </div>
+                                </div>
+                                <div id="edit-info" class="row">
+                                  <div class="col-lg-12 col-md-12">
+                                    <form>
+                                      <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Full Name">
+                                      </div>
+                                      <div class="input-group">
+                                        <div class="form-radio">
+                                          <div class="form-radio">
+                                            <label class="md-check p-0">Gender</label>
+                                            <div class="radio radio-inline">
+                                              <label>
+                                                <input type="radio" name="radio" checked="checked">
+                                                <i class="helper"></i>Male
+                                              </label>
+                                            </div>
+                                            <div class="radio radio-inline">
+                                              <label>
+                                                <input type="radio" name="radio">
+                                                <i class="helper"></i>Female
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="input-group">
+                                        <input id="dropper-default" class="form-control" type="text" placeholder="Birth Date" />
+                                      </div>
+                                      <div class="input-group">
+                                        <select id="hello-single" class="form-control">
+                                          <option value="">---- Marital Status ----</option>
+                                          <option value="married">Married</option>
+                                          <option value="unmarried">Unmarried</option>
+                                        </select>
+                                      </div>
+                                      <div class="md-group-add-on">
+                                        <textarea rows="5" cols="5" class="form-control" placeholder="Address..."></textarea>
+                                      </div>
+                                      <div class="text-center m-t-20">
+                                        <a href="javascript:;" id="edit-save" class="btn btn-primary waves-effect waves-light m-r-20">Save</a>
+                                        <a href="javascript:;" id="edit-cancel" class="btn btn-default waves-effect waves-light">Cancel</a>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-12">
+                            <div class="card">
+                              <div class="card-header">
+                                <h5 class="card-header-text">Contact Information</h5>
+                                <button id="edit-Contact" type="button" class="btn btn-primary waves-effect waves-light f-right">
+                                  <i class="icofont icofont-edit"></i>
+                                </button>
+                              </div>
+                              <div class="card-block">
+                                <div id="contact-info" class="row">
+                                  <div class="col-lg-6 col-md-12">
+                                    <table class="table table-responsive m-b-0">
+                                      <tr>
+                                        <th class="social-label b-none p-t-0">Mobile Number</th>
+                                        <td class="social-user-name b-none p-t-0 text-muted">+91-9990804835</td>
+                                      </tr>
+                                      <tr>
+                                        <th class="social-label b-none">Email Address</th>
+                                        <td class="social-user-name b-none text-muted">anuranjan@crosstab.in</td>
+                                      </tr>
+                                      <tr>
+                                        <th class="social-label b-none">LinkedIn</th>
+                                        <td class="social-user-name b-none text-muted">https://www.linkedin.com/in/anuranjanverma/</td>
+                                      </tr>
+                                      <tr>
+                                        <th class="social-label b-none p-b-0">Skype</th>
+                                        <td class="social-user-name b-none p-b-0 text-muted">anu5rock</td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div id="edit-contact-info" class="row">
+                                  <div class="col-lg-12 col-md-12">
+                                    <form>
+                                      <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Mobile number">
+                                      </div>
+                                      <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Email address">
+                                      </div>
+                                      <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="LinkedIn id">
+                                      </div>
+                                      <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Skype id">
+                                      </div>
+                                      <div class="text-center m-t-20">
+                                        <a href="javascript:;" id="contact-save" class="btn btn-primary waves-effect waves-light m-r-20">Save</a>
+                                        <a href="javascript:;" id="contact-cancel" class="btn btn-default waves-effect waves-light">Cancel</a>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-12">
+                            <div class="card">
+                              <div class="card-header">
+                                <h5 class="card-header-text">Work</h5>
+                                <button id="edit-work" type="button" class="btn btn-primary waves-effect waves-light f-right">
+                                  <i class="icofont icofont-edit"></i>
+                                </button>
+                              </div>
+                              <div class="card-block">
+                                <div id="work-info" class="row">
+                                  <div class="col-lg-6 col-md-12">
+                                    <table class="table table-responsive m-b-0">
+                                      <tr>
+                                        <th class="social-label b-none p-t-0">Occupation &nbsp; &nbsp; &nbsp;
+                                        </th>
+                                        <td class="social-user-name b-none p-t-0 text-muted">Developer</td>
+                                      </tr>
+                                      <tr>
+                                        <th class="social-label b-none">Skills</th>
+                                        <td class="social-user-name b-none text-muted">PHP, HTML, CSS, Javascript, MySQL</td>
+                                      </tr>
+                                      <tr>
+                                        <th class="social-label b-none">Jobs</th>
+                                        <td class="social-user-name b-none p-b-0 text-muted">CrossTab IT Consulting</td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div id="edit-contact-work" class="row">
+                                  <div class="col-lg-12 col-md-12">
+                                    <form>
+                                      <div class="input-group">
+                                        <select id="occupation" class="form-control">
+                                          <option value=""> Select occupation </option>
+                                          <option value="married">Developer</option>
+                                          <option value="unmarried">Web Design</option>
+                                        </select>
+                                      </div>
+                                      <div class="input-group">
+                                        <select id="skill" class="form-control">
+                                          <option value=""> Select Skills </option>
+                                          <option value="married">C# &amp; .net</option>
+                                          <option value="unmarried">Angular</option>
+                                        </select>
+                                      </div>
+                                      <div class="input-group">
+                                        <select id="job" class="form-control">
+                                          <option value=""> Select Job </option>
+                                          <option value="married">Phoenixcoded</option>
+                                          <option value="unmarried">Other</option>
+                                        </select>
+                                      </div>
+                                      <div class="text-center m-t-20">
+                                        <a href="javascript:;" id="work-save" class="btn btn-primary waves-effect waves-light m-r-20">Save</a>
+                                        <a href="javascript:;" id="work-cancel" class="btn btn-default waves-effect waves-light">Cancel</a>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div role="tabpanel" class="tab-pane fade" id="skills">
+<div class="row">
+  <div class="col-md-6">
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25</div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50</div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75</div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">90</div>
+    </div>
+  </div>
+</div>
+                      </div>
+                      <div role="tabpanel" class="tab-pane fade" id="cv">
+                        <div class="row">
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contact">Contactarme</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <p for="msj">Se enviará este mensaje a la persona que desea contactar, indicando que te quieres comunicar con el. Para esto debes de ingresar tu información personal.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtFullname">Nombre completo</label>
+                        <input type="text" id="txtFullname" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="txtEmail">Email</label>
+                        <input type="text" id="txtEmail" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="txtPhone">Teléfono</label>
+                        <input type="text" id="txtPhone" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" (click)="openModal()" data-dismiss="modal">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </main>
+
+<!--==========================
+    Footer
+  ============================-->
+<!-- Footer -->
+  <section id="footer">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-6 col-sm-4 col-md-3">
+          <h5>About Us</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Vision</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About PureBricks</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Why use PureBricks?</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>How Purebricks Works</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Terms</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <h5>Our Services</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Advertise a room</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Place a room wanted ad</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Lend a property</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Purchase a property</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Student Accomodation</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Find a roommate</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <h5>Find your Home</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>England</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Scotland</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Wales</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Northern Ireland</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled quick-links">
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="javascript:void();"><i class="fa fa-phone"></i>Call us on 000 000 0000</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-calendar"></i>Mon to Fri: 9am – 8.30pm</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-calendar"></i>Weekends: 10am – 7.30pm</a></li>
+          </ul>
+        </div>
+      </div>
+<!--       <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-web"></i>Visit PureBricks.com</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-phone"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+      </div>   -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p></p>
+          <p class="h6">&copy PureBricks<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank"></a>All right reserved.</p>
+        </div>
+      </div>  
+    </div>
+  </section>
+  <!-- ./Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/sticky/sticky.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+  <script src="lib/dropzone/dropzone.js"></script>
+  <!-- MDBootstrap Datatables  -->
+  <script type="text/javascript" src="lib/datatables/datatables.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

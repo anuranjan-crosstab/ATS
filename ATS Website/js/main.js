@@ -165,48 +165,6 @@ jQuery(document).ready(function( $ ) {
   }
   google.maps.event.addDomListener(window, 'load', initialize_google_map);
 
-// Sweet Alert
-
-  $(window).on("scroll", doScroll);
-  function doScroll() {
-     if($(window).scrollTop() + $(window).height() > $(document).height()-1500) {
-        swal({
-          title : "Want to Explore?",
-          text : "Register!",
-          type : "input",
-          showCancelButton : true,
-          closeOnConfirm : false,
-          closeOnClickOutside: true,
-          closeOnEsc: true,
-          inputPlaceholder : "Enter Full Name"
-        }, function(inputValue) {
-          if (inputValue === false)
-            return false;
-            if (inputValue === "") {
-              swal.showInputError("Please enter the name or click Cancel!");
-              return false
-            }
-            console.log(inputValue);
-            swal("Wow!", "Thank you for your time " + inputValue+".", "success");
-          $.ajax({
-            url : "",
-            method : 'post',
-            data : {
-              name : inputValue,
-            },
-            success : function(result) {
-              console.log(inputValue);
-            },
-          error : function(result){
-            swal("Sorry", "Your email is not registered", "warning");
-          }
-          });
-          
-        });
-        $(window).off('scroll', doScroll);
-      }
-      }
-
 
 
 });
@@ -216,6 +174,17 @@ $(document).ready(function () {
   $('.dataTables_length').addClass('bs-select');
 });
 
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+var delay = 500;
+$(".progress-bar").each(function(i){
+    $(this).delay( delay*i ).animate( { width: $(this).attr('aria-valuenow') + '%' }, delay );
+
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: delay,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now)+'%');
+        }
+    });
+});
