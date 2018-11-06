@@ -2400,7 +2400,7 @@ border-radius: 10px;
     margin-bottom:10px;
   }
   .main-secction{
-    box-shadow: 10px 10px 10px;
+    box-shadow: 0 10px 10px 10px rgba(73, 78, 92, 0.1);
   }
   .image-section{
     padding: 0px;
@@ -2514,15 +2514,12 @@ border-radius: 10px;
 }
 
 .card {
-
     border-radius: 2px;
-    border-top: 4px solid rgba(0, 115, 170, 0.5);
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
     border-left: none;
     border-right: none;
     border-bottom: none;
     margin-bottom: 30px;
-
 }
 
 #jobs {
@@ -2607,26 +2604,20 @@ border-radius: 10px;
 }
 
 .label-primary {
-
-    background-color: #0073aa;
-
+    background-color: #FCB300;
 }
 
 .label {
-
     border-radius: 2px;
     color: #fff;
     font-size: 12px;
     line-height: 1;
     margin-bottom: 0;
     text-transform: capitalize;
-
 }
 
 .f-right {
-
     float: right;
-
 }
 
 .tab-content {
@@ -2661,4 +2652,21 @@ border-radius: 10px;
 
 .progress-bar {
   width: 0;
+}
+
+.card-edit {
+  display: flex;
+}
+
+.btn-edit {
+  position: absolute;
+  right: 0;
+}
+
+.edit-form {
+  display: none;
+}
+
+.card h5 {
+  margin: 0;
 }

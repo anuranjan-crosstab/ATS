@@ -294,17 +294,17 @@
   <main id="main">
     <div class="container main-secction">
       <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12 image-section">
+<!--         <div class="col-md-12 col-sm-12 col-xs-12 image-section">
           <img src="https://png.pngtree.com/thumb_back/fw800/back_pic/00/08/57/41562ad4a92b16a.jpg">
-        </div>
+        </div> -->
         <div class="row user-left-part">
           <div class="col-md-3 col-sm-3 col-xs-12 user-profil-part pull-left">
             <div class="row ">
               <div class="col-md-12 col-md-12-sm-12 col-xs-12 user-image text-center">
-                <img src="https://www.jamf.com/jamf-nation/img/default-avatars/generic-user-purple.png" class="rounded-circle">
+                <img src="./img/avatar-2.png">
               </div>
               <div class="col-md-12 col-sm-12 col-xs-12 user-detail-section1 text-center">
-                <button id="btn-contact" (click)="clearModal()" data-toggle="modal" data-target="#contact" class="btn btn-success btn-block follow">Contact Me</button> 
+                <button id="btn-contact" (click)="clearModal()" data-toggle="modal" data-target="#contact" class="btn btn-default follow">Contact Me</button> 
                 <!-- <button class="btn btn-warning btn-block">Descargar Curriculum</button> -->
               </div>
               <div class="row user-detail-row">
@@ -343,7 +343,7 @@
                     <h5>Developer</h5>
                   </div>
                   <div class="col-md-4 col-sm-6 col-xs-6 profile-header-section1 text-right pull-rigth">
-                    <a href="/search" class="btn btn-primary btn-block">Follow</a>
+                    <a href="/search" class="btn btn-primary">Follow</a>
                   </div>
                 </div>
               </div>
@@ -352,16 +352,16 @@
                   <div class="col-md-12">
                     <ul class="nav nav-tabs" role="tablist">
                       <li class="nav-item">
-                        <a class="nav-link active" href="#companies" role="tab" data-toggle="tab"><i class="fas fa-user-circle"></i> Companies</a>
+                        <a class="nav-link active" href="#companies" role="tab" data-toggle="tab"><i class="fas fa-building"></i> Companies</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#about2" role="tab" data-toggle="tab"><i class="fas fa-info-circle"></i> About</a>
+                        <a class="nav-link" href="#about2" role="tab" data-toggle="tab"><i class="fas fa-user"></i> About</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#skills" role="tab" data-toggle="tab"><i class="fas fa-info-circle"></i> Skills</a>
+                        <a class="nav-link" href="#skills" role="tab" data-toggle="tab"><i class="fas fa-bar-chart"></i> Skills</a>
                       </li> 
                       <li class="nav-item">
-                        <a class="nav-link" href="#cv" role="tab" data-toggle="tab"><i class="fas fa-info-circle"></i> CV</a>
+                        <a class="nav-link" href="#cv" role="tab" data-toggle="tab"><i class="fas fa-pencil"></i> CV</a>
                       </li>                                               
                     </ul>
 
@@ -510,14 +510,14 @@
                         <div class="row">
                           <div class="col-sm-12">
                             <div class="card">
-                              <div class="card-header">
+                              <div class="card-header card-edit">
                                 <h5 class="card-header-text">Basic Information</h5>
-                                <button id="edit-btn" type="button" class="btn btn-primary waves-effect waves-light f-right">
-                                  <i class="icofont icofont-edit"></i>
+                                <button id="edit-btn" type="button" class="btn btn-primary waves-effect waves-light f-right btn-edit">
+                                  <i class="fa fa-edit"></i>
                                 </button>
                               </div>
                               <div class="card-block">
-                                <div id="view-info" class="row">
+                                <div id="view-info" class="row info-show">
                                   <div class="col-lg-6 col-md-12">
                                     <form>
                                       <table class="table table-responsive m-b-0">
@@ -546,7 +546,7 @@
                                     </form>
                                   </div>
                                 </div>
-                                <div id="edit-info" class="row">
+                                <div id="edit-info" class="row edit-form">
                                   <div class="col-lg-12 col-md-12">
                                     <form>
                                       <div class="input-group">
@@ -585,7 +585,7 @@
                                         <textarea rows="5" cols="5" class="form-control" placeholder="Address..."></textarea>
                                       </div>
                                       <div class="text-center m-t-20">
-                                        <a href="javascript:;" id="edit-save" class="btn btn-primary waves-effect waves-light m-r-20">Save</a>
+                                        <a href="javascript:;" id="edit-save" class="btn btn-primary waves-effect waves-light m-r-20 save">Save</a>
                                         <a href="javascript:;" id="edit-cancel" class="btn btn-default waves-effect waves-light">Cancel</a>
                                       </div>
                                     </form>
@@ -596,14 +596,14 @@
                           </div>
                           <div class="col-sm-12">
                             <div class="card">
-                              <div class="card-header">
+                              <div class="card-header card-edit">
                                 <h5 class="card-header-text">Contact Information</h5>
-                                <button id="edit-Contact" type="button" class="btn btn-primary waves-effect waves-light f-right">
-                                  <i class="icofont icofont-edit"></i>
+                                <button id="edit-Contact" type="button" class="btn btn-primary waves-effect waves-light f-right btn-edit">
+                                  <i class="fa fa-edit"></i>
                                 </button>
                               </div>
                               <div class="card-block">
-                                <div id="contact-info" class="row">
+                                <div id="contact-info" class="row info-show">
                                   <div class="col-lg-6 col-md-12">
                                     <table class="table table-responsive m-b-0">
                                       <tr>
@@ -625,7 +625,7 @@
                                     </table>
                                   </div>
                                 </div>
-                                <div id="edit-contact-info" class="row">
+                                <div id="edit-contact-info" class="row edit-form">
                                   <div class="col-lg-12 col-md-12">
                                     <form>
                                       <div class="input-group">
@@ -641,7 +641,7 @@
                                         <input type="text" class="form-control" placeholder="Skype id">
                                       </div>
                                       <div class="text-center m-t-20">
-                                        <a href="javascript:;" id="contact-save" class="btn btn-primary waves-effect waves-light m-r-20">Save</a>
+                                        <a href="javascript:;" id="contact-save" class="btn btn-primary waves-effect waves-light m-r-20 save">Save</a>
                                         <a href="javascript:;" id="contact-cancel" class="btn btn-default waves-effect waves-light">Cancel</a>
                                       </div>
                                     </form>
@@ -652,14 +652,14 @@
                           </div>
                           <div class="col-sm-12">
                             <div class="card">
-                              <div class="card-header">
+                              <div class="card-header card-edit">
                                 <h5 class="card-header-text">Work</h5>
-                                <button id="edit-work" type="button" class="btn btn-primary waves-effect waves-light f-right">
-                                  <i class="icofont icofont-edit"></i>
+                                <button id="edit-work" type="button" class="btn btn-primary waves-effect waves-light f-right btn-edit">
+                                  <i class="fa fa-edit"></i>
                                 </button>
                               </div>
                               <div class="card-block">
-                                <div id="work-info" class="row">
+                                <div id="work-info" class="row info-show">
                                   <div class="col-lg-6 col-md-12">
                                     <table class="table table-responsive m-b-0">
                                       <tr>
@@ -678,7 +678,7 @@
                                     </table>
                                   </div>
                                 </div>
-                                <div id="edit-contact-work" class="row">
+                                <div id="edit-contact-work" class="row edit-form">
                                   <div class="col-lg-12 col-md-12">
                                     <form>
                                       <div class="input-group">
@@ -703,7 +703,7 @@
                                         </select>
                                       </div>
                                       <div class="text-center m-t-20">
-                                        <a href="javascript:;" id="work-save" class="btn btn-primary waves-effect waves-light m-r-20">Save</a>
+                                        <a href="javascript:;" id="work-save" class="btn btn-primary waves-effect waves-light m-r-20 save">Save</a>
                                         <a href="javascript:;" id="work-cancel" class="btn btn-default waves-effect waves-light">Cancel</a>
                                       </div>
                                     </form>
