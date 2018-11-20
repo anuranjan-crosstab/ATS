@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>CrossTab ATS</title>
+  <title>Talent Cache</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta name="author" content="">
@@ -25,9 +25,12 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
+  <link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style3.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link href="css/style2.css" rel="stylesheet">
 
 </head>
@@ -39,10 +42,11 @@
   ============================-->
 
   <section id="topbar" class="d-none d-lg-block">
+    <div id="banner-full" style="background: url('./img/intro-carousel/banner4.jpg'); background-repeat: no-repeat; background-size: cover;"></div>
     <div class="container clearfix">
       <div class="float-left" id="logo-here">
       <div id="logo" class="pull-left">
-        <h2 style="margin: 0;"><a href="./index.html" class="scrollto">CrossTab<span>ATS</span></a></h2>
+        <h2 style="margin: 0;"><a href="./index.html" class="scrollto">Talent<span>Cache</span></a></h2>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
@@ -228,16 +232,16 @@
 
           <!-- particles.js container -->
     <div id="particles-js"></div>
-    <div class="text-center" id="search-heading">
-      <h2>A better search</h2>
-      <p>CrossTab ATS is an applicant tracking system and recruiting software designed to optimize your entire recruiting process. Find better candidates, conduct more focused interviews, and make data-driven hiring decisions.</p>
-      <button class="btn btn-outline-primary btn-lg">Request a Demo</button>
-    </div>
 
   <!--==========================
     Intro Section
   ============================-->
   <section id="intro">
+    <div class="text-center" id="search-heading">
+      <h2>A better search</h2>
+      <p>Talent Cache is an <strong>Applicant Mapping System</strong> and recruiting software designed to optimize your entire recruiting process. Find better candidates, conduct more focused interviews, and make data-driven hiring decisions.</p>
+      <button class="btn btn-outline-primary btn-lg">Request a Demo</button>
+    </div>
 <!--     <div class="container text-center">
       <div class="row">
         <div class="col-md-12" id="form-top">
@@ -289,12 +293,63 @@
   </section><!-- #intro -->
 
   <main id="main">
-    <div class="language under-construction">
-      <figure>
-        <a href="#!"><img src="./img/img-animate.png"></a>
-        <figcaption>Watch Live</figcaption>
-      </figure>
-    </div>
+    <!--==========================
+      Select Section
+    ============================-->
+
+    <section id="select" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 about-right mt-lg-0 mt-5 pl-lg-5">
+            <div id="horizontalTab">
+              <ul class="resp-tabs-list">
+                <li><h3>Recruit at Scale for High-Powered Hiring</h3></li>
+                <li><h3>Hire Top Talent Faster</h3></li>
+                <li><h3>Automate Your Hiring Process</h3></li>
+              </ul>
+              <img src="./img/features.png" class="img-fluid" id="feature-side">
+              <div class="resp-tabs-container" id="feature-content">
+                <div class="tab1">
+                  <h4 class="">Talent Cache AMS is a Leading Best-of-Breed Recruiting Software</h4>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <img src="./img/task.gif" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 small-description">
+                      <p class="">Our comprehensive recruiting platform accelerates recruiting with an easy-to-use AMS, social recruiting capabilities, mobile-optimized branded career sites, a recruiting branding solution, on-demand video screening, advanced analytics, onboarding, and seamless integration with other HR systems.</p>
+                    </div>
+                  </div>                
+                </div>
+                <div class="tab2">
+                  <h4 class="">The AMS You’ve Been Dreaming About</h4>
+                  <div class="row">
+                    <div class="col-md-3 language">
+                      <img src="./img/ipad2.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-9 small-description">
+                      <p class="">Talent Cache’s Applicant Mapping System is the top best-of-breed recruiting platform available. Built on knowledge gleaned from many years of development, and working with thousands of customers, Talent Cache AMS makes recruiting more efficient and cost effective.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab3">
+                  <h4 class="">Talent Cache AMS Makes Hiring Easy and Cost Effective</h4>
+                  <div class="row">
+                    <div class="col-md-3 language">
+                      <img src="./img/ipad3.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-9 small-description">
+                      <p class="">Talent Cache AMS—our innovative Applicant Mapping System—goes way beyond your garden-variety ATS. Leveraging many years of development expertise and feedback from thousands of customers, our product is expertly built to make your job easier, your recruiting more efficient, and your strategies more cost-effective.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #select -->
+
 
     <!--==========================
       About Section
@@ -304,7 +359,7 @@
         <div class="row">
 
           <div class="col-lg-6 content">
-            <h2>What Makes CrossTab ATS Different?</h2>
+            <h2>What Makes Talent Cache Different?</h2>
             <h3>From years of collaborating closely with recruitment teams, we have figured out that rarely does “one-size-fits-all”.</h3>
 
             <ul>
@@ -320,39 +375,69 @@
 
         </div>
       </div>
+      <div id="about-below">
+        <div id='object'><img src="./img/shake3.png"></div>
+        <div id="object2"><img src="./img/shake2.png"></div>
+      </div>
     </section><!-- #about -->
 
     <!--==========================
       Services Section
     ============================-->
     <section id="services">
-      <div id="app">
-        <main>
-          <section id="container" :class="{ loading: isLoading }" ref="container">
-            <div v-cloak v-for="(obj, index) in renderItems" :key="obj.id" :class="['item-wrap', { selected: obj.id === selectedItem }]"
-            @click="selectedItem = (selectedItem === obj.id) ? undefined : obj.id" @mouseenter="selectedItem = undefined">
-            <figure class="item">
-              <aside class="a-side">
-                <span class="a-side__name">{{ obj.name }}</span>
-                <div class="a-side__image">
-                  <img :src="obj.image_url" :alt="obj.name">
-                </div>
-                <span class="a-side__tagline">{{ obj.tagline }}</span>
-              </aside>
-              <aside class="b-side">
-                <div class="b-side__info">
-                  <span class="b-side__info-item" :class="{ empty: obj.abv === null }">{{ obj.abv | textContent('ABV') }}</span>
-                  <span class="b-side__info-item" :class="{ empty: obj.ibu === null }">{{ obj.ibu | textContent('IBU') }}</span>
-                  <span class="b-side__info-item" :class="{ empty: obj.srm === null }">{{ obj.srm | textContent('SRM') }}</span>
-                </div>
-                <span class="b-side__text">
-                  <span class="text-ellipsis">{{ obj.description }}</span>
-                </span>
-              </aside>
-            </figure>
+      <div class="container text-center">
+<!--         <div class="section-header">
+          <h2>Services</h2>
+          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+        </div> -->
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box wow fadeInLeft">
+              <!-- <div class="icon"><i class="fa fa-bar-chart"></i></div> -->
+              <h4 class="title"><a href="">Find</a></h4>
+              <p class="description">Source qualified candidates faster from job boards, social networks and your talent pool using the business intelligence of our fully-featured recruiting system. </p>
+              <!-- <button class="btn btn-info btn-lg">Place a free advert</button> -->
             </div>
-          </section>
-        </main>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="box wow fadeInDown">
+              <!-- <div class="icon"><i class="fa fa-bar-chart"></i></div> -->
+              <h4 class="title"><a href="">Engage</a></h4>
+              <p class="description">Save time and make candidate management easy with CRM integrated applicant tracking software that includes all communication, interviewing & engagement tools. </p>
+              <!-- <button class="btn btn-info btn-lg">Place a free advert</button> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="box wow fadeInRight">
+              <!-- <div class="icon"><i class="fa fa-picture-o"></i></div> -->
+              <h4 class="title"><a href="">Hire</a></h4>
+              <p class="description">Bring the best onboard with a recruiting software that features built-in video screening, interview scorecard and facilitates real-time feedback from your entire team. </p>
+              <!-- <button class="btn btn-info btn-lg">Place a free advert</button> -->
+            </div>
+          </div>
+
+<!--           <div class="col-lg-6">
+            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur trinige zareta lobur trade.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-map"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum rideta zanox satirente madera</p>
+            </div>
+          </div> -->
+
+        </div>
+
       </div>
     </section><!-- #services -->
 
@@ -366,29 +451,25 @@
           <div class="col-lg-2 col-md-3 mb-lg-0 mb-5 ser_grid1 icon1">
             <span class="fab fa-forumbee"></span>
             <h3>Feature One </h3>
-            <p>Phasellus congue erat sem, ut tempor mauris tincidunt non. Nulla in erat
-            nec orci semper ultrices et sed libero. empor mauris tincidunt</p>
+            <p>Your interactions with candidates don't take place in a single location, and you shouldn't be confined to work in one. Talent Cache mobile recruiting software lets you view and edit candidate records, create notes, and access placement data on any device at any time.</p>
             <a href="#">Read More <span class="fa fa-angle-right"></span></a>
           </div>
           <div class="col-lg-2 col-md-3 mb-lg-0 mb-5 ser_grid1 icon2">
             <span class="fab fa-foursquare"></span>
             <h3>Feature Two</h3>
-            <p>Phasellus congue erat sem, ut tempor mauris tincidunt non. Nulla in erat
-            nec orci semper ultrices et sed libero. empor mauris tincidunt</p>
+            <p>Recruiters can’t afford to miss conversations with candidates, and with Bullhorn’s passive activity tracking, they never will. The system automatically tracks all email activity associated with a particular candidate record and updates that record in real time.</p>
             <a href="#">Read More <span class="fa fa-angle-right"></span></a>
           </div>
           <div class="col-lg-2 col-md-3 mb-lg-0 mb-5 ser_grid1 icon3">
             <span class="fab fa-first-order"></span>
             <h3>Feature Three</h3>
-            <p>Phasellus congue erat sem, ut tempor mauris tincidunt non. Nulla in erat
-            nec orci semper ultrices et sed libero. empor mauris tincidunt</p>
+            <p>Talent Cache reporting and analytics capabilities enable you to turn your team’s recruiting activity data into business insight. Standard reports include analysis of overall team and individual recruiter performance, placement activity, activity against specific job orders, and more.</p>
             <a href="#">Read More <span class="fa fa-angle-right"></span></a>
           </div>
           <div class="col-lg-2 col-md-3 ser_grid1 icon4">
             <span class="fab fa-freebsd"></span>
             <h3>Feature Four</h3>
-            <p>Phasellus congue erat sem, ut tempor mauris tincidunt non. Nulla in erat
-            nec orci semper ultrices et sed libero. empor mauris tincidunt</p>
+            <p>Talent Cache has provided the industry’s first staffing-specific applicant tracking system integration with LinkedIn Recruiter to streamline a recruiter’s workflow, reduce clicks, and provide a continuously up-to-date view of candidate information. </p>
             <a href="#">Read More <span class="fa fa-angle-right"></span></a>
           </div>
           <div class="col-lg-4 col-12 mt-lg-0 mt-5 team_grid1">
@@ -406,23 +487,528 @@
     <!--==========================
       Clients Section
     ============================-->
-    <section id="clients" class="">
+    <section id="clients" class="wow fadeInUp">
       <div class="container">
         <div class="section-header text-center">
           <h2>Clients</h2>
           <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
         </div>
 
-        <div id="lets">
-          <img src="img/img-animate.png" alt="">
+        <div class="owl-carousel clients-carousel">
+          <img src="img/clients/client-1.png" alt="">
+          <img src="img/clients/client-2.png" alt="">
+          <img src="img/clients/client-3.png" alt="">
+          <img src="img/clients/client-4.png" alt="">
+          <img src="img/clients/client-5.png" alt="">
+          <img src="img/clients/client-6.png" alt="">
+          <img src="img/clients/client-7.png" alt="">
+          <img src="img/clients/client-8.png" alt="">
         </div>
 
       </div>
     </section>
     <!-- #clients -->
 
-    <div id='object'><img src="./img/shake1.png"></div>
-    <div id="object2"><img src="./img/shake2.png"></div>
+    <!--==========================
+      Our Portfolio Section
+    ============================-->
+<!--     <section id="portfolio" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header text-center" id="whole-uk">
+          <h2>Purchase Property</h2>
+          <p>Check the properties in the following countries. Make your life luxurious.</p>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row no-gutters">
+
+          <div class="col-6 col-sm-6 col-md-3" id="set">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="#" class="portfolio-popup">
+                <img src="img/portfolio/1.png" alt="" class="rounded mx-auto d-block">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h2 class="wow fadeInUp">England</h2></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-3" id="set">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="#" class="portfolio-popup">
+                <img src="img/portfolio/2.png" alt="" class="rounded mx-auto d-block">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h2 class="wow fadeInUp">Scotland</h2></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-3" id="set">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="#" class="portfolio-popup">
+                <img src="img/portfolio/3.png" alt="" class="rounded mx-auto d-block">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h2 class="wow fadeInUp">Wales</h2></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-3" id="set">
+            <div class="portfolio-item wow fadeInUp">
+              <a href="#" class="portfolio-popup">
+                <img src="img/portfolio/4.png" alt="" class="rounded mx-auto d-block">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info"><h2 class="wow fadeInUp">Northern Ireland</h2></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> --><!-- #portfolio -->
+
+    <!--==========================
+      Listing Section
+    ============================-->
+<!--     <section id="listing" class="wow fadeInRight">
+
+
+    <div class="container-fluid">
+        <div class="section-header text-center">
+          <h2>Favourites</h2>
+          <p>Check out famous place</p>
+        </div>
+        <div class="container container-pad" id="property-listings">
+            
+            <div class="row">
+                <div class="col-sm-6"> 
+
+
+                    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
+                        <div class="media">
+                            <a class="pull-left" href="#" target="_parent">
+                            <img alt="image" class="img-fluid" src="http://images.prd.mris.com/image/V2/1/Yu59d899Ocpyr_RnF0-8qNJX1oYibjwp9TiLy-bZvU9vRJ2iC1zSQgFwW-fTCs6tVkKrj99s7FFm5Ygwl88xIA.jpg"></a>
+
+                            <div class="clearfix visible-sm"></div>
+
+                            <div class="media-body fnt-smaller">
+                                <a href="#" target="_parent"></a>
+
+                                <h4 class="media-heading">
+                                  <a href="#" target="_parent">$1,975,000 <small class="pull-right">609 W Gravers Ln</small></a></h4>
+
+
+                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
+                                    <li class="list-inline-item">4,820 SqFt</li>
+
+                                    <li class="list-inline-item" style="list-style: none">|</li>
+
+                                    <li class="list-inline-item">5 Beds</li>
+
+                                    <li class="list-inline-item" style="list-style: none">|</li>
+
+                                    <li class="list-inline-item">5 Baths</li>
+                                </ul>
+
+                                <p class="hidden-xs">Situated between fairmount
+                                park and the prestigious philadelphia cricket
+                                club, this beautiful 2+ acre property is truly
+                                ...</p><span class="fnt-smaller fnt-lighter fnt-arial">Courtesy of HS Fox & Roach-Chestnut Hill
+                                Evergreen</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
+                        <div class="media">
+                            <a class="pull-left" href="#" target="_parent">
+                            <img alt="image" class="img-fluid" src="http://images.prd.mris.com/image/V2/1/iwn7qH9r9OPnqTaTTxxb8PBzQHk2EiHU2PBBntt041AZsVsGY-SeUexTMLgRcYSJukrKOwHaYnTVXAsk6RdSmA.jpg"></a>
+
+                            <div class="clearfix visible-sm"></div>
+
+                            <div class="media-body fnt-smaller">
+                                <a href="#" target="_parent"></a>
+
+                                <h4 class="media-heading">
+                                  <a href="#" target="_parent">$1,599,999 <small class="pull-right">209 Chestnut Hill ve</small></a></h4>
+
+
+                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
+                                    <li class="list-inline-item">16,581 SqFt</li>
+
+                                    <li class="list-inline-item" style="list-style: none">|</li>
+
+                                    <li class="list-inline-item">8 Beds</li>
+
+                                    <li class="list-inline-item" style="list-style: none">|</li>
+
+                                    <li class="list-inline-item">4 Baths</li>
+                                </ul>
+
+                                <p class="hidden-xs">Built in 1909 by
+                                pittsburgh steel magnate henry a. laughlin,
+                                greylock is a classic chestnut hill stone
+                                mansion once cons...</p><span class="fnt-smaller fnt-lighter fnt-arial">Courtesy of ng and Foster-Devon</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-sm-6">  
+
+
+                    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
+                        <div class="media">
+                            <a class="pull-left" href="#" target="_parent">
+                            <img alt="image" class="img-fluid" src="http://images.prd.mris.com/image/V2/1/vGoNjc2jHGb87GlnnDQlf6LxeOUgIOn0bL6Wvn1nEnig2Ntq6W7xN5cOQBZZeNxl9O42DOkHUw0LNnj1ZB2KHA.jpg"></a>
+
+                            <div class="clearfix visible-sm"></div>
+
+                            <div class="media-body fnt-smaller">
+                                <a href="#" target="_parent"></a>
+
+                                <h4 class="media-heading">
+                                  <a href="#" target="_parent">$1,500,000 <small class="pull-right">1220-32 N Howard St</small></a></h4>
+
+
+                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
+                                    <li class="list-inline-item">4,900 SqFt</li>
+
+                                    <li class="list-inline-item" style="list-style: none">|</li>
+
+                                    <li class="list-inline-item">1 Beds</li>
+
+                                    <li class="list-inline-item" style="list-style: none">|</li>
+
+                                    <li class="list-inline-item">1 Baths</li>
+                                </ul>
+
+                                <p class="hidden-xs">A once in a lifetime
+                                opportunity to own a unique live / work space
+                                in one of philadelphia's most popular
+                                neighborhoods. ...</p><span class="fnt-smaller fnt-lighter fnt-arial">Courtesy of ll Banker Preferred-Philadelphia</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
+                        <div class="media">
+                            <a class="pull-left" href="#" target="_parent">
+                            <img alt="image" class="img-fluid" src="http://images.prd.mris.com/image/V2/1/uLp58OH37CTPHxXcgJXYw8zT2u3xg_2XIbFndB6J0WTSAStGBaEV6YsdAseSZTKAdthm0OzG-Ca_EIkoXIEBxw.jpg"></a>
+
+                            <div class="clearfix visible-sm"></div>
+
+                            <div class="media-body fnt-smaller">
+                                <a href="#" target="_parent"></a>
+
+                                <h4 class="media-heading">
+                                  <a href="#" target="_parent">$1,295,000 <small class="pull-right">9006 Crefeld St</small></a></h4>
+
+
+                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
+                                    <li class="list-inline-item">7,672 SqFt</li>
+
+                                    <li class="list-inline-item" style="list-style: none">|</li>
+
+                                    <li class="list-inline-item">7 Beds</li>
+
+                                    <li class="list-inline-item" style="list-style: none">|</li>
+
+                                    <li class="list-inline-item">5 Baths</li>
+                                </ul>
+
+                                <p class="hidden-xs">Located in chestnut hill,
+                                recently named by the american planning
+                                association as one of america's top 10 great
+                                neighborh...</p><span class="fnt-smaller fnt-lighter fnt-arial">Courtesy of RE/MAX Services</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section> -->
+    <!-- #listing -->
+
+    <!--==========================
+      Application Section
+    ============================-->
+    <section id="application" class="wow fadeInLeft">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Available on iOS/Android</h2>
+          <p>Download our app for quick access</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="./img/iosandriod.png" class="img-fluid">
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-4 col-6"><a href=""><img src="./img/android.png" class="img-fluid"></a></div>
+              <div class="col-md-4 col-6"><a href=""><img src="./img/ios.png" class="img-fluid"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- #app -->
+
+    <!--==========================
+      Testimonials Section
+    ============================-->
+    <section id="testimonials" class="wow fadeInUp">
+      <div id="extra"></div>
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Testimonials</h2>
+          <p>Our clients praise the quality of service we provide them</p>
+        </div>
+        <div class="owl-carousel testimonials-carousel">
+
+            <div class="testimonial-item">
+              <p>
+                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+              <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
+              <h3>Saul Goodman</h3>
+              <h4>Ceo &amp; Founder</h4>
+            </div>
+
+            <div class="testimonial-item">
+              <p>
+                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+              <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
+              <h3>Sara Wilsson</h3>
+              <h4>Designer</h4>
+            </div>
+
+            <div class="testimonial-item">
+              <p>
+                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+              <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
+              <h3>Jena Karlis</h3>
+              <h4>Store Owner</h4>
+            </div>
+
+            <div class="testimonial-item">
+              <p>
+                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+              <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
+              <h3>Matt Brandon</h3>
+              <h4>Freelancer</h4>
+            </div>
+
+            <div class="testimonial-item">
+              <p>
+                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+              <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
+              <h3>John Larson</h3>
+              <h4>Entrepreneur</h4>
+            </div>
+
+        </div>
+
+      </div>
+    </section><!-- #testimonials -->
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+<!--     <section id="call-to-action" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">Sell My Property</h3>
+            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Post an Ad</a>
+          </div>
+        </div>
+
+      </div>
+    </section> -->
+    <!-- #call-to-action -->
+
+    <!--==========================
+      Our Team Section
+    ============================-->
+<!--     <section id="team" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Team</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team-1.jpg" alt=""></div>
+              <div class="details">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team-2.jpg" alt=""></div>
+              <div class="details">
+                <h4>Sarah Jhinson</h4>
+                <span>Product Manager</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team-3.jpg" alt=""></div>
+              <div class="details">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team-4.jpg" alt=""></div>
+              <div class="details">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section> --><!-- #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+<!--     <section id="contact" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>A108 Adam Street, NY 535022, USA</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">info@example.com</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="google-map" data-latitude="40.713732" data-longitude="-74.0092704"></div>
+
+      <div class="container">
+        <div class="form">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section>-->
+
+    <!-- #contact --> 
 
   </main>
 
@@ -438,7 +1024,7 @@
           <ul class="list-unstyled quick-links">
             <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Vision</a></li>
             <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About Us</a></li>
-            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Why use CrossTab ATS?</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Why use Talent Cache?</a></li>
             <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>News & Awards</a></li>
             <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Terms</a></li>
             <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Privacy Policy</a></li>
@@ -498,7 +1084,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
           <p></p>
-          <p class="h6">&copy CrossTab ATS<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank"></a>All right reserved.</p>
+          <p class="h6">&copy Talent Cache<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank"></a>All right reserved.</p>
         </div>
       </div>  
     </div>
@@ -524,185 +1110,76 @@
 
 <!-- scripts -->
 <script src="js/particles.js"></script>
-<script src="js/app2.js"></script>
+<script src="js/app.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
 
 <!-- stats.js -->
 <script src="js/stats.js"></script>
 <script>
- 
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
 </script>
 
-<script>
-var window_width = $(window).width() - $('#object, #object2').width();
-
-var document_height = $(document).height() - $(window).height() - 1500;
-
-$(function () {
-    $(window).scroll(function () {
-        var scroll_position = $(window).scrollTop();
-        var object_position_left = window_width * (scroll_position / document_height);
-        var object_position_right = window_width * (scroll_position / document_height);
-        console.log(object_position_right);
-        if (object_position_left <= 480) {
-          $('#object').css({
-              'left': object_position_left
-          });
-        }
-        if (object_position_right <= 520) {
-          $('#object2').css({
-              'right': object_position_right
-          });
-        }
-    });
-});
-</script>
-
-<script>
-  $(document).ready(function() {
-  $('#lets').addClass('wow zoomIn');
-    var zoomIn = $(this).text();
-    var delayTime = 5000;
-    if ($("#lets").hasClass('wow zoomIn')) {
-     setTimeout(function () {
-         $('#lets').removeClass('wow zoomIn');
-      $('#lets').addClass('wow zoomOut');
-    }, 5000);
-      return false;
-    } else if($("#lets").hasClass('wow zoomOut')){
-      setTimeout(function () {
-         $('#lets').removeClass('wow zoomOut');
-      $('#lets').addClass('wow zoomIn');
-    }, 5000);
-      return false;
-    }
-    
-   /* function zoom_in(){
-       setTimeout(function () {
-         $('#lets').removeClass('wow zoomOut');
-      $('#lets').addClass('wow zoomIn');
-    }, 5000);
-    }
-    function zoom_out(){
-       setTimeout(function () {
-         $('#lets').removeClass('wow zoomIn');
-      $('#lets').addClass('wow zoomOut');
-    }, 3000);
-    }*/
+  <!-- tabs -->
+  <script src="js/easy-responsive-tabs.js"></script>
+  <script>
+  $(document).ready(function () {
+  $('#horizontalTab').easyResponsiveTabs({
+  type: 'default', //Types: default, vertical, accordion           
+  width: 'auto', //auto or any width like 600px
+  fit: true,   // 100% fit in a container
+  closed: 'accordion', // Start closed if in accordion view
+  activate: function(event) { // Callback function if tab is switched
+  var $tab = $(this);
+  var $info = $('#tabInfo');
+  var $name = $('span', $info);
+  $name.text($tab.text());
+  $info.show();
+  }
   });
-</script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
-<script>
-new Vue({
-    el: '#app',
-    data: {
-        fetchedItems: [],
-        renderItems: [],
-        renderImages: [],
-        isLoading: true,
-        selectedItem: undefined,
-        apiParams: {
-            page: 1,
-            perPage: 30,
-        },
-        subheading: `Browse BrewDog’s <a href="https://www.brewdog.com/lowdown/diydog" target="_blank">DIY Dog</a> catalogue. Kindly powered by <a href="https://punkapi.com/" target="_blank">Punk API</a>.`,
-    },
-    watch: {
-        renderItems() {
-            // item array to render is populated
-            const urls = this.renderItems.map((obj) => obj.image_url);
-            // load images before display
-            this.loadImages(urls);
-        },
-        renderImages() {
-            // images loaded
-            setTimeout(() => this.isLoading = false, 260);
-        },
-        selectedItem() {
-            if (this.selectedItem) console.log('selected: ', this.selectedItem);
-        },
-    },
-    filters: {
-        textContent(value, type) {
-            return (value) ? `${type}: ${value}` : null;
-        }
-    },
-    methods: {
-        fetchData() {
-            const url = `https://api.punkapi.com/v2/beers?page=${this.apiParams.page}&per_page=${this.apiParams.perPage}`;
-            fetch(url, { method: 'GET' })
-                .then((response) => response.json())
-                .then((json) => {
-                    this.apiParams.page++;
-                    this.processData(json);
-                })
-                .catch((error) => {
-                    this.subheading = `Whoops! Unable to reach Punk API ${String.fromCodePoint(0x1F605)}`;
-                    console.error(error);
-                });
-        },
-        processData(data) {
-            // store the fetched data
-            const maxLength = 360;
-            this.fetchedItems = data.map((each) => {
-                return Object.entries(each).reduce((obj, [key, value]) => {
-                    return { ...obj, [key]: (key === 'description' && value.length > maxLength)
-                        ? this.truncateEllipsis(value, maxLength) // trim descriptions
-                        : value
-                    };
-                }, {});
-            });
-            // render next set
-            this.nextSet();
-        },
-        truncateEllipsis(string, maxLength) {
-            const trimmed = string.substring(0, maxLength);
-            return `${trimmed.substring(0, trimmed.lastIndexOf('. '))}...`;
-        },
-        loadImages(urls) {
-            const promisedImages = urls.map((url) => {
-                return new Promise((resolve, reject) => {
-                    const image = new Image();
-                    // '.onload' must precede '.src' to resolve previously cached images
-                    image.onload = () => resolve(image);
-                    image.onerror = (error) => reject(error);
-                    image.src = url;
-                });
-            });
-            return Promise.all(promisedImages)
-                // update
-                .then((resolvedImages) => this.renderImages = resolvedImages)
-                .catch((error) => {
-                    this.subheading = `Whoops! Image loading has failed ${String.fromCodePoint(0x1F605)}`;
-                    console.error(error);
-                });
-        },
-        nextSet() {
-            // apply delegate class
-            this.isLoading = true;
+  $('#verticalTab').easyResponsiveTabs({
+  type: 'vertical',
+  width: 'auto',
+  fit: true
+  });
+  });
+  </script>
+  <!--//tabs-->
 
-            // fetch new data if required
-            if (this.fetchedItems.length === 0) {
-                this.fetchData();
+  <script>
+    var window_width = $(window).width() - $('#object, #object2').width();
 
-            } else { // use local data
-                // sleep for transition duration
-                setTimeout(() => {
-                    if (this.fetchedItems.length > 9) {
-                        this.renderItems = this.fetchedItems.slice(0, 10);
-                        this.fetchedItems.splice(0, 10);
-                    } else { // incomplete set remaining
-                        this.renderItems = this.fetchedItems.slice(0, (this.fetchedItems.length % 10));
-                        this.fetchedItems = [];
-                    }
-                }, 960);
-            }
-        },
-    },
-    created() {
-        this.fetchData();
-    }
-});
-</script>
+    var document_height = $(document).height() - $(window).height();
+
+    $(function () {
+        $(window).scroll(function () {
+            var scroll_position = $(window).scrollTop() - 150;
+            var object_position_left = window_width * (scroll_position / document_height);
+            var object_position_right = window_width * (scroll_position / document_height);
+            $('#object').css({
+                'left': object_position_left
+            });
+            $('#object2').css({
+                'right': object_position_right
+            });
+        });
+    });
+  </script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>

@@ -178,3 +178,5 @@ $(".progress-bar").each(function(i){
         }
     });
 });
+
+$('#myModal').modal('show');

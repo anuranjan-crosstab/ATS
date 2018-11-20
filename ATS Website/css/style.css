@@ -2176,7 +2176,7 @@ border-radius: 10px;
 
 /*-- select section --*/
 #select {
-  margin-top: 100px;
+  margin: 100px 0 50px 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -2303,7 +2303,7 @@ border-radius: 10px;
 
 .small-description {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 #feature-side {
@@ -2669,4 +2669,51 @@ border-radius: 10px;
 
 .card h5 {
   margin: 0;
+}
+
+.nav-tabs {
+    margin-bottom: 15px;
+}
+.sign-with {
+    margin-top: 25px;
+    padding: 20px;
+}
+div#OR {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #C2C2C2;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    float: right;
+    position: absolute;
+    right: -16px;
+    top: 40%;
+    z-index: 1;
+    color: #ffffff;
+    background: #FCB300;
+}
+
+.btn-linkedin {
+  background-color: #0077B5;
+  color: #ffffff;
+}
+
+.btn-linkedin:hover, .btn-linkedin:active {
+  background-color: #ffffff;
+  color: #0077B5;
+  border: 1px solid;
+}
+
+.btn-google {
+  background-color: #b23121;
+  color: #ffffff;
+}
+
+.btn-google:hover, .btn-google:active {
+  background-color: #ffffff;
+  color: #b23121;
+  border: 1px solid;
 }
