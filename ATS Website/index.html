@@ -72,9 +72,9 @@
         </div>
  -->      </div>
       <div class="float-right">
-        <div class="btn-group">
+        <div class="btn-group" id="register-button">
           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-            Register <span class="caret"></span>
+            Company Register <span class="caret"></span>
           </button>
           <ul id="login-dp" class="dropdown-menu dropdown-menu-right" role="menu">
             <li>
@@ -82,34 +82,53 @@
                   <div class="col-md-12">
                     For fast registration
                     <div class="social-buttons">
-                      <a href="#" class="btn btn-fb"><i class="fa fa-linkedin"></i>   Register using LinkedIn</a>
+                      <a href="#" class="btn btn-linkedin"><span class="fab fa-linkedin"></span></a>
+                      <a href="#" class="btn btn-google"><span class="fab fa-google"></span></a>
                     </div>
-                                   <hr><div class="text-center">or</div><hr>Register with your email
-                     <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+
+                      <hr>
+                    <div class="text-center">or</div>
+                      <hr>
+                      <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
                         <div class="form-group">
-                           <label class="sr-only" for="firstname">First Name</label>
-                           <input type="text" class="form-control" id="" placeholder="First Name" required>
+                           <label class="sr-only" for="companyname">Company Name</label>
+                           <input type="text" class="form-control form-control-sm" id="" placeholder="Company Name" required>
                         </div>
                         <div class="form-group">
-                           <label class="sr-only" for="lastname">Last Name</label>
-                           <input type="text" class="form-control" id="" placeholder="Last Name" required>
+                           <label class="sr-only" for="country">Country</label>
+                           <select class="form-control form-control-sm" id="" name="">
+                             <option>Select Country</option>
+                             <option>India</option>
+                             <option>USA</option>
+                             <option>UK</option>
+                             <option>Canada</option>
+                           </select>
                         </div>
                         <div class="form-group">
-                           <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                           <input type="email" class="form-control" id="" placeholder="Email Address" required>
+                           <label class="sr-only" for="state">State</label>
+                           <select class="form-control form-control-sm" id="" name="">
+                             <option>Select State</option>
+                           </select>
                         </div>
                         <div class="form-group">
-                           <label class="sr-only" for="exampleInputEmail2">Password</label>
-                           <input type="password" class="form-control" id="" placeholder="Password" required>
+                           <label class="sr-only" for="url">Company Career URL</label>
+                           <input type="text" class="form-control form-control-sm" id="" placeholder="Company Career URL" required>
                         </div>
                         <div class="form-group">
-                           <label class="sr-only" for="exampleInputPassword2">Confirm Password</label>
-                           <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Confirm Password" required>
+                           <label class="sr-only" for="admin">Admin Name</label>
+                           <input type="text" class="form-control form-control-sm" id="" placeholder="Admin Name" required>
                         </div>
-                        <div class="form-group form-check-inline">
-                           <label class="form-check-label" for="exampleInputPassword2">Gender:</label>
-                           <input type="radio" class="form-control form-check-input" id="exampleInputPassword2">Male
-                           <input type="radio" class="form-control form-check-input" id="exampleInputPassword2">Female
+                        <div class="form-group">
+                           <label class="sr-only" for="email">Company Email</label>
+                           <input type="email" class="form-control form-control-sm" id="" placeholder="Company Email" required>
+                        </div>
+                        <div class="form-group">
+                           <label class="sr-only" for="password">Password</label>
+                           <input type="password" class="form-control form-control-sm" id="" placeholder="Password" required>
+                        </div>
+                        <div class="form-group">
+                           <label class="sr-only" for="password2">Confirm Password</label>
+                           <input type="password" class="form-control form-control-sm" id="" placeholder="Confirm Password" required>
                         </div>
                         <div class="form-group">
                            <button type="submit" class="btn btn-primary btn-block">Register</button>
@@ -171,7 +190,7 @@
                       <div class="col-sm-2">
                       </div>
                       <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary btn-sm">
+                        <button type="submit" class="btn btn-primary">
                         Submit</button>
                         <a href="javascript:;">Forgot your password?</a>
                       </div>

@@ -179,4 +179,20 @@ $(".progress-bar").each(function(i){
     });
 });
 
-$('#myModal').modal('show');
+// $('#myModal').modal('show');
+
+$(function() {
+    $('#register-button').on({
+        "shown.bs.dropdown": function() {
+            $(this).data('closable', false);
+        },
+        "click": function(event) {
+            $(this).data('closable', false);
+        },
+        "hide.bs.dropdown": function(event) {
+            temp = $(this).data('closable');
+            $(this).data('closable', true);
+            return temp;
+        }
+    });
+});
