@@ -1235,6 +1235,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #f2f5f8;
   /*padding: 0 0 30px 0;*/
   font-size: 14px;
+  margin-top: 20px;
 }
 
 #footer .copyright {
@@ -2652,6 +2653,8 @@ border-radius: 10px;
 
 .progress-bar {
   width: 0;
+  background: linear-gradient(left, #33156d 0%, #f282bc 100%);
+  background: -webkit-linear-gradient(left, #33156d 0%, #f282bc 100%);
 }
 
 .card-edit {
@@ -2716,4 +2719,60 @@ div#OR {
   background-color: #ffffff;
   color: #b23121;
   border: 1px solid;
+}
+
+#about2 .table th, #skills .table th {
+  min-width: 250px;
+}
+
+#skills p {
+  margin: 0 0 10px 0;
+}
+
+.wrap {
+    display: flex;
+    background: white;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.wrap:hover {
+    background: linear-gradient(135deg,#6394ff 0%,#0a193b 100%);
+    color: white;
+}
+
+.wrap .mbr-iconfont {
+    font-size: 3.5rem !important;
+    color: #313131;
+    margin: 1rem;
+    padding-right: 1rem;
+}
+.wrap .vcenter {
+    margin: auto;
+}
+
+.wrap .mbr-section-title3 {
+    text-align: left;
+}
+.wrap h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.wrap .display-5 {
+    font-size: 1.4rem;
+}
+.wrap .mbr-bold {
+    font-weight: 700;
+}
+
+.wrap p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 5px;
+    margin: 0;
+}
+.wrap .display-6 {
+    font-size: 1re;
 }
