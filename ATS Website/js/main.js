@@ -152,8 +152,17 @@ jQuery(document).ready(function( $ ) {
   $('#edit-Contact').click(function(){
     $("#contact-info,#edit-contact-info").toggle(500);
   });
-  $('#edit-work').click(function(){
+  $('#edit-education').click(function(){
     $("#work-info,#edit-contact-work").toggle(500);
+  });
+  $('#edit-experience').click(function(){
+    $("#view-company,#edit-company").toggle(500);
+  });
+  $('#btn-projects').click(function(){
+    $("#view-projects,#edit-projects").toggle(500);
+  });
+  $('#btn-certificate').click(function(){
+    $("#view-certificate,#edit-certificate").toggle(500);
   });
 
 
@@ -196,3 +205,35 @@ $(function() {
         }
     });
 });
+
+// $(function () {
+//   $("#datepicker").datepicker({ 
+//         autoclose: true, 
+//         todayHighlight: true
+//   }).datepicker('update', new Date());
+// });
+
+
+    $("#dropper-default").dateDropper( {
+        dropWidth: 200,
+        dropPrimaryColor: "#1abc9c", 
+        dropBorder: "1px solid #1abc9c"
+    });
+    $("#dropper-default2").dateDropper( {
+        dropWidth: 200,
+        init_animation: "bounce",
+        dropPrimaryColor: "#1abc9c", 
+        dropBorder: "1px solid #1abc9c"
+    });
+    $("#dropper-default3").dateDropper( {
+        dropWidth: 200,
+        init_animation: "bounce",
+        dropPrimaryColor: "#1abc9c", 
+        dropBorder: "1px solid #1abc9c"
+    });
+    $("#dropper-default4").dateDropper( {
+        dropWidth: 200,
+        init_animation: "bounce",
+        dropPrimaryColor: "#1abc9c", 
+        dropBorder: "1px solid #1abc9c"
+    });

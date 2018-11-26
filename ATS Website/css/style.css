@@ -2457,10 +2457,10 @@ border-radius: 10px;
   }
   .profile-header-section1 h1{
     font-size: 25px;
-    margin: 0px;
+    margin-bottom: 7px;
   }
   .profile-header-section1 h5{
-    color: #0062cc;
+    color: #848484;
   }
   .req-btn{
     height:30px;
@@ -2511,7 +2511,8 @@ border-radius: 10px;
   }
 
 .img-circle {
-    width: 20%;
+  width: 21%;
+  margin: 1%;
 }
 
 .card {
@@ -2572,10 +2573,8 @@ border-radius: 10px;
 }
 
 .card-img {
-
     max-width: 100%;
     border-radius: 50%;
-
 }
 
 #jobs-card {
@@ -2585,12 +2584,15 @@ border-radius: 10px;
 }
 
 .card .card-header span {
-
     color: #9f9f9f;
     display: block;
     font-size: 13px;
     margin-top: 5px;
+    cursor: pointer;
+}
 
+.card-block {
+    padding: 2% 5%;
 }
 
 .label {
@@ -2633,14 +2635,13 @@ border-radius: 10px;
 .nav-tabs {
 
     border-bottom: 2px solid #dee2e6;
-    border-image: url('../img/border.jpg') 21 23 repeat;
+    border-image: url('../img/border.jpg') 10 5 repeat;
 
 }
 
 .nav-tabs .nav-link:hover {
-
-    border-color: #FCB300 #FCB300 #FCB300;
-
+  border-color: #FCB300;
+  color: #FCB300;
 }
 
 .nav-tabs .nav-item {
@@ -2726,31 +2727,31 @@ div#OR {
 }
 
 #skills p {
-  margin: 0 0 10px 0;
+  margin: 0 0 5px 0;
 }
 
 .wrap {
     display: flex;
     background: white;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     border-radius: 0.5rem;
     box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.1);
-    margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 
-.wrap:hover {
+/*.wrap:hover {
     background: linear-gradient(135deg,#6394ff 0%,#0a193b 100%);
     color: white;
-}
+}*/
 
 .wrap .mbr-iconfont {
-    font-size: 3.5rem !important;
-    color: #313131;
+    font-size: 2.5rem !important;
+    color: #008081;
     margin: 1rem;
-    padding-right: 1rem;
+    padding-right: 0;
 }
 .wrap .vcenter {
-    margin: auto;
+    margin: 0;
 }
 
 .wrap .mbr-section-title3 {
@@ -2761,12 +2762,18 @@ div#OR {
     margin-bottom: 0.5rem;
 }
 .wrap .display-5 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+}
+.wrap .display-7 {
+    font-size: 1rem;
+    margin-bottom: .6rem;
 }
 .wrap .mbr-bold {
     font-weight: 700;
 }
-
+.wrap .designation {
+  font-size: 15px;
+}
 .wrap p {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -2774,5 +2781,17 @@ div#OR {
     margin: 0;
 }
 .wrap .display-6 {
-    font-size: 1re;
+    font-size: 0.8rem;
+}
+
+#skills-go {
+  margin-bottom: 30px;
+}
+
+#star {
+  padding: 15px 0;
+}
+
+#datepicker > span:hover {
+  cursor: pointer;
 }
