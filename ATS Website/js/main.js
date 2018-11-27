@@ -237,3 +237,4 @@ $(function() {
         dropPrimaryColor: "#1abc9c", 
         dropBorder: "1px solid #1abc9c"
     });
+
