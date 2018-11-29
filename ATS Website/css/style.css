@@ -1010,51 +1010,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #FCB300;
 }
 
-/* Call To Action Section
---------------------------------*/
-#call-to-action {
-  background: #FCB300;
-  background-size: cover;
-  padding: 40px 0;
-}
-
-#call-to-action .cta-title {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-#call-to-action .cta-text {
-  color: #fff;
-}
-
-@media (min-width: 769px) {
-  #call-to-action .cta-btn-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-}
-
-#call-to-action .cta-btn {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 26px;
-  border-radius: 3px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 3px solid #fff;
-  color: #fff;
-}
-
-#call-to-action .cta-btn:hover {
-  background: #FCB300;
-  border: 3px solid #FCB300;
-}
-
 /* Our Team Section
 --------------------------------*/
 #team {
@@ -2250,6 +2205,12 @@ border-radius: 10px;
     color: #666;
 }
 
+@media screen and (min-width: 768px) {
+  .tab1 p ,.tab2 p,.tab3 p {
+    margin-bottom: 0;
+  }
+} 
+
 .resp-tab-active h3 {
     background-color: #ffffff !important;
     color: #e2b13c !important;
@@ -2292,14 +2253,6 @@ border-radius: 10px;
 
 #about-below {
   height: 140px;
-}
-
-.language {
-  position: relative;
-  animation: zoomIn 1s linear infinite alternate;
-  -webkit-animation: zoomIn 3s linear infinite alternate;
-  cursor: pointer;
-  z-index: 1;
 }
 
 .small-description {
