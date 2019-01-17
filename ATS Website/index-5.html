@@ -27,7 +27,8 @@
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
   <link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+ <link rel="stylesheet" type="text/css"
+	href="bower_components/sweetalert/css/sweetalert.css" />
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -36,12 +37,13 @@
 </head>
 
 <body id="body">
-
+<div id="response"></div>
   <!--==========================
     Top Bar
   ============================-->
 
-  <section id="topbar" class="d-none d-lg-block">
+  
+ <section id="topbar" class="d-none d-lg-block">
     <div id="banner-full" style="background: url('./img/intro-carousel/banner4.jpg'); background-repeat: no-repeat; background-size: cover;"></div>
     <div class="container clearfix">
       <div class="float-left" id="logo-here">
@@ -92,46 +94,40 @@
                       <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
                         <div class="form-group">
                            <label class="sr-only" for="companyname">Company Name</label>
-                           <input type="text" class="form-control form-control-sm" id="" placeholder="Company Name" required>
+                           <input type="text" class="form-control form-control-sm" id="comp_name" placeholder="Company Name" required>
                         </div>
                         <div class="form-group">
                            <label class="sr-only" for="country">Country</label>
-                           <select class="form-control form-control-sm" id="" name="">
-                             <option>Select Country</option>
-                             <option>India</option>
-                             <option>USA</option>
-                             <option>UK</option>
-                             <option>Canada</option>
+                           <select class="form-control form-control-sm"  id="comp_country" >
                            </select>
                         </div>
                         <div class="form-group">
                            <label class="sr-only" for="state">State</label>
-                           <select class="form-control form-control-sm" id="" name="">
-                             <option>Select State</option>
+                           <select class="form-control form-control-sm" id="comp_state" >
                            </select>
                         </div>
                         <div class="form-group">
                            <label class="sr-only" for="url">Company Career URL</label>
-                           <input type="text" class="form-control form-control-sm" id="" placeholder="Company Career URL" required>
+                           <input type="text" class="form-control form-control-sm" id="comp_career_url" placeholder="Company Career URL" required>
                         </div>
                         <div class="form-group">
                            <label class="sr-only" for="admin">Admin Name</label>
-                           <input type="text" class="form-control form-control-sm" id="" placeholder="Admin Name" required>
+                           <input type="text" class="form-control form-control-sm" id="comp_admin_name" placeholder="Admin Name" required>
                         </div>
                         <div class="form-group">
                            <label class="sr-only" for="email">Company Email</label>
-                           <input type="email" class="form-control form-control-sm" id="" placeholder="Company Email" required>
+                           <input type="email" class="form-control form-control-sm" id="comp_email" placeholder="Company Email" required>
                         </div>
                         <div class="form-group">
                            <label class="sr-only" for="password">Password</label>
-                           <input type="password" class="form-control form-control-sm" id="" placeholder="Password" required>
+                           <input type="password" class="form-control form-control-sm" id="comp_pass" placeholder="Password" required>
                         </div>
                         <div class="form-group">
                            <label class="sr-only" for="password2">Confirm Password</label>
-                           <input type="password" class="form-control form-control-sm" id="" placeholder="Confirm Password" required>
+                           <input type="password" class="form-control form-control-sm" id="confirm_pass" placeholder="Confirm Password" required>
                         </div>
                         <div class="form-group">
-                           <button type="submit" class="btn btn-primary btn-block">Register</button>
+                           <button type="button" class="btn btn-primary btn-block"id="sign_up">Register</button>
                         </div>
                      </form>
                   </div>
@@ -146,7 +142,6 @@
       </div>
     </div>
   </section>
-
   <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -176,21 +171,21 @@
                       <label for="email" class="col-sm-2 control-label">
                       Email</label>
                       <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email1" placeholder="Enter Your Email" />
+                        <input type="email" class="form-control" id="candidate_email" placeholder="Enter Your Email" />
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1" class="col-sm-2 control-label">
                       Password</label>
                       <div class="col-sm-10">
-                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Password" />
+                        <input type="password" class="form-control" id="candidate_pass" placeholder="Enter Your Password" />
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-sm-2">
                       </div>
                       <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary">
+                        <button type="button" id="signin_candidate"class="btn btn-primary btn-sm">
                         Submit</button>
                         <a href="javascript:;">Forgot your password?</a>
                       </div>
@@ -219,21 +214,21 @@
                       <label for="email" class="col-sm-2 control-label">
                       Email</label>
                       <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email1" placeholder="Enter Your Email" />
+                        <input type="email" class="form-control" id="recruiter_email" placeholder="Enter Your Email" />
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1" class="col-sm-2 control-label">
                       Password</label>
                       <div class="col-sm-10">
-                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Password" />
+                        <input type="email" class="form-control" id="recruiter_pass" placeholder="Enter Your Password" />
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-sm-2">
                       </div>
                       <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary btn-sm">
+                        <button type="button" id="signin_recruiter" class="btn btn-primary btn-sm">
                         Submit</button>
                         <a href="javascript:;">Forgot your password?</a>
                       </div>
@@ -246,21 +241,21 @@
                       <label for="email" class="col-sm-2 control-label">
                       Email</label>
                       <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email1" placeholder="Enter Your Email" />
+                        <input type="email"id="admin_email" class="form-control"  placeholder="Enter Your Email" />
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1" class="col-sm-2 control-label">
                       Password</label>
                       <div class="col-sm-10">
-                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Password" />
+                        <input type="password"id="admin_pass" class="form-control" placeholder="Enter Your Password" />
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-sm-2">
                       </div>
                       <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary btn-sm">
+                        <button type="button"id="signin_admin" class="btn btn-primary btn-sm">
                         Submit</button>
                         <a href="javascript:;">Forgot your password?</a>
                       </div>
@@ -423,10 +418,10 @@
                 <div class="tab1">
                   <h4 class="">Talent Cache AMS is a Leading Best-of-Breed Recruiting Software</h4>
                   <div class="row">
-                    <div class="col-md-8">
-                      <img src="./img/task2.gif" class="img-fluid">
+                    <div class="col-md-6">
+                      <img src="./img/task.gif" class="img-fluid">
                     </div>
-                    <div class="col-md-4 small-description">
+                    <div class="col-md-6 small-description">
                       <p class="">Our comprehensive recruiting platform accelerates recruiting with an easy-to-use AMS, social recruiting capabilities, mobile-optimized branded career sites, a recruiting branding solution, on-demand video screening, advanced analytics, onboarding, and seamless integration with other HR systems.</p>
                     </div>
                   </div>                
@@ -434,10 +429,10 @@
                 <div class="tab2">
                   <h4 class="">The AMS You’ve Been Dreaming About</h4>
                   <div class="row">
-                    <div class="col-md-8">
-                      <img src="./img/task2.gif" class="img-fluid">
+                    <div class="col-md-3 language">
+                      <img src="./img/ipad2.png" class="img-fluid">
                     </div>
-                    <div class="col-md-4 small-description">
+                    <div class="col-md-9 small-description">
                       <p class="">Talent Cache’s Applicant Mapping System is the top best-of-breed recruiting platform available. Built on knowledge gleaned from many years of development, and working with thousands of customers, Talent Cache AMS makes recruiting more efficient and cost effective.</p>
                     </div>
                   </div>
@@ -445,10 +440,10 @@
                 <div class="tab3">
                   <h4 class="">Talent Cache AMS Makes Hiring Easy and Cost Effective</h4>
                   <div class="row">
-                    <div class="col-md-8">
-                      <img src="./img/task2.gif" class="img-fluid">
+                    <div class="col-md-3 language">
+                      <img src="./img/ipad3.png" class="img-fluid">
                     </div>
-                    <div class="col-md-4 small-description">
+                    <div class="col-md-9 small-description">
                       <p class="">Talent Cache AMS—our innovative Applicant Mapping System—goes way beyond your garden-variety ATS. Leveraging many years of development expertise and feedback from thousands of customers, our product is expertly built to make your job easier, your recruiting more efficient, and your strategies more cost-effective.</p>
                     </div>
                   </div>
@@ -481,15 +476,15 @@
           </div>
 
           <div class="col-lg-6 about-img">
-            <img src="img/mockup-video.gif" alt="">
+            <img src="img/mockup.png" alt="">
           </div>
 
         </div>
       </div>
-      <!-- <div id="about-below">
+      <div id="about-below">
         <div id='object'><img src="./img/shake3.png"></div>
         <div id="object2"><img src="./img/shake2.png"></div>
-      </div> -->
+      </div>
     </section><!-- #about -->
 
     <!--==========================
@@ -1215,14 +1210,15 @@
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/magnific-popup/magnific-popup.min.js"></script>
   <script src="lib/sticky/sticky.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
   <!-- Contact Form JavaScript File -->
+  <script
+		src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
   <script src="contactform/contactform.js"></script>
-
-<!-- scripts -->
+	<script type="text/javascript" src="assets/countries.js"></script>
+<!-- scripts --><script src="bower_components/sweetalert/js/sweetalert.min.js"></script>
 <script src="js/particles.js"></script>
 <script src="js/app.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+ 
 
 <!-- stats.js -->
 <script src="js/stats.js"></script>
@@ -1239,7 +1235,7 @@
     stats.begin();
     stats.end();
     if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+      /* count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; */
     }
     requestAnimationFrame(update);
   };
@@ -1249,7 +1245,265 @@
   <!-- tabs -->
   <script src="js/easy-responsive-tabs.js"></script>
   <script>
+  $(function() {
+	    $('#register-button').on({
+	        "shown.bs.dropdown": function() {
+	            $(this).data('closable', false);
+	        },
+	        "click": function(event) {
+	            $(this).data('closable', false);
+	        },
+	        "hide.bs.dropdown": function(event) {
+	            temp = $(this).data('closable');
+	            $(this).data('closable', true);
+	            return temp;
+	        }
+	    });
+	});
+  </script>
+  <script>
   $(document).ready(function () {
+	  populateCountries("comp_country", "comp_state");
+	  if (Cookies.get('auth') == undefined) {
+			
+			 $('#myModal').modal('show');
+		} 
+
+		$("#signin_candidate")
+		.click(
+				function() {
+
+					var email = $("#candidate_email")
+							.val();
+					var pass = $("#candidate_pass")
+							.val();
+
+					$
+							.ajax({
+								url : "rest/hello/login/user",
+								method : 'post',
+								headers : {
+									"Authorization" : "Basic "
+											+ btoa(email
+													+ ":"
+													+ pass)
+								},
+								data : {
+									emails : email,
+									pwds : pass,
+								},
+								success : function(
+										result) {
+									if (result == 'Authorize') {
+										Cookies
+												.set(
+														'auth',
+														1);
+										Cookies
+												.set(
+														'mail',
+														email);
+										$(
+												"#page_title")
+												.html(
+														email);
+window.location="candidate_progress2.html"
+									} else {
+										swal({
+											title : "Failed to load your data",
+											text : "Not Authorize",
+											type : "error",
+											showCancelButton : false,
+											confirmButtonClass : "btn-danger",
+											confirmButtonText : "OK",
+											closeOnConfirm : true
+										});
+									}
+								},
+								failure : function(
+										message) {
+									swal({
+										title : "Failed to load your data",
+										text : "Oops. Some error occured while fetching your data from server. Please try again.",
+										type : "error",
+										showCancelButton : false,
+										confirmButtonClass : "btn-danger",
+										confirmButtonText : "OK",
+										closeOnConfirm : true
+									});
+								}
+							});
+
+				})
+	
+				
+				$("#signin_admin")
+		.click(
+				function() {
+
+					var email = $("#admin_email")
+							.val();
+					var pass = $("#admin_pass")
+							.val();
+
+					$
+							.ajax({
+								url : "rest/hello/login/company_details",
+								method : 'post',
+								headers : {
+									"Authorization" : "Basic "
+											+ btoa(email
+													+ ":"
+													+ pass)
+								},
+								data : {
+									emails : email,
+									pwds : pass,
+								},
+								success : function(
+										result) {
+									if (result == 'Authorize') {
+										Cookies
+												.set(
+														'auth',
+														1);
+										Cookies
+												.set(
+														'mail',
+														email);
+										$(
+												"#page_title")
+												.html(
+														email);
+window.location="upload-file3.html"
+									} else {
+										swal({
+											title : "Failed to load your data",
+											text : "Not Authorize",
+											type : "error",
+											showCancelButton : false,
+											confirmButtonClass : "btn-danger",
+											confirmButtonText : "OK",
+											closeOnConfirm : true
+										});
+									}
+								},
+								failure : function(
+										message) {
+									swal({
+										title : "Failed to load your data",
+										text : "Oops. Some error occured while fetching your data from server. Please try again.",
+										type : "error",
+										showCancelButton : false,
+										confirmButtonClass : "btn-danger",
+										confirmButtonText : "OK",
+										closeOnConfirm : true
+									});
+								}
+							});
+
+				})
+				$("#signin_recruiter")
+		.click(
+				function() {
+
+					var email = $("#recruiter_email")
+							.val();
+					var pass = $("#recruiter_pass")
+							.val();
+
+					$
+							.ajax({
+								url : "rest/hello/login/recruiter",
+								method : 'post',
+								headers : {
+									"Authorization" : "Basic "
+											+ btoa(email
+													+ ":"
+													+ pass)
+								},
+								data : {
+									emails : email,
+									pwds : pass,
+								},
+								success : function(
+										result) {
+									if (result == 'Authorize') {
+										Cookies
+												.set(
+														'auth',
+														1);
+										Cookies
+												.set(
+														'mail',
+														email);
+										$(
+												"#page_title")
+												.html(
+														email);
+window.location="recruiter.html"
+									} else {
+										swal({
+											title : "Failed to load your data",
+											text : "Not Authorize",
+											type : "error",
+											showCancelButton : false,
+											confirmButtonClass : "btn-danger",
+											confirmButtonText : "OK",
+											closeOnConfirm : true
+										});
+									}
+								},
+								failure : function(
+										message) {
+									swal({
+										title : "Failed to load your data",
+										text : "Oops. Some error occured while fetching your data from server. Please try again.",
+										type : "error",
+										showCancelButton : false,
+										confirmButtonClass : "btn-danger",
+										confirmButtonText : "OK",
+										closeOnConfirm : true
+									});
+								}
+							});
+
+				})
+	
+		$("#sign_up").click(function(event) {
+			 event.stopPropagation();
+			
+			
+			$.ajax({
+				method : "post",
+				url : "rest/hello/comp_register",
+				data : {
+					comp_name :$("#comp_name").val(),
+					comp_country : $("#comp_country").val(),
+					comp_state : $("#comp_state").val(),
+					comp_career_url : $("#comp_career_url").val(),
+					comp_admin :  $("#comp_admin").val(),
+					comp_mail : $("#comp_email").val(),
+					comp_pass : $("#comp_pass").val(),
+					
+				},
+				success : function(data) {
+					console.log(data);
+					Cookies
+					.set(
+							'mail',
+							$("#comp_email").val());
+					$('#myModal').modal('show');
+					$("#comp_name").val("");
+					$("#comp_country").val("");
+					$("#comp_state").val("");
+					$("#comp_career_url").val("");
+					$("#comp_admin").val("");
+					$("#comp_email").val("");
+					$("#comp_pass").val("");
+				}
+			})
+		})
   $('#horizontalTab').easyResponsiveTabs({
   type: 'default', //Types: default, vertical, accordion           
   width: 'auto', //auto or any width like 600px
@@ -1293,7 +1547,7 @@
   </script>
 
   <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
+ <!--  <script src="js/"></script> -->
   <script src="js/script.js"></script>
 
 </body>

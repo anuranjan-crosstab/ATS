@@ -294,3 +294,11 @@ setTimeout(function(){var a=document.createElement("script");
 var b=document.getElementsByTagName("script")[0];
 a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0067/0651.js?"+Math.floor(new Date().getTime()/3600000);
 a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+
+$('.owl-carousel').owlCarousel({
+    items:1,
+    lazyLoad:true,
+    nav:true,
+    loop:true,
+    margin:10
+});

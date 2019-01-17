@@ -1,0 +1,2081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Talent Cache</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="" name="keywords">
+<meta name="author" content="">
+<meta content="" name="description">
+
+<!-- Favicons -->
+<link href="img/favicon.png" rel="icon">
+<link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+<!-- Google Fonts -->
+<link
+	href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
+	rel="stylesheet">
+
+<!-- Bootstrap CSS File -->
+<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css"
+	href="assets/icon/icofont/css/icofont.css">
+<!-- Libraries CSS Files -->
+<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="lib/animate/animate.min.css" rel="stylesheet">
+<link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+<link href="lib/owlcarousel/assets/owl.carousel.min.css"
+	rel="stylesheet">
+<link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+<link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/fontawesome-all.css">
+<link href="lib/dropzone/dropzone.css" rel="stylesheet">
+<!-- Font-Awesome-Icons-CSS -->
+<link href="css/easy-responsive-tabs.css" rel='stylesheet'
+	type='text/css' />
+<!-- MDBootstrap Datatables  -->
+<link href="lib/datatables/datatables.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css"
+	href="assets/rating/jquery.raty.css">
+<!-- Main Stylesheet File -->
+<link href="css/style.css" rel="stylesheet">
+<link href="css/style2.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css"
+	href="bower_components/sweetalert/css/sweetalert.css" />
+	<link rel="stylesheet" type="text/css"
+	href="css/progress-wizard.min.css" />
+<link rel="stylesheet"
+	href="bower_components/select2/css/select2.min.css" />
+<link rel="stylesheet" type="text/css" href="css/progress_bar.css">
+</head>
+
+<body id="body">
+
+	<!--==========================
+    Top Bar
+  ============================-->
+
+	<section id="topbar" class="d-none d-lg-block">
+		<div id="banner-full2"
+			style="background: url('./img/intro-carousel/banner6.jpg'); background-repeat: no-repeat; background-size: cover;"></div>
+		<div class="container clearfix">
+			<div class="float-left" id="logo-here">
+				<div id="logo" class="pull-left">
+					<h2 style="margin: 0;">
+						<a href="./index.html" class="scrollto">Talent<span>Cache</span></a>
+					</h2>
+					<!-- Uncomment below if you prefer to use an image logo -->
+					<!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+				</div>
+
+				<!--         <div class="btn-group show-on-hover">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Support <span class="caret"></span>
+          </button>
+          <ul id="login-dp" class="dropdown-menu dropdown-menu-right" role="menu">
+            <li>
+               <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h4>Call us online</h4>
+                  </div>
+                  <div class="bottom">
+                    Call 0000 000 0000<br>
+                    Mon to Fri: 9am – 8.30pm<br>
+                    Weekends: 10am – 7.30pm
+                  </div>
+               </div>
+            </li>
+          </ul>
+        </div>
+ -->
+			</div>
+			<div class="float-right">
+				<div class="btn-group">
+					<button type="button" class="btn btn-default"
+						data-toggle="dropdown">
+						Logout <i class="icofont icofont-logout"></i>
+					</button>
+
+				</div>
+
+				<!--         <div class="btn-group">
+          <button type="button" class="btn btn-mine dropdown-toggle" data-toggle="dropdown">
+            <img src="./img/uk.png" style="width: 20px;"> UK <span class="caret"></span>
+          </button>
+          <ul id="login-dp" class="dropdown-menu dropdown-menu-right" role="menu">
+            <li>
+               <div class="row">
+                  <div class="col-md-12">
+                    In which country are you looking?
+                     <form class="form" role="form" method="post" action="#" accept-charset="UTF-8" id="login-nav">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                          <label class="form-check-label" for="inlineRadio1">UK</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                          <label class="form-check-label" for="inlineRadio2">USA</label>
+                        </div>
+                        <div class="form-group">
+                           <button type="submit" class="btn btn-primary btn-block">Save</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </li>
+          </ul>
+        </div> -->
+			</div>
+		</div>
+	</section>
+
+	<!--==========================
+    Header
+  ============================-->
+	<header id="header">
+		<div class="container" id="header-another">
+
+			<!--       <div id="logo" class="pull-left">
+        <h1><a href="#body" class="scrollto">Pure<span>Bricks</span></a></h1>
+        Uncomment below if you prefer to use an image logo
+         <a href="#body"><img src="img/logo.png" alt="" title="" /></a>
+      </div> -->
+
+			<nav id="nav-menu-container">
+				<!--         <ul class="nav-menu">
+          <li class="menu-active"><a href="#body">Search</a></li>
+          <li><a href="#about">Account</a></li>
+          <li><a href="#services">Messages</a></li>
+          <li><a href="#portfolio">Place a Free Advert</a></li>
+          <li><a href="#team">Browse</a></li>
+          <li class="menu-has-children"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul> -->
+				<!-- <ul class="nav-menu pull-right">
+					<li class=""><a href="./about.html">About Us</a></li>
+					<li class=""><a href="./info.html">Info & Advice</a></li>
+					<li><a href="#">Request A Demo</a></li>
+				</ul> -->
+			</nav>
+			<!-- #nav-menu-container -->
+		</div>
+	</header>
+	<!-- #header -->
+
+	<!--==========================
+    Intro Section
+  ============================-->
+	<section id="intro2">
+		<div class="text-center" id="search-heading2">
+			<h2 id="page_title"></h2>
+			<!-- <button class="btn btn-outline-primary btn-lg">Request a Demo</button> -->
+		</div>
+		<!--     <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12" id="form-top">
+          <form>
+            <div class="form-group">
+              <br>
+              <input type="radio" name="emotion" id="one" class="input-hidden" />
+              <label for="one">
+                <img src="./img/circle.png" alt="Rent Room" />
+                  <div class="centered">Rent Room</div>
+              </label>
+
+              <input type="radio" name="emotion" id="two" class="input-hidden" />
+              <label for="two">
+                <img src="./img/circle.png" alt="Advertise Room" />
+                <div class="centered">Advertise Room</div>
+              </label>
+
+              <input type="radio" name="emotion" id="three" class="input-hidden" />
+              <label for="three">
+                <img src="./img/circle.png" alt="Rent Room" />
+                  <div class="centered">Buy Property</div>
+              </label>
+
+              <input type="radio" name="emotion" id="four" class="input-hidden" />
+              <label for="four">
+                <img src="./img/circle.png" alt="Advertise Room" />
+                <div class="centered">Sell Property</div>
+              </label>
+
+              <input type="radio" name="emotion" id="five" class="input-hidden" />
+              <label for="five">
+                <img src="./img/circle.png" alt="Rent Room" />
+                  <div class="centered">Co-living Rooms</div>
+              </label>
+
+              <input type="radio" name="emotion" id="six" class="input-hidden" />
+              <label for="six">
+                <img src="./img/circle.png" alt="Advertise Room" />
+                <div class="centered">Property Management</div>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Free Search</button><br><br>
+          </form>
+        </div>
+      </div>
+    </div> -->
+
+	</section>
+	<!-- #intro -->
+
+	<main id="main">
+	<div class="container main-secction">
+		<div class="row">
+			<!--         <div class="col-md-12 col-sm-12 col-xs-12 image-section">
+          <img src="https://png.pngtree.com/thumb_back/fw800/back_pic/00/08/57/41562ad4a92b16a.jpg">
+        </div> -->
+			<div class="row user-left-part">
+				<div class="col-md-3 col-sm-3 col-xs-12 user-profil-part pull-left">
+					<div class="row ">
+						<div
+							class="col-md-12 col-md-12-sm-12 col-xs-12 user-image text-center">
+							<img src="./img/avatar-2.png">
+						</div>
+						<div
+							class="col-md-12 col-sm-12 col-xs-12 user-detail-section1 text-center">
+							<button id="btn-contact" (click)="clearModal()"
+								data-toggle="modal" data-target="#contact"
+								class="btn btn-default follow">Contact Me</button>
+							<!-- <button class="btn btn-warning btn-block">Descargar Curriculum</button> -->
+						</div>
+						<div class="row user-detail-row text-center">
+							<div class="col-md-12 col-sm-12 user-detail-section2 "
+								style="padding-left: 25%">
+								<div class="border"></div>
+								<div id="rating" style="color: #D4AF37"></div>
+
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header">
+								<h5 class="card-header-text d-inline-block">Companies</h5>
+								<!-- <span class="friend-more f-right">see 12 more</span> -->
+								<span class="label label-primary f-right"> See 12 More </span>
+							</div>
+							<div class="card-block friend-box">
+								<img class="media-object img-circle" src="./img/avatar-1.png"
+									alt=""> <img class="media-object img-circle"
+									src="./img/avatar-2.png" alt=""> <img
+									class="media-object img-circle" src="./img/avatar-3.png" alt="">
+								<img class="media-object img-circle" src="./img/avatar-4.png"
+									alt=""> <img class="media-object img-circle"
+									src="./img/avatar-1.png" alt=""> <img
+									class="media-object img-circle" src="./img/avatar-4.png" alt="">
+								<img class="media-object img-circle" src="./img/avatar-3.png"
+									alt=""> <img class="media-object img-circle"
+									src="./img/avatar-2.png" alt="">
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div
+					class="col-md-9 col-sm-9 col-xs-12 pull-right profile-right-section">
+					<div class="row profile-right-section-row">
+						<div class="col-md-12 profile-header">
+							<div class="row">
+								<div
+									class="col-md-8 col-sm-6 col-xs-6 profile-header-section1 pull-left">
+									<h1 id="cand_name"></h1>
+									<h5 id="cand_comp"></h5>
+								</div>
+								<div
+									class="col-md-4 col-sm-6 col-xs-6 profile-header-section1 text-right pull-rigth">
+									<a href="/search" class="btn btn-primary">Follow</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-12">
+									<ul class="nav nav-tabs" role="tablist">
+										<li class="nav-item"><a class="nav-link active"
+											href="#companies" role="tab" data-toggle="tab"><i
+												class="fas fa-building"></i> Companies</a></li>
+										<li class="nav-item"><a class="nav-link" href="#about2"
+											role="tab" data-toggle="tab"><i class="fas fa-user"></i>
+												About</a></li>
+										<li class="nav-item"><a class="nav-link" href="#skills"
+											role="tab" data-toggle="tab"><i class="fas fa-bar-chart"></i>
+												Skills</a></li>
+										<li class="nav-item"><a class="nav-link" href="#cv"
+											role="tab" data-toggle="tab"><i class="fas fa-pencil"></i>
+												CV</a></li>
+									</ul>
+
+									<!-- Tab panes -->
+									<div class="tab-content">
+										<div role="tabpanel" class="tab-pane fade show active"
+											id="companies">
+											<div class="row">
+											<div class="col-md-12 text-center">
+                           
+                              <div class="col-md-12">
+                                <div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne4">
+                                      <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4">
+                                          <i class="icon fa fa-star"></i>
+                                          New
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapseOne4" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne4">
+                                      <div class="panel-body">
+                                        <div class="row" id="response">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="headingTwo4">
+                                        <h4 class="panel-title">
+                                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapseTwo4" aria-expanded="false" aria-controls="collapseTwo4">
+                                            <i class="icon fa fa-check"></i>
+                                            Applied
+                                          </a>
+                                        </h4>
+                                      </div>
+                                      <div id="collapseTwo4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo4">
+                                        <div class="panel-body">
+                                          <div class="row" id="applied_company">
+
+                                            <div class="col-md-6 col-xl-4">
+                                              <div class="card" id="color_red">
+                                                <div class="card-block-big card-task nestable-danger"  id="jobs">
+                                                  <div class="card-block card-comment-icon" id="jobs-card">
+                                                    <div class="row justify-content-center">
+                                                      <div class="col-12">
+                                                        <button class="btn btn-danger btn-icon"><img src="./img/infosys.jpg" class="card-img"></button>
+                                                        <h5>Infosys</h5>
+                                                        <p>Front End Developer</p><hr>
+<span>Status</span>
+                                                       <div id="demo">
+                                                       <ul class="progress-indicator">
+  <li class="completed"> <span class="bubble"></span> Applied</li>
+  <li class="completed"> <span class="bubble"></span> Viewed </li>
+  <li> <span class="bubble"></span>Interview</li>
+  <li> <span class="bubble"></span>Joined</li>
+ 
+</ul>
+                                                       </div>
+                                                  
+                                                        <button type="button" class="btn btn-sm btn-hr">Contact HR</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-md-6 col-xl-4">
+                                              <div class="card">
+                                                <div class="card-block-big card-task nestable-primary" id="jobs">
+                                                  <div class="card-block card-comment-icon" id="jobs-card">
+                                                    <div class="row justify-content-center">
+                                                      <div class="col-12">
+                                                        <button class="btn btn-primary btn-icon"><img src="./img/wipro.jpg" class="card-img"></button>
+                                                        <h5>Wipro</h5>
+                                                        <p>Front End Developer</p><hr>
+<span>Status</span>
+                                                       <div id="demo">
+                                                       <ul class="progress-indicator">
+  <li class="completed"> <span class="bubble"></span> Applied</li>
+  <li class="completed"> <span class="bubble"></span> Viewed </li>
+  <li> <span class="bubble"></span>Interview</li>
+  <li> <span class="bubble"></span>Joined</li>
+ 
+</ul>
+                                                       </div>
+                                                       
+                                                        <button type="button" class="btn btn-sm btn-hr">Contact HR</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-md-6 col-xl-4">
+                                              <div class="card" id="color_green">
+                                                <div class="card-block-big card-task nestable-success" id="jobs">
+                                                  <div class="card-block card-comment-icon"id="jobs-card">
+                                                    <div class="row justify-content-center">
+                                                      <div class="col-12">
+                                                        <button class="btn btn-success btn-icon"><img src="./img/ibm.jpg" class="card-img"></button>
+                                                        <h5>IBM</h5>
+                                                        <p>Front End Developer</p><hr>
+<span>Status</span>
+                                                       <div id="demo">
+                                                       <ul class="progress-indicator">
+  <li class="completed"> <span class="bubble"></span> Applied</li>
+  <li class="completed"> <span class="bubble"></span> Viewed </li>
+  <li> <span class="bubble"></span>Interview</li>
+  <li> <span class="bubble"></span>Joined</li>
+ 
+</ul>
+                                                       </div>
+                                                       
+                                                        <button type="button" class="btn btn-sm btn-hr">Contact HR</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="headingThree4">
+                                        <h4 class="panel-title">
+                                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
+                                            <i class="icon fa fa-close"></i>
+                                            Declined
+                                          </a>
+                                        </h4>
+                                      </div>
+                                      <div id="collapseThree4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree4">
+                                        <div class="panel-body">
+                                          <div class="row"id="waiting_job">
+
+                                            <div class="col-md-6 col-xl-4">
+                                              <div class="card" id="color_red">
+                                                <div class="card-block-big card-task nestable-warning"  id="jobs">
+                                                  <div class="card-block card-comment-icon" id="jobs-card">
+                                                    <div class="row justify-content-center">
+                                                      <div class="col-12">
+                                                        <button class="btn btn-warning btn-icon"><img src="./img/honeywell.jpg" class="card-img"></button>
+                                                        <h5>Honeywell</h5>
+                                                        <p>Front End Developer</p>
+                                                      <button type="button" class="btn btn-sm">Apply</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-md-6 col-xl-4">
+                                              <div class="card" id="color_red">
+                                                <div class="card-block-big card-task nestable-danger"  id="jobs">
+                                                  <div class="card-block card-comment-icon" id="jobs-card">
+                                                    <div class="row justify-content-center">
+                                                      <div class="col-12">
+                                                        <button class="btn btn-danger btn-icon"><img src="./img/dell.jpg" class="card-img"></button>
+                                                        <h5>Dell</h5>
+                                                        <p>Front End Developer</p>
+                                                      <button type="button" class="btn btn-sm">Apply</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              
+                            </div>
+                          </div>
+											
+											</div>
+										</div>
+										<div role="tabpanel" class="tab-pane fade" id="about2">
+											<div class="row">
+												<div class="col-sm-12">
+													<div class="card">
+														<div class="card-header card-edit">
+															<h5 class="card-header-text">Basic Information</h5>
+															<button id="edit-btn" type="button"
+																class="btn btn-primary waves-effect waves-light f-right btn-edit">
+																<i class="fa fa-edit"></i>
+															</button>
+														</div>
+														<div class="card-block">
+															<div id="view-info" class="row info-show">
+																<div class="col-md-12">
+																	<form>
+																		<table class="table table-responsive m-b-0">
+																			<tr>
+																				<th class="social-label b-none p-t-0">Full Name
+																				</th>
+																				<td class="social-user-name b-none p-t-0 text-muted"
+																					id="full_name1"></td>
+																			</tr>
+																			<tr>
+																				<th class="social-label b-none">Birth Date</th>
+																				<td class="social-user-name b-none text-muted"
+																					id="dob1"></td>
+																			</tr>
+																			<tr>
+																				<th class="social-label b-none">Marital Status</th>
+																				<td class="social-user-name b-none text-muted"
+																					id="ms1"></td>
+																			</tr>
+																			<tr>
+																				<th class="social-label b-none p-b-0">Location</th>
+																				<td class="social-user-name b-none p-b-0 text-muted"
+																					id="location1"></td>
+																			</tr>
+																		</table>
+																	</form>
+																</div>
+															</div>
+															<div id="edit-info" class="row edit-form">
+																<div class="col-md-12">
+																	<form>
+																		<div class="form-group row py-1">
+																			<label for="fullname" class="col-sm-3 col-form-label">Full
+																				Name</label>
+																			<div class="col-sm-9">
+																				<input type="text" class="form-control"
+																					id="full_name2" placeholder="Enter Full Name">
+																			</div>
+																		</div>
+
+																		<div id="datepicker" class="form-group row date py-1"
+																			data-date-format="mm-dd-yyyy">
+																			<label for="fullname" class="col-sm-3 col-form-label">Birth
+																				Date</label>
+																			<div class="col-sm-9">
+																				<div class="input-group">
+																					<input id="dropper-default" class="form-control"
+																						type="text" id="dob2"
+																						placeholder="Select your birth date" /> <span
+																						class="input-group-addon"> <i
+																						class="icofont icofont-calendar"></i>
+																					</span>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="form-group row py-1">
+																			<label for="fullname" class="col-sm-3 col-form-label">Marital
+																				Status</label>
+																			<div class="col-sm-9">
+																				<select id="ms2" class="form-control">
+																					<option value="married">Married</option>
+																					<option value="unmarried">Unmarried</option>
+																				</select>
+																			</div>
+																		</div>
+																		<div class="form-group row md-group-add-on py-1">
+																			<label for="fullname" class="col-sm-3 col-form-label">Address</label>
+																			<div class="col-sm-9">
+																				<textarea rows="3" cols="3" class="form-control"
+																					id="location2"
+																					placeholder="Enter your full address"></textarea>
+																			</div>
+																		</div>
+																		<div class="text-center m-t-20 py-1">
+																			<a href="javascript:;" id="basic-save"
+																				class="btn btn-primary waves-effect waves-light m-r-20 basic-save">Save</a>
+																			<a href="javascript:;" id="edit-cancel"
+																				class="btn btn-default waves-effect waves-light">Cancel</a>
+																		</div>
+																	</form>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-sm-12">
+													<div class="card">
+														<div class="card-header card-edit">
+															<h5 class="card-header-text">Contact Information</h5>
+															<button id="edit-Contact" type="button"
+																class="btn btn-primary waves-effect waves-light f-right btn-edit">
+																<i class="fa fa-edit"></i>
+															</button>
+														</div>
+														<div class="card-block">
+															<div id="contact-info" class="row info-show">
+																<div class="col-md-12">
+																	<table class="table table-responsive m-b-0">
+																		<tr>
+																			<th class="social-label b-none p-t-0">Mobile
+																				Number</th>
+																			<td class="social-user-name b-none p-t-0 text-muted"
+																				id="mob1"></td>
+																		</tr>
+																		<tr>
+																			<th class="social-label b-none">Email Address</th>
+																			<td class="social-user-name b-none text-muted"
+																				id="email1"></td>
+																		</tr>
+																		<tr>
+																			<th class="social-label b-none">LinkedIn</th>
+																			<td class="social-user-name b-none text-muted"
+																				id="linkdin1"></td>
+																		</tr>
+																		<tr>
+																			<th class="social-label b-none p-b-0">Skype</th>
+																			<td class="social-user-name b-none p-b-0 text-muted"
+																				id="skype1"></td>
+																		</tr>
+																	</table>
+																</div>
+															</div>
+															<div id="edit-contact-info" class="row edit-form">
+																<div class="col-lg-12 col-md-12">
+																	<form>
+																		<div class="input-group py-1">
+																			<input type="text" class="form-control"
+																				placeholder="Mobile number" id="mob2">
+																		</div>
+																		<div class="input-group py-1">
+																			<input type="text" class="form-control"
+																				placeholder="Email address" id="email2">
+																		</div>
+																		<div class="input-group py-1">
+																			<input type="text" class="form-control"
+																				placeholder="LinkedIn id" id="linkedin2">
+																		</div>
+																		<div class="input-group py-1">
+																			<input type="text" class="form-control"
+																				placeholder="Skype id" id="skype2">
+																		</div>
+																		<div class="text-center m-t-20">
+																			<a href="javascript:;" id="contact-save"
+																				class="btn btn-primary waves-effect waves-light m-r-20 basic-save">Save</a>
+																			<a href="javascript:;" id="contact-cancel"
+																				class="btn btn-default waves-effect waves-light">Cancel</a>
+																		</div>
+																	</form>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-12">
+													<div class="card">
+														<div class="card-header card-edit">
+															<h5 class="card-header-text">Education</h5>
+															<button id="edit-education" type="button"
+																class="btn btn-primary waves-effect waves-light f-right btn-edit">
+																<i class="fa fa-plus"></i>
+															</button>
+														</div>
+														<div class="card-block">
+															<div id="work-info"
+																class="row info-show mbr-justify-content-center">
+															</div>
+															<div id="edit-contact-work" class="row edit-form">
+																<div class="col-md-12">
+
+																	<div class="form-group row py-1">
+																		<label for="highschool"
+																			class="col-sm-3 col-form-label">Degree Name</label>
+																		<div class="col-sm-9">
+																			<select class="form-control custom-select mr-sm-2"
+																				id="degree_name">
+																				<option value="Not Selected">Select</option>
+																				<option value="High School">High School</option>
+																				<option value="Intermediate">Intermediate</option>
+																				<option value="Diploma">Diploma</option>
+																				<option value="B.Tech">B. Tech.</option>
+																			</select>
+																		</div>
+																	</div>
+																	<div class="form-group row py-1">
+																		<label for="highschool"
+																			class="col-sm-3 col-form-label">Specialisation</label>
+																		<div class="col-sm-9">
+																			<select class="form-control custom-select mr-sm-2"
+																				id="specialization">
+																				<option value="Not Selected">Select</option>
+																				<option value="Science">Science</option>
+																				<option value="Commerce">Commerce</option>
+																				<option value="Arts">Arts</option>
+																				<option value="IT">IT</option>
+																				<option value="Machenical">Mechanical</option>
+																				<option value="Electronics">Electronics</option>
+																			</select>
+																		</div>
+																	</div>
+																	<div class="form-group row py-1">
+																		<label for="intermediate"
+																			class="col-sm-3 col-form-label">School/College</label>
+																		<div class="col-sm-9">
+																			<input type="text" class="form-control" id="college"
+																				placeholder="Enter School/College Name">
+																		</div>
+																	</div>
+																	<div class="form-group row py-1">
+																		<label for="gradaution"
+																			class="col-sm-3 col-form-label">Duration</label>
+																		<div class="col-sm-9">
+																			<select class="form-control custom-select mr-sm-2"
+																				id="course_duration">
+																				<option value="Not Selected">Select</option>
+																				<option value="1 Year">1 Year</option>
+																				<option value="2 Year">2 Year</option>
+																				<option value="3 Year">3 Year</option>
+																				<option value="4 Year">4 Year</option>
+
+																			</select>
+																		</div>
+																	</div>
+																	<div class="form-group row py-1">
+																		<label for="postgraduation"
+																			class="col-sm-3 col-form-label">Marks</label>
+																		<div class="col-sm-9">
+																			<input type="text" class="form-control" id="marks"
+																				placeholder="CGPA/Percentage">
+																		</div>
+																	</div>
+																</div>
+																<div class="text-center py-1 m-t-20">
+																	<a href="javascript:;" id="work-save"
+																		class="btn btn-primary waves-effect waves-light m-r-20 save"
+																		save_type="education_arr">Save</a> <a
+																		href="javascript:;" id="work-cancel"
+																		class="btn btn-default waves-effect waves-light">Cancel</a>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div role="tabpanel" class="tab-pane fade" id="skills">
+											<div class="row">
+												<div class="col-sm-12">
+													<div class="card">
+														<div class="card-header card-edit">
+															<h5 class="card-header-text">Technical Skills</h5>
+															<button type="button"
+																class="btn btn-primary waves-effect waves-light f-right btn-edit add_skill">
+																<i class="fa fa-plus"></i>
+															</button>
+														</div>
+														<div class="card-block">
+															<div id="skill-info" class="row info-show">
+															</div>
+															<div id="edit-skill" class="row edit-form">
+																<div class="col-lg-12 col-md-12">
+																	<form>
+
+																		<div class="form-group row py-1">
+																			<label for="intermediate"
+																				class="col-sm-3 col-form-label">Skill Name</label>
+																			<div class="col-sm-9">
+																				<input type="text" class="form-control" id="skill"
+																					placeholder="Enter your skill criteria">
+																			</div>
+																		</div>
+																		<div class="form-group row py-1">
+																			<label for="intermediate"
+																				class="col-sm-3 col-form-label">Skill
+																				percent</label>
+																			<div class="col-sm-9">
+																				<input type="text" class="form-control"
+																					id="skill_percent"
+																					placeholder="Enter your skill percent">
+																			</div>
+																		</div>
+
+																		<div class="text-center m-t-20">
+																			<a href="javascript:;" id="contact-save"
+																				class="btn btn-primary waves-effect waves-light m-r-20 save"
+																				save_type="skill_arr">Save</a> <a
+																				href="javascript:;" id="contact-cancel"
+																				class="btn btn-default waves-effect waves-light">Cancel</a>
+																		</div>
+																	</form>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-12">
+													<div class="card">
+														<div class="card-header card-edit">
+															<h5 class="card-header-text">Experience</h5>
+															<button id="edit-experience" type="button"
+																class="btn btn-primary waves-effect waves-light f-right btn-edit">
+																<i class="fa fa-plus"></i>
+															</button>
+														</div>
+														<div class="card-block">
+															<div id="view-company"
+																class="row info-show mbr-justify-content-center">
+															</div>
+															<div id="edit-company" class="row edit-form">
+																<div class="col-md-12">
+																	<form>
+																		<div class="form-group row py-1">
+																			<label for="companyname"
+																				class="col-sm-3 col-form-label">Company Name</label>
+																			<div class="col-sm-9">
+																				<input type="text" class="form-control"
+																					id="companyname" placeholder="Enter Company Name">
+																			</div>
+																		</div>
+																		<div class="form-group row py-1">
+																			<label for="designation"
+																				class="col-sm-3 col-form-label">Designation</label>
+																			<div class="col-sm-9">
+																				<input type="text" class="form-control"
+																					id="designation" placeholder="Enter Designation">
+																			</div>
+																		</div>
+																		<div class="form-group row date py-1"
+																			data-date-format="mm-dd-yyyy">
+																			<label for="fromjoining"
+																				class="col-sm-3 col-form-label">From</label>
+																			<div class="col-sm-9">
+																				<div class="input-group">
+																					<input id="join_from" class="form-control"
+																						type="text" placeholder="When did you join?" />
+																				</div>
+																			</div>
+																		</div>
+																		<div class="form-group row date py-1"
+																			data-date-format="mm-dd-yyyy">
+																			<label for="tojoining"
+																				class="col-sm-3 col-form-label">To</label>
+																			<div class="col-sm-9">
+																				<div class="input-group">
+																					<input id="join_to" class="form-control"
+																						type="text" placeholder="When did you left?" />
+																				</div>
+																			</div>
+																		</div>
+																		<div class="text-center m-t-20 py-1">
+																			<a href="javascript:;" id="edit-save"
+																				class="btn btn-primary waves-effect waves-light m-r-20 save"
+																				save_type="work_ex_arr">Save</a> <a
+																				href="javascript:;" id="edit-cancel"
+																				class="btn btn-default waves-effect waves-light">Cancel</a>
+																		</div>
+																	</form>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-sm-12">
+													<div class="card">
+														<div class="card-header card-edit">
+															<h5 class="card-header-text">Projects</h5>
+															<button id="btn-projects" type="button"
+																class="btn btn-primary waves-effect waves-light f-right btn-edit">
+																<i class="fa fa-plus"></i>
+															</button>
+														</div>
+														<div class="card-block">
+															<div id="view-projects"
+																class="row info-show mbr-justify-content-center">
+
+
+
+
+
+															</div>
+															<div id="edit-projects" class="row edit-form">
+																<div class="col-md-12">
+																	<form>
+																		<div class="form-group row py-1">
+																			<label for="companyname"
+																				class="col-sm-3 col-form-label">Project Name</label>
+																			<div class="col-sm-9">
+																				<input type="text" class="form-control"
+																					id="project_name" placeholder="Enter Project Name">
+																			</div>
+																		</div>
+																		<div class="form-group row py-1">
+																			<label for="designation"
+																				class="col-sm-3 col-form-label">Comapny</label>
+																			<div class="col-sm-9">
+																				<input type="text" class="form-control"
+																					id="comp_name" placeholder="Enter Company Name">
+																			</div>
+																		</div>
+																		<div class="form-group row py-1">
+																			<label for="designation"
+																				class="col-sm-3 col-form-label">Time</label>
+																			<div class="col-sm-9">
+																				<input type="text" class="form-control" id="time"
+																					placeholder="Enter Months">
+																			</div>
+																		</div>
+																		<div class="text-center m-t-20 py-1">
+																			<a href="javascript:;" id="edit-save"
+																				class="btn btn-primary waves-effect waves-light m-r-20 save"
+																				save_type="project_arr">Save</a> <a
+																				href="javascript:;" id="edit-cancel"
+																				class="btn btn-default waves-effect waves-light">Cancel</a>
+																		</div>
+																	</form>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-sm-12">
+													<div class="card">
+														<div class="card-header card-edit">
+															<h5 class="card-header-text">Certification</h5>
+															<button id="btn-certificate" type="button"
+																class="btn btn-primary waves-effect waves-light f-right btn-edit">
+																<i class="fa fa-plus"></i>
+															</button>
+														</div>
+														<div class="card-block">
+															<div id="view-certificate"
+																class="row info-show mbr-justify-content-center">
+															</div>
+															<div id="edit-certificate" class="row edit-form">
+																<div class="col-md-12">
+																	<form>
+																		<div class="form-group row py-1">
+																			<label for="companyname"
+																				class="col-sm-3 col-form-label">Certificate
+																				Name</label>
+																			<div class="col-sm-9">
+																				<input type="text" class="form-control"
+																					id="certificate_name"
+																					placeholder="Enter Certificate Name">
+																			</div>
+																		</div>
+																		<div class="form-group row py-1">
+																			<label for="designation"
+																				class="col-sm-3 col-form-label">Issued By</label>
+																			<div class="col-sm-9">
+																				<input type="text" class="form-control"
+																					id="issued_by" placeholder="Who issued it?">
+																			</div>
+																		</div>
+																		<div class="form-group row date py-1"
+																			data-date-format="mm-dd-yyyy">
+																			<label for="fullname" class="col-sm-3 col-form-label">Valid
+																				Till</label>
+																			<div class="col-sm-9">
+																				<div class="input-group">
+																					<input id="certificate_duration"
+																						class="form-control" type="text"
+																						placeholder="Select validitye" />
+																				</div>
+																			</div>
+																		</div>
+																		<div class="text-center m-t-20">
+																			<a href="javascript:;" id="work-save"
+																				class="btn btn-primary waves-effect waves-light m-r-20 save"
+																				save_type="certification_arr">Save</a> <a
+																				href="javascript:;" id="work-cancel"
+																				class="btn btn-default waves-effect waves-light">Cancel</a>
+																		</div>
+																	</form>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+										<div role="tabpanel" class="tab-pane fade" id="cv">
+											<div id="menu2">
+												<div style="min-height: 100%" id="resume_text">
+													<div class="col-md-3 col-sm-4 col-xs-6 pull-right"></div>
+
+
+													<div class="text-center">
+														<button id="prev" class="btn btn-info pull-left">Previous</button>
+														<span>Page: <span id="page_num"></span> / <span
+															id="page_count"></span></span>
+														<button id="next" class="btn btn-info pull-right">Next</button>
+
+													</div>
+													<canvas id="the-canvas" style="width: 100%"></canvas>
+
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="modal fade" id="contact" tabindex="-1" role="dialog"
+			aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="contact">Contactarme</h5>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<span aria-hidden="true">×</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<p for="msj">Se enviará este mensaje a la persona que desea
+								contactar, indicando que te quieres comunicar con el. Para esto
+								debes de ingresar tu información personal.</p>
+						</div>
+						<div class="form-group">
+							<label for="txtFullname">Nombre completo</label> <input
+								type="text" id="txtFullname" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="txtEmail">Email</label> <input type="text"
+								id="txtEmail" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="txtPhone">Teléfono</label> <input type="text"
+								id="txtPhone" class="form-control">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary"
+							data-dismiss="modal">Cancelar</button>
+						<button type="button" class="btn btn-primary"
+							(click)="openModal()" data-dismiss="modal">Guardar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!--==========================
+    Footer
+  ============================-->
+	<!-- Footer -->
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-6 col-sm-4 col-md-3">
+					<h5>CrossTab</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i
+								class="fa fa-angle-double-right"></i>Vision</a></li>
+						<li><a href="javascript:void();"><i
+								class="fa fa-angle-double-right"></i>About Us</a></li>
+						<li><a href="javascript:void();"><i
+								class="fa fa-angle-double-right"></i>Why use Talent Cache?</a></li>
+						<li><a href="javascript:void();"><i
+								class="fa fa-angle-double-right"></i>News & Awards</a></li>
+						<li><a href="javascript:void();"><i
+								class="fa fa-angle-double-right"></i>Terms</a></li>
+						<li><a href="javascript:void();"><i
+								class="fa fa-angle-double-right"></i>Privacy Policy</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Our Products</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i
+								class="fa fa-angle-double-right"></i>Application Tracking System</a></li>
+						<li><a href="javascript:void();"><i
+								class="fa fa-angle-double-right"></i>Career Website</a></li>
+						<li><a href="javascript:void();"><i
+								class="fa fa-angle-double-right"></i>On Boarding</a></li>
+						<!--             <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Purchase a property</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Student Accomodation</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Find a roommate</a></li> -->
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Find your Job</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i
+								class="fa fa-angle-double-right"></i>India</a></li>
+						<li><a href="javascript:void();"><i
+								class="fa fa-angle-double-right"></i>Europe</a></li>
+						<li><a href="javascript:void();"><i
+								class="fa fa-angle-double-right"></i>America</a></li>
+						<li><a href="javascript:void();"><i
+								class="fa fa-angle-double-right"></i>Australia</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3">
+					<h5>Contact Us</h5>
+					<ul class="list-unstyled quick-links">
+						<li class="list-inline-item"><a href="javascript:void();"><i
+								class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i
+								class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i
+								class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i
+								class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"
+							target="_blank"><i class="fa fa-envelope"></i></a></li>
+						<li><a href="javascript:void();"><i class="fa fa-phone"></i>Call
+								us on 000 000 0000</a></li>
+						<li><a href="javascript:void();"><i
+								class="fa fa-calendar"></i>Mon to Fri: 9am – 8.30pm</a></li>
+						<li><a href="javascript:void();"><i
+								class="fa fa-calendar"></i>Weekends: 10am – 7.30pm</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--       <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-web"></i>Visit PureBricks.com</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-phone"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+      </div>   -->
+			<div class="row">
+				<div
+					class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p></p>
+					<p class="h6">
+						&copy Talent Cache<a class="text-green ml-2"
+							href="https://www.sunlimetech.com" target="_blank"></a>All right
+						reserved.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ./Footer -->
+
+	<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+	<!-- JavaScript Libraries -->
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/jquery/jquery-migrate.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="lib/easing/easing.min.js"></script>
+	<script src="lib/superfish/hoverIntent.js"></script>
+	<script src="lib/superfish/superfish.min.js"></script>
+	<script src="lib/wow/wow.min.js"></script>
+	<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+	<script src="lib/magnific-popup/magnific-popup.min.js"></script>
+	<script src="lib/sticky/sticky.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+	<script src="lib/dropzone/dropzone.js"></script>
+	<!-- MDBootstrap Datatables  -->
+	<script type="text/javascript" src="lib/datatables/datatables.min.js"></script>
+	<!-- Contact Form JavaScript File -->
+	<script type="text/javascript"
+		src="bower_components/select2/js/select2.full.min.js"></script>
+	<script src="contactform/contactform.js"></script>
+	<script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
+	<script type="text/javascript" src="assets/rating/jquery.raty.js"></script>
+	<script type="text/javascript"
+		src="assets/pages/social-timeline/social.js"></script>
+	<script src="bower_components/sweetalert/js/sweetalert.min.js"></script>
+	<!-- Template Main Javascript File -->
+	<script src="js/main.js"></script>
+	<script src="js/script.js"></script>
+	
+	<script
+		src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	<script>
+		$(document)
+				.ready(
+						function() {
+							load_cv();
+							if (Cookies.get('auth') == undefined) {
+								$("#page_title").html("Please Login");
+
+							} else {
+								$("#page_title").html(Cookies.get('mail'));
+								$('#rating').raty({
+
+									score : 3,
+									starType : 'i'
+								});
+								load_data();
+								
+							}
+							$("#response").on('click','.apply',function(){
+								
+								 var div_id_apply=$(this).attr('apply_row_id');
+								console.log(div_id_apply);
+								var applied_div='<div class="col-md-6 col-xl-4"><div class="card">'
+									+ ' <div class="card-block-big card-task nestable-primary" id="jobs">'
+									+ '  <div class="card-block card-comment-icon" id="jobs-card">'
+									+ ' <div class="row justify-content-center"> <div class="col-12">'
+									+ '  <button class="btn btn-primary btn-icon"><img src="./img/wipro.jpg" class="card-img"></button>'
+									+ ' <h5>'+$("#apply_company_"+div_id_apply).text()+'</h5>'
+									+ ' <p>Front End Developer</p><hr><span>Status</span><div id="demo">'
+									+ '<ul class="progress-indicator"><li class="completed"> <span class="bubble"></span> Applied</li>'
+									+ '<li> <span class="bubble"></span> Viewed </li><li> <span class="bubble"></span>Interview</li>'
+									+ '<li> <span class="bubble"></span>Joined</li></ul></div><button type="button" class="btn btn-sm btn-hr">Contact HR</button>'
+									+ '</div></div></div></div></div></div>';
+									
+									$("#applied_company").append(applied_div);
+								
+									$("#remove"+div_id_apply).remove();
+							})
+							$("#response").on('click','.send_to_draft',function(){
+								 var send_to_draft=$(this).attr('send_to_draft_id').replace('draft','');
+								 var draft_div='<div class="col-md-6 col-xl-4">' 
+										+ ' <div class="card" id="color_red">' 
+										+ ' <div class="card-block-big card-task nestable-warning"  id="jobs">' 
+										+ ' <div class="card-block card-comment-icon" id="jobs-card">' 
+										+ ' <div class="row justify-content-center">' 
+										+ ' <div class="col-12"> <button class="btn btn-warning btn-icon"><img src="./img/honeywell.jpg" class="card-img"></button>' 
+										+ ' <h5>'+$("#apply_company_"+send_to_draft).text()+'</h5> <p>Front End Developer</p> <button type="button" class="btn btn-sm">Apply</button>' 
+										+ ' </div></div></div></div></div> </div>';
+								 $("#waiting_job").append(draft_div);
+									$("#remove"+send_to_draft).remove();
+							})
+							 $("#applied_company").on('click','.btn-hr',function(){
+								 swal({
+									  title: "HR Anant Mahrotra",
+									  text: "<h5 class='mbr-fonts-style mbr-bold mbr-section-title3 display-5'>CrossTab IT Consulting Pvt Ltd</h5><p class='mbr-fonts-style text1 mbr-text display-6'>MOB:- +91 8788778765</p><p class='mbr-fonts-style text1 mbr-text display-6'>anant@crosstab.in</p>",
+									  type: "info",
+									  html:true,
+									  confirmButtonClass: "btn-success",
+									  confirmButtonText: "OK",
+									  closeOnConfirm: false
+									})
+							 })
+
+							$('.add_skill').click(function() {
+								$("#skill-info,#edit-skill").toggle(500);
+							});
+							
+							$(".save")
+									.click(
+											function() {
+												alert();
+												var insert_data = $(this).attr(
+														'save_type');
+												switch (insert_data) {
+												case 'education_arr':
+													var col_name = "education";
+													$("#work-info").show();
+													var education = '<div class="col-lg-6 mbr-col-md-10">'
+															+ '<div class="wrap"><div class="ico-wrap">'
+															+ '<span class="mbr-iconfont fa-graduation-cap fa"></span>'
+															+ '</div><div class="text-wrap vcenter">'
+															+ '<h5 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">'
+															+ $("#degree_name")
+																	.val()
+															+ '</h5>'
+															+ '<p>'
+															+ $(
+																	"#specialization")
+																	.val()
+															+ '</p><p class="mbr-fonts-style text1 mbr-text display-6">'
+															+ $("#college")
+																	.val()
+															+ '</p>'
+															+ '<p class="mbr-fonts-style text1 mbr-text display-6">'
+															+ $(
+																	"#course_duration")
+																	.val()
+															+ '</p>'
+															+ '<p class="mbr-fonts-style text1 mbr-text display-6">'
+															+ $("#marks").val()
+															+ '</p></div></div> </div>';
+													$("#work-info").append(
+															education);
+													var edu_arr = '{"degree_name":"'
+															+ $("#degree_name")
+																	.val()
+															+ '","specialization":"'
+															+ $(
+																	"#specialization")
+																	.val()
+															+ '","college":"'
+															+ $("#college")
+																	.val()
+															+ '","duration":"'
+															+ $(
+																	"#course_duration")
+																	.val()
+															+ '","marks":"'
+															+ $("#marks").val()
+															+ '" }';
+													console.log(edu_arr);
+													insert_cand_data(edu_arr,
+															insert_data,
+															col_name);
+													$("#degree_name").val("");
+													$("#specialization")
+															.val("");
+													$("#college").val('');
+													$("#course_duration").val(
+															"");
+													$("#marks").val("");
+													break;
+
+												case 'certification_arr':
+
+													$("#view-certificate")
+															.show();
+													$("#edit-certificate")
+															.hide();
+													var col_name = "certification";
+													var certificate = '<div class="col-lg-6 mbr-col-md-10">'
+															+ '<div class="wrap"><div class="ico-wrap">'
+															+ '<span class="mbr-iconfont fa-graduation-cap fa"></span>'
+															+ '</div><div class="text-wrap vcenter">'
+															+ '<h5 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">'
+															+ $(
+																	"#certificate_name")
+																	.val()
+															+ '</h5>'
+															+ '<p class="mbr-fonts-style text1 mbr-text display-6">'
+															+ $("#issued_by")
+																	.val()
+															+ '</p>'
+															+ '<p class="mbr-fonts-style text1 mbr-text display-6">'
+															+ $(
+																	"#certificate_duration")
+																	.val()
+															+ '</p>'
+															+ '</div></div> </div>';
+													$("#view-certificate")
+															.append(certificate);
+													var certificate_arr = '{"certificate_name":"'
+															+ $(
+																	"#certificate_name")
+																	.val()
+															+ '","issued_by":"'
+															+ $("#issued_by")
+																	.val()
+															+ '","certificate_duration":"'
+															+ $(
+																	"#certificate_duration")
+																	.val()
+															+ '" }';
+													insert_cand_data(
+															certificate_arr,
+															insert_data,
+															col_name);
+													$("#certificate_name").val(
+															'');
+													$("#issued_by").val('');
+													$("#certificate_duration")
+															.val('')
+													break;
+
+												case 'project_arr':
+
+													console.log("3");
+													$("#view-projects").show();
+													$("#edit-projects").hide();
+													var col_name = "project";
+													var projects = '<div class="col-lg-6 mbr-col-md-10">'
+															+ '<div class="wrap"><div class="ico-wrap">'
+															+ '<span class="mbr-iconfont fa-graduation-cap fa"></span>'
+															+ '</div><div class="text-wrap vcenter">'
+															+ '<h5 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">'
+															+ $("#project_name")
+																	.val()
+															+ '</h5>'
+															+ '<p class="mbr-fonts-style text1 mbr-text display-6">'
+															+ $("#comp_name")
+																	.val()
+															+ '</p>'
+															+ '<p class="mbr-fonts-style text1 mbr-text display-6">'
+															+ $("#time").val()
+															+ '</p>'
+															+ '</div></div> </div>';
+													$("#view-projects").append(
+															projects);
+													var project_arr = '{"project_name":"'
+															+ $("#project_name")
+																	.val()
+															+ '","company_name":"'
+															+ $("#comp_name").val()
+															+ '","project_duration":"'
+															+ $("#time").val()
+															+ '" }';
+													insert_cand_data(
+															project_arr,
+															insert_data,
+															col_name);
+													$("#project_name").val("");
+													$("#time").val("");
+													$("#time").val("");
+													break;
+
+												case 'work_ex_arr':
+													console.log("4");
+													$("#view-company").show();
+													$("#edit-company").hide();
+													var col_name = "work_ex";
+													var work_ex = '<div class="col-lg-6 mbr-col-md-10">'
+															+ ' <div class="wrap">'
+															+ ' <div class="ico-wrap">'
+															+ '  <span class="mbr-iconfont fa-briefcase fa"></span>'
+															+ ' </div>'
+															+ '  <div class="text-wrap vcenter">'
+															+ '  <h3 class="mbr-fonts-style mbr-bold mbr-section-title3 display-7">'
+															+ $("#companyname")
+																	.val()
+															+ '</h3>'
+															+ '  <p class="designation">'
+															+ $("#designation")
+																	.val()
+															+ '</p>'
+															+ '  <p class="mbr-fonts-style text1 mbr-text display-6">'
+															+ $("#join_from")
+																	.val()
+															+ ' - '
+															+ $("#join_to")
+																	.val()
+															+ '</p>'
+															+ '  </div>'
+															+ '  </div>'
+															+ '  </div>';
+													$("#view-company").append(
+															work_ex);
+													var work_exp = '{"company_name":"'
+															+ $("#companyname")
+																	.val()
+															+ '","designation":"'
+															+ $("#designation")
+																	.val()
+															+ '","from":"'
+															+ $("#join_from")
+																	.val()
+															+ '","to":"'
+															+ $("#join_to")
+																	.val()
+															+ '" }';
+													insert_cand_data(work_exp,
+															insert_data,
+															col_name);
+													$("#companyname").val("");
+													$("#designation").val("");
+													$("#join_from").val("");
+													$("#join_to").val("");
+													break;
+												case 'skill_arr':
+
+													console.log("5");
+													$("#skill-info").show();
+													$("#edit-skill").hide();
+													var col_name = "required_skills";
+													var projects = '<div class="col-3">'
+															+ '<h6>'
+															+ $("#skill").val()
+															+ '</h6>'
+															+ '</div>'
+															+ '<div class="col-2">'
+															+ '	<p style="line-height: 10px;!important">'
+															+ $(
+																	"#skill_percent")
+																	.val()
+															+ '&nbsp;%</p>'
+															+ '</div>'
+															+ '<div class="col-md-7">'
+															+ '	<progress max="100" value="'
+															+ $(
+																	"#skill_percent")
+																	.val()
+															+ '" class="html5">'
+															+ '	</progress>'
+															+ '	</div>'
+															+ '<hr>';
+													+'</div></div> </div>';
+													$("#skill-info").append(
+															projects);
+													var skill_arr = '{"skill_name":"'
+															+ $("#skill").val()
+															+ '","skill_percent":"'
+															+ $(
+																	"#skill_percent")
+																	.val()
+															+ '" }';
+													insert_cand_data(skill_arr,
+															insert_data,
+															col_name);
+													$("#skill").val("");
+													$("#skill_percent").val("");
+													break;
+												}
+												console.log(insert_data);
+											})
+							function insert_cand_data(json, save_type, col_name) {
+								$.ajax({
+									method : "post",
+									url : "rest/hello/cand_progress/"
+											+ col_name,
+									data : {
+										cookie_mail : Cookies.get('mail'),
+										type_of_save : save_type,
+										cand_data : json,
+
+									},
+									success : function(data) {
+										console.log(data);
+									}
+								});
+							}
+							var cookie_mail = "";
+							$("#signin")
+									.click(
+											function() {
+
+												cookie_mail = $("#comp_email")
+														.val();
+												var pass = $("#comp_pass")
+														.val();
+
+												$
+														.ajax({
+															url : "rest/hello/login",
+															method : 'post',
+															headers : {
+																"Authorization" : "Basic "
+																		+ btoa(cookie_mail
+																				+ ":"
+																				+ pass)
+															},
+															data : {
+																emails : cookie_mail,
+																pwds : pass,
+															},
+															success : function(
+																	result) {
+																if (result == 'Authorize') {
+																	Cookies
+																			.set(
+																					'auth',
+																					1);
+																	Cookies
+																			.set(
+																					'mail',
+																					cookie_mail);
+																	$(
+																			"#page_title")
+																			.html(
+																					cookie_mail);
+																	$
+																			.ajax({
+																				method : "post",
+																				url : "rest/hello/progress_candidate",
+																				data : {
+																					cookie_mail : cookie_mail,
+																				},
+																				success : function(
+																						data) {
+																					$(
+																							"#response")
+																							.html(
+																									data);
+																				}
+																			});
+																	load_data();
+																	load_cv();
+
+																} else {
+																	swal({
+																		title : "Failed to load your data",
+																		text : "Not Authorize",
+																		type : "error",
+																		showCancelButton : false,
+																		confirmButtonClass : "btn-danger",
+																		confirmButtonText : "OK",
+																		closeOnConfirm : true
+																	});
+																}
+															},
+															failure : function(
+																	message) {
+																swal({
+																	title : "Failed to load your data",
+																	text : "Oops. Some error occured while fetching your data from server. Please try again.",
+																	type : "error",
+																	showCancelButton : false,
+																	confirmButtonClass : "btn-danger",
+																	confirmButtonText : "OK",
+																	closeOnConfirm : true
+																});
+															}
+														});
+
+											})
+							$('#edit-btn').click(function() {
+								$("#view-info,#edit-info").toggle(500);
+							});
+							$('#add-work').click(function() {
+								$("#work-info,#edit-work-info").toggle(500);
+							});
+							$('#edit-education').click(function() {
+								$("#work-info,#edit-contact-work").toggle(500);
+							});
+							$('#edit-experience').click(function() {
+								$("#view-company,#edit-company").toggle(500);
+							});
+							$('#btn-projects').click(function() {
+								$("#view-projects,#edit-projects").toggle(500);
+							});
+							$('#btn-certificate')
+									.click(
+											function() {
+												$(
+														"#view-certificate,#edit-certificate")
+														.toggle(500);
+											});
+
+							$('#edit-edu')
+									.click(
+											function() {
+												$(
+														"#education-info,#edit-education-info")
+														.toggle();
+											});
+							$('#add-edu')
+									.click(
+											function() {
+												$(
+														"#education-info,#edit-education-info")
+														.toggle();
+											});
+							$('#edit-Contact').click(function() {
+								$("#contact-info,#edit-contact-info").toggle();
+							});
+							$('#edit-work').click(function() {
+								$("#work-info,#edit-work-info").toggle();
+							});
+							$(".js-example-tags").select2({
+								tags : true,
+								dataType : 'json',
+								tokenSeparators : [ ',', ' ' ]
+							});
+							$('.js-example-tags').on('select2:select',
+									function(e) {
+										var data = e.params.data;
+										reqskill = data.text;
+										skill_arr.push(reqskill);
+
+									});
+							function load_data() {
+								$.ajax({
+									method : "post",
+									url : "rest/hello/progress_candidate",
+									data : {
+										cookie_mail : Cookies.get('mail'),
+									},
+									success : function(data) {
+										$("#response").html(data);
+									}
+								});
+								var skill_json = '';
+								var education_json = '';
+								var project_json = '';
+								var work_exp_json = '';
+								var certificate_json = '';
+								$
+										.ajax({
+											method : "post",
+											url : "rest/hello/candidate_json_creater",
+											data : {
+												tb_name : "candidate",
+												logged_in : Cookies.get('mail'),
+											},
+											success : function(data) {
+												var result_json = JSON
+														.parse(data);
+												$("#full_name1")
+														.html(
+																result_json[0].full_name);
+												$("#full_name2")
+														.val(
+																result_json[0].full_name);
+												$("#dob1").html(
+														result_json[0].dob);
+												$("#dob2").val(
+														result_json[0].dob);
+												$("#ms1")
+														.html(
+																result_json[0].martial_status);
+												$("#ms2")
+														.val(
+																result_json[0].martial_status);
+												$("#location1")
+														.html(
+																result_json[0].location);
+												$("#location2")
+														.val(
+																result_json[0].location
+																		+ " "
+																		+ result_json[0].location);
+												$("#mob1")
+														.html(
+																result_json[0].mobile_no);
+												$("#mob2")
+														.val(
+																result_json[0].mobile_no);
+												$("#email1").html(
+														result_json[0].email);
+												$("#email2").val(
+														result_json[0].email);
+												$("#linkedin1")
+														.html(
+																result_json[0].linkedin);
+												$("#linkedin2")
+														.val(
+																result_json[0].linkedin);
+												$("#skype1").html(
+														result_json[0].skype);
+												$("#skype2").val(
+														result_json[0].skype);
+												$("#occ1")
+														.html(
+																result_json[0].experience);
+												$("#occ2")
+														.val(
+																result_json[0].experience);
+												$("#skills1")
+														.html(
+																result_json[0].required_skills);
+												$("#skills2")
+														.val(
+																result_json[0].required_skills);
+												$("#curr1")
+														.html(
+																result_json[0].curr_cmpny);
+												$("#curr2")
+														.val(
+																result_json[0].curr_cmpny);
+
+												$
+														.each(
+																JSON
+																		.parse(result_json[0].required_skills),
+																function(i,
+																		item) {
+																	console
+																			.log(JSON
+																					.parse(result_json[0].required_skills));
+																	skill_json += '<div class="col-3">'
+																			+ '<h6>'
+																			+ item.skill_name
+																			+ '</h6>'
+																			+ '</div>'
+																			+ '<div class="col-2">'
+																			+ '	<p style="line-height: 10px;!important">'
+																			+ item.skill_percent
+																			+ '&nbsp;%</p>'
+																			+ '</div>'
+																			+ '<div class="col-md-7">'
+																			+ '	<progress max="100" value="'+item.skill_percent+'" class="html5">'
+																			+ '	</progress>'
+																			+ '	</div>'
+																			+ '<hr>';
+																});
+												$("#skill-info").append(
+														skill_json);
+												$
+														.each(
+																JSON
+																		.parse(result_json[0].education),
+																function(i,
+																		item) {
+																	education_json += '<div class="col-lg-6 mbr-col-md-10">'
+																			+ '<div class="wrap"><div class="ico-wrap">'
+																			+ '<span class="mbr-iconfont fa-graduation-cap fa"></span>'
+																			+ '</div><div class="text-wrap vcenter">'
+																			+ '<h5 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">'
+																			+ item.degree_name
+																			+ '</h5>'
+																			+ '<p>'
+																			+ item.specialization
+																			+ '</p><p class="mbr-fonts-style text1 mbr-text display-6">'
+																			+ item.college
+																			+ '</p>'
+																			+ '<p class="mbr-fonts-style text1 mbr-text display-6">'
+																			+ item.duration
+																			+ '</p>'
+																			+ '<p class="mbr-fonts-style text1 mbr-text display-6">'
+																			+ item.marks
+																			+ '</p></div></div> </div>';
+																});
+												$("#work-info").append(
+														education_json);
+												$
+														.each(
+																JSON
+																		.parse(result_json[0].project),
+																function(i,
+																		item) {
+																	project_json += '<div class="col-lg-6 mbr-col-md-10">'
+																			+ '<div class="wrap"><div class="ico-wrap">'
+																			+ '<span class="mbr-iconfont fa-briefcase fa"></span>'
+																			+ '</div><div class="text-wrap vcenter">'
+																			+ '<h5 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">'
+																			+ item.project_name
+																			+ '</h5>'
+																			+ '<p class="mbr-fonts-style text1 mbr-text display-6">'
+																			+ item.company_name
+																			+ '</p>'
+																			+ '<p class="mbr-fonts-style text1 mbr-text display-6">'
+																			+ item.project_duration
+																			+ '</p>'
+																			+ '</div></div> </div>';
+																});
+												$("#view-projects").append(
+														project_json);
+												$
+														.each(
+																JSON
+																		.parse(result_json[0].work_ex),
+																function(i,
+																		item) {
+																	work_exp_json += '<div class="col-lg-6 mbr-col-md-10">'
+																			+ ' <div class="wrap">'
+																			+ ' <div class="ico-wrap">'
+																			+ '  <span class="mbr-iconfont fa-tasks fa"></span>'
+																			+ ' </div>'
+																			+ '  <div class="text-wrap vcenter">'
+																			+ '  <h3 class="mbr-fonts-style mbr-bold mbr-section-title3 display-7">'
+																			+ item.company_name
+																			+ '</h3>'
+																			+ '  <p class="designation">'
+																			+ item.designation
+																			+ '</p>'
+																			+ '  <p class="mbr-fonts-style text1 mbr-text display-6">'
+																			+ item.from
+																			+ ' - '
+																			+ item.to
+																			+ '</p>'
+																			+ '  </div>'
+																			+ '  </div>'
+																			+ '  </div>';
+																});
+												$("#view-company").append(
+														work_exp_json);
+												$
+														.each(
+																JSON
+																		.parse(result_json[0].certification),
+																function(i,
+																		item) {
+
+																	certificate_json += '<div class="col-lg-6 mbr-col-md-10">'
+																			+ '<div class="wrap"><div class="ico-wrap">'
+																			+ '<span class="mbr-iconfont fa-certificate fa"></span>'
+																			+ '</div><div class="text-wrap vcenter">'
+																			+ '<h5 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">'
+																			+ item.certificate_name
+																			+ '</h5>'
+																			+ '<p class="mbr-fonts-style text1 mbr-text display-6">'
+																			+ item.issued_by
+																			+ '</p>'
+																			+ '<p class="mbr-fonts-style text1 mbr-text display-6">'
+																			+ item.certificate_duration
+																			+ '</p>'
+																			+ '</div></div> </div>';
+																});
+												$("#view-certificate").append(
+														certificate_json);
+
+											},
+											failure : function(message) {
+												swal({
+													title : "Failed to load your data",
+													text : "Oops. Some error occured while fetching your data from server. Please try again.",
+													type : "error",
+													showCancelButton : false,
+													confirmButtonClass : "btn-danger",
+													confirmButtonText : "OK",
+													closeOnConfirm : true
+												});
+											}
+										});
+							}
+							$(".basic-save").click(
+									function() {
+										var update_id = $(this).attr('custom');
+										$.ajax({
+											method : "post",
+											url : "rest/hello/update_profile/"
+													+ update_id,
+											data : {
+												full_name : $("#full_name2")
+														.val(),
+												dob : $("#dob2").val(),
+												ms : $("#ms2").val(),
+												location : $("#location2")
+														.val(),
+												mob : $("#mob2").val(),
+												email : $("#email2").val(),
+												linkedin : $("#linkedin2")
+														.val(),
+												skype : $("#skype2").val(),
+												exp : $("#occ2").val(),
+												skill : $("#skills2").val(),
+												curr : $("#curr2").val(),
+											},
+											success : function(data) {
+												load_data();
+											}
+										});
+
+									})
+							function load_cv() {
+								$
+										.ajax({
+											type : "GET",
+
+											url : "rest/hello/test4",
+											dataType : "html",
+											success : function(base64data) {
+
+												var pdfData = atob(base64data);
+
+												// Loaded via <script> tag, create shortcut to access PDF.js exports.
+												var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+												// The workerSrc property shall be specified.
+												pdfjsLib.GlobalWorkerOptions.workerSrc = '//mozilla.github.io/pdf.js/build/pdf.worker.js';
+
+												var pdfDoc = null, pageNum = 1, pageRendering = false, pageNumPending = null, scale = 3.0, canvas = document
+														.getElementById('the-canvas'), ctx = canvas
+														.getContext('2d');
+
+												/**
+												 * Get page info from document, resize canvas accordingly, and render page.
+												 * @param num Page number.
+												 */
+												function renderPage(num) {
+													pageRendering = true;
+													// Using promise to fetch the page
+													pdfDoc
+															.getPage(num)
+															.then(
+																	function(
+																			page) {
+																		var viewport = page
+																				.getViewport(scale);
+																		canvas.height = viewport.height;
+																		canvas.width = viewport.width;
+
+																		// Render PDF page into canvas context
+																		var renderContext = {
+																			canvasContext : ctx,
+																			viewport : viewport
+																		};
+																		var renderTask = page
+																				.render(renderContext);
+
+																		// Wait for rendering to finish
+																		renderTask.promise
+																				.then(function() {
+																					pageRendering = false;
+																					if (pageNumPending !== null) {
+																						// New page rendering is pending
+																						renderPage(pageNumPending);
+																						pageNumPending = null;
+																					}
+																				});
+																	});
+
+													// Update page counters
+													document
+															.getElementById('page_num').textContent = num;
+												}
+
+												/**
+												 * If another page rendering in progress, waits until the rendering is
+												 * finised. Otherwise, executes rendering immediately.
+												 */
+												function queueRenderPage(num) {
+													if (pageRendering) {
+														pageNumPending = num;
+													} else {
+														renderPage(num);
+													}
+												}
+
+												/**
+												 * Displays previous page.
+												 */
+												function onPrevPage() {
+													if (pageNum <= 1) {
+														return;
+													}
+													pageNum--;
+													queueRenderPage(pageNum);
+												}
+												document.getElementById('prev')
+														.addEventListener(
+																'click',
+																onPrevPage);
+
+												/**
+												 * Displays next page.
+												 */
+												function onNextPage() {
+													if (pageNum >= pdfDoc.numPages) {
+														return;
+													}
+													pageNum++;
+													queueRenderPage(pageNum);
+												}
+												document.getElementById('next')
+														.addEventListener(
+																'click',
+																onNextPage);
+
+												/**
+												 * Asynchronously downloads PDF.
+												 */
+												var loadingTask = pdfjsLib
+														.getDocument({
+															data : pdfData
+														});
+												loadingTask.promise
+														.then(function(pdfDoc_)
+
+														{
+															pdfDoc = pdfDoc_;
+															document
+																	.getElementById('page_count').textContent = pdfDoc.numPages;
+
+															// Initial/first page rendering
+															renderPage(pageNum);
+														});
+											}
+										});
+							}
+
+						})
+	</script>
+</body>
+</html>

@@ -169,6 +169,20 @@ jQuery(document).ready(function( $ ) {
 });
 
 $(document).ready(function () {
+
+  $('.previewimg1').css("transition", "transform " + 0.01 * $('.previewimg1').height() + "s ease");
+
+  function getHeight(url) {
+    console.log(url);
+    var img = new Image();
+    img.src = url;
+    return 0.002*parseInt(img.height);
+  }
+  var e =$(".previewimg");
+  var tr = "all "+getHeight(e.css("background-image").replace(/^url\(['"](.+)['"]\)/, '$1'))+"s ease-in-out";
+  console.log(tr);
+  e.css('transition',tr);
+
   $('#dtBasicExample').DataTable();
   $('.dataTables_length').addClass('bs-select');
 });
@@ -237,4 +251,3 @@ $(function() {
         dropPrimaryColor: "#1abc9c", 
         dropBorder: "1px solid #1abc9c"
     });
-

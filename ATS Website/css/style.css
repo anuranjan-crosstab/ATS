@@ -1620,6 +1620,12 @@ background-size: cover;
   z-index: 2;
 }
 
+#search-heading h2 {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 4em;
+}
+
 #search-heading2 {
   position: absolute;
   z-index: 2;
@@ -1627,7 +1633,7 @@ background-size: cover;
   margin-top: 5%;
 }
 
-#search-heading h2, #search-heading2 h2 {
+#search-heading2 h2 {
   color: #ffffff;
   font-weight: 500;
   font-size: 3em;
@@ -2848,4 +2854,49 @@ div#OR {
     font-size: 15px;
     color: #333;
     line-height: 27px;
+}
+
+.preview1 {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border: 5px solid #787878;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.preview1 .previewimg1 {
+  width: 100%;
+  height: auto;
+  transform: translateY(0px); 
+}
+
+.preview1:hover .previewimg1 {
+  transform: translateY(calc(-100% + 300px)); 
+}
+
+.preview {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border: 5px solid #787878;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.previewimg {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-image: url('../img/page.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position-y: 0;
+}
+
+.previewimg:hover {
+  background-position-y: 100%;
+  height: 100%;
 }

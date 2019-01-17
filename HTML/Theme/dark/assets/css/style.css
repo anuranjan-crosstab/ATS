@@ -19279,7 +19279,7 @@ padding: 1em;
   background-color:#0073aa  !important;
 }
 
-#res-config{
+#res-config, #res-config1, #res-config2{
 table-layout:fixed;
 width: 99.5% !important;
 }
@@ -19446,3 +19446,9 @@ width: 99.5% !important;
   background-color: #008081;
 }
 /* Custom End */
+
+/* Carousel */
+.owl-carousel.owl-drag .owl-item {
+  max-height: 70vh;
+}
+
